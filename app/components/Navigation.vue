@@ -11,8 +11,8 @@ const toggleColorMode = () => {
 
 const navItems = [
   { name: 'Home', path: '/', icon: HomeIcon },
-  { name: 'About', path: '/about', icon: InformationCircleIcon },
   { name: 'Info', path: '/info', icon: QuestionMarkCircleIcon },
+  { name: 'About', path: '/about', icon: InformationCircleIcon },
 ]
 </script>
 
