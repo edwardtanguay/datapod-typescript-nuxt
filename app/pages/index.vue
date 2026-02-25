@@ -21,8 +21,6 @@ useHead({
       </p>
     </div>
 
-    <FeaturesGrid />
-
 		<UCard class="font-mono bg-indigo-200/50 dark:bg-indigo-900/20 border-indigo-200/50 dark:border-indigo-900/50">
 			<template #header>
 				<p>Examples of accessing environment variables (see /app/lib/env.ts to see how you can validate your .env variables with Zod) </p>
