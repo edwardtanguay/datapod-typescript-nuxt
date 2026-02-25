@@ -1,0 +1,28 @@
+{
+  "name": "start-nuxt-site-002",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "gh": "git log --pretty=format:\"%ad | %h | %s\" --date=format:\"%Y-%m-%d %H:%M:%S\"",
+    "backup": "bash -c 'git archive --format=zip HEAD -o \"../BACKUP/showcase-nuxt-003-$(date +%F-%H-%M-%S).zip\"'"
+  },
+  "dependencies": {
+    "@heroicons/vue": "^2.2.0",
+    "@nuxt/ui": "^4.4.0",
+    "@nuxtjs/color-mode": "^4.0.0",
+    "@types/node": "^25.2.3",
+    "autoprefixer": "^10.4.24",
+    "nuxt": "^4.2.1",
+    "vue": "^3.5.25",
+    "vue-router": "^4.6.3",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "baseline-browser-mapping": "^2.9.19"
+  }
+}
