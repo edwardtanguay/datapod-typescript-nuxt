@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { HomeIcon, Bars3Icon, XMarkIcon, SunIcon, MoonIcon, InformationCircleIcon } from '@heroicons/vue/24/outline'
+import { HomeIcon, Bars3Icon, XMarkIcon, SunIcon, MoonIcon, InformationCircleIcon, QuestionMarkCircleIcon } from '@heroicons/vue/24/outline'
 
 const mobileMenuOpen = ref(false)
 const colorMode = useColorMode()
@@ -11,6 +11,7 @@ const toggleColorMode = () => {
 
 const navItems = [
   { name: 'Home', path: '/', icon: HomeIcon },
+  { name: 'Info', path: '/info', icon: QuestionMarkCircleIcon },
   { name: 'About', path: '/about', icon: InformationCircleIcon },
 ]
 </script>
