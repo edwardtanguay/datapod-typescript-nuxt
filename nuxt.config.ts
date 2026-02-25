@@ -29,9 +29,7 @@ export default defineNuxtConfig({
 	},
 	runtimeConfig: {
 		public: {
-			nodeEnv: env.NODE_ENV,
-			cacheDriver: env.CACHE_DRIVER,
-			logLevel: env.LOG_LEVEL
+			nodeEnv: env.NODE_ENV
 		}
 	}
 })
