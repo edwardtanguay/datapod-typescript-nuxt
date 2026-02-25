@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <p>
     This is the info page.
-  </div>
+  </p>
 </template>
