@@ -1,5 +1,5 @@
 {
-  "name": "start-nuxt-site-002",
+  "name": "datapod-typescript-nuxt",
   "type": "module",
   "private": true,
   "scripts": {
@@ -9,7 +9,7 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "gh": "git log --pretty=format:\"%ad | %h | %s\" --date=format:\"%Y-%m-%d %H:%M:%S\"",
-    "backup": "bash -c 'git archive --format=zip HEAD -o \"../BACKUP/showcase-nuxt-003-$(date +%F-%H-%M-%S).zip\"'"
+    "backup": "bash -c 'git archive --format=zip HEAD -o \"../BACKUP/datapod-typescript-nuxt-$(date +%F-%H-%M-%S).zip\"'"
   },
   "dependencies": {
     "@heroicons/vue": "^2.2.0",

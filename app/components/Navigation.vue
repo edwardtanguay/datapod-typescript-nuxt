@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { HomeIcon, Bars3Icon, XMarkIcon, SunIcon, MoonIcon, InformationCircleIcon, QuestionMarkCircleIcon } from '@heroicons/vue/24/outline'
+import { HomeIcon, Bars3Icon, XMarkIcon, SunIcon, MoonIcon, InformationCircleIcon, DocumentTextIcon } from '@heroicons/vue/24/outline'
 
 const mobileMenuOpen = ref(false)
 const colorMode = useColorMode()
@@ -11,8 +11,8 @@ const toggleColorMode = () => {
 
 const navItems = [
   { name: 'Home', path: '/', icon: HomeIcon },
-  { name: 'Info', path: '/info', icon: QuestionMarkCircleIcon },
-  { name: 'About', path: '/about', icon: InformationCircleIcon },
+  { name: 'Info', path: '/info', icon: InformationCircleIcon },
+  { name: 'About', path: '/about', icon: DocumentTextIcon },
 ]
 </script>
 
@@ -23,9 +23,7 @@ const navItems = [
       <div class="flex justify-between items-center h-16">
         <!-- Logo -->
         <NuxtLink to="/"
-                  class="text-xl font-bold text-primary-700 hover:text-primary-800 transition-colors dark:text-primary-500 dark:hover:text-primary-400">
-          Nuxt Showcase 003
-        </NuxtLink>
+                  class="text-xl font-bold text-primary-700 hover:text-primary-800 transition-colors dark:text-primary-500 dark:hover:text-primary-400">Info Site</NuxtLink>
 
         <!-- Desktop Navigation -->
         <div class="hidden md:flex items-center space-x-8">

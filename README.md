@@ -1,12 +1,12 @@
-# Nuxt 4 Showcase
+# Datapod for TypeScript and Nuxt
 
-A demonstration of modern web development capabilities using Nuxt 4, Vue 3, and Tailwind CSS. This project showcases a responsive, interactive application with server-side API integration and seamless deployment.
+This is a Datapod that uses TypeScript as the backend CLI language for data parsing and Nuxt 4 as the frontend.
 
-![Screenshot](https://github.com/user-attachments/assets/78a4266a-e00c-404b-be93-4c26a4802b06)
+<img width="925" height="463" alt="grafik" src="https://github.com/user-attachments/assets/2b3bcbb0-d132-4712-96aa-86f4e44ae122" />
 
 ## 🚀 Live Demo
 
-[View Live Site](https://showcase-nuxt-003.vercel.app/)
+[View Live Site](https://datapod-typescript-nuxt.vercel.app)
 
 ## ✨ Key Features
 
@@ -14,8 +14,6 @@ A demonstration of modern web development capabilities using Nuxt 4, Vue 3, and 
 -   **UI & Styling**: Styled with Tailwind CSS and Nuxt UI for a clean, modern look.
 -   **Dark/Light Mode**: Fully supported color modes using `@nuxtjs/color-mode`.
 -   **Responsive Navigation**: Optimized for both desktop and mobile devices.
--   **Interactive Forms**: Demonstrates API integration with error handling.
--   **Server-Side Logic**: Includes server API routes for data handling.
 -   **Easy Deployment**: Configured for one-click publishing to Vercel.
 
 ## 🛠️ Tech Stack
@@ -34,46 +32,8 @@ A demonstration of modern web development capabilities using Nuxt 4, Vue 3, and 
 
 ### Installation
 
-```bash
-# Clone the repository
-git clone https://github.com/edwardtanguay/showcase-nuxt-003.git
-
-# Navigate to the project directory
-cd showcase-nuxt-003
-
-# Install dependencies
-npm install
-```
-
-### env file
-
-This is a dummy env file at the moment to demonstrate the zod validation.
-
-```
-NODE_ENV=development
-LOG_LEVEL=warn
-CACHE_DRIVER=redis
-TURSO_DATABASE_URL=libsql://test.turso.io
-TURSO_AUTH_TOKEN=eyJhbGciOiJIUzI1NiI
-```
-
-### Development
-
-Start the development server:
-
-```bash
-npm run dev
-```
-
-Visit `http://localhost:3000` in your browser.
-
-### Build
-
-Build the application for production:
-
-```bash
-npm run build
-```
+- `npm i`
+- `npm run dev`
 
 ## 🎨 Configuration
 
@@ -81,21 +41,19 @@ You can customize the layout colors and other UI settings in `app/app.config.ts`
 
 ```typescript
 export default defineAppConfig({
-  ui: {
-    colors: {
-      primary: 'green',
-      neutral: 'gray'
-    }
-  }
+	ui: {
+		colors: {
+			primary: 'green',
+			neutral: 'gray',
+			secondary: 'orange',
+			success: 'emerald',
+			info: 'blue',
+			warning: 'yellow',
+			error: 'red'
+		}
+	}
 })
 ```
-
-## 📂 Project Structure
-
--   `app/`: Core application files (pages, components, layouts).
--   `server/`: Server-side API routes and utilities.
--   `public/`: Static assets.
--   `nuxt.config.ts`: Nuxt configuration file.
 
 ## 🚀 Deployment
 

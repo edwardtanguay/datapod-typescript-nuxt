@@ -14,9 +14,12 @@ export default defineNuxtConfig({
 	},
 	app: {
 		head: {
-			title: 'Nuxt Showcase 003',
+			title: 'Info Site',
 			meta: [
-				{ name: 'description', content: 'A Nuxt 4 site with responsive navigation and color mode' }
+				{ name: 'description', content: 'A info site' }
+			],
+			link: [
+				{ rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }
 			]
 		}
 	},
