@@ -16,7 +16,7 @@ export default defineNuxtConfig({
 		head: {
 			title: 'Info Site',
 			meta: [
-				{ name: 'description', content: 'A info site' }
+				{ name: 'description', content: 'An info site' }
 			],
 			link: [
 				{ rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }

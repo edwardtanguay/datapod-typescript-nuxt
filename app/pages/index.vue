@@ -7,7 +7,7 @@ const cacheDriver = config.public.cacheDriver;
 useHead({
   title: 'Info Site',
   meta: [
-    { name: 'description', content: 'A info site' }
+    { name: 'description', content: 'An info site' }
   ]
 });
 </script>
