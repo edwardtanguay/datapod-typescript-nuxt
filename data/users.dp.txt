@@ -7,22 +7,12 @@ Score;wholeNumber
 Birth Date;date
 
 ==user
-dpodId::8jK3aI
-dpodWhenCreated::2026-02-28 13:58:19
-firstName::Initial
-lastName::Developer
-email::
-notes::
-score::
-birthDate::1969-01-01
-
-==user
 dpodId::G8h2jK
 dpodWhenCreated::2026-03-01 10:00:00
 firstName::Jürgen
 lastName::Müller
 email::juergen.mueller@example.de
-notes::Er ist ein netter Kollege.
+notes::Jürgen ist ein sehr erfahrener Softwarearchitekt mit über 15 Jahren Berufserfahrung. In seiner Freizeit wandert er gerne in den Alpen und engagiert sich ehrenamtlich in der lokalen Gemeinde. Er ist bekannt für seine ruhige Art und seine präzisen Problemanalysen.
 score::85
 birthDate::1985-05-12
 
@@ -32,7 +22,7 @@ dpodWhenCreated::2026-03-01 10:05:00
 firstName::Stefan
 lastName::Groß
 email::stefan.gross@example.de
-notes::Hobbyläufer und Programmierer.
+notes::Stefan ist ein leidenschaftlicher Hobbyläufer, der bereits an mehreren Marathon-Events teilgenommen hat. Beruflich konzentriert er sich auf die Webentwicklung mit modernen Frameworks wie Nuxt und React. Er liebt es, komplexe Logikprobleme zu lösen und neue Technologien zu erforschen.
 score::92
 birthDate::1990-11-23
 
@@ -42,7 +32,7 @@ dpodWhenCreated::2026-03-01 10:10:00
 firstName::Bärbel
 lastName::Häupler
 email::baerbel.haeupler@example.de
-notes::Spezialistin für Qualitätssicherung.
+notes::Bärbel ist unsere Spezialistin für Qualitätssicherung und hat ein extrem scharfes Auge für Details. Dank ihrer gründlichen Tests konnten wir die Stabilität unserer Anwendungen in den letzten Jahren signifikant verbessern. Sie ist eine unverzichtbare Stütze für das gesamte Entwicklungsteam.
 score::78
 birthDate::1975-03-08
 
@@ -52,7 +42,7 @@ dpodWhenCreated::2026-03-01 11:00:00
 firstName::Aurélie
 lastName::Michaud
 email::aurelie.michaud@example.fr
-notes::Elle travaille dans le marketing.
+notes::Aurélie travaille dans le département marketing où elle gère les campagnes internationales avec brio. Originaire de Lyon, elle apporte une touche créative et dynamique à tous nos projets de communication. Elle est particulièrement douée pour l'analyse des tendances du marché européen.
 score::88
 birthDate::1992-07-14
 
@@ -62,6 +52,6 @@ dpodWhenCreated::2026-03-01 11:15:00
 firstName::François
 lastName::Renard
 email::francois.renard@example.fr
-notes::Un expert en gastronomie française.
+notes::François est un véritable expert en gastronomie française et adore partager ses découvertes culinaires avec ses collègues. En dehors de son travail, il passe beaucoup de temps à explorer les vignobles et à perfectionner ses propres recettes de cuisine traditionnelle. Son enthousiasme est contagieux et illumine le bureau.
 score::95
 birthDate::1982-04-20
