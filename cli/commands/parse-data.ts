@@ -26,4 +26,4 @@ for (let i = 0; i < lines.length; i += 4) {
 
 qcli.message(`Generated ${lines.length} flashcards`);
 utils.saveFlashcardsToJson(flashcards, "../../data-parsed/flashcards.json");
-qcli.message(`Wrorte ${flashcards.length} flashcards to flashcards.json`);
+qcli.message(`Wrote ${flashcards.length} flashcards to flashcards.json`);
