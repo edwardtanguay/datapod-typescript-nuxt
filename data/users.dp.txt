@@ -1,0 +1,20 @@
+** Users
+First Name;line
+Last Name;line
+Email;email
+Notes;paragraph
+Score;wholeNumber
+Birth Date;date
+
+==user
+dpodId::8jK3aI
+dpodWhenCreated::2026-02-28 13:58:19
+firstName::Initial
+lastName::Developer
+email::
+notes::
+score::
+birthDate::1969-01-01
+
+
+
