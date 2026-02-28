@@ -16,5 +16,52 @@ notes::
 score::
 birthDate::1969-01-01
 
+==user
+dpodId::G8h2jK
+dpodWhenCreated::2026-03-01 10:00:00
+firstName::Jürgen
+lastName::Müller
+email::juergen.mueller@example.de
+notes::Er ist ein netter Kollege.
+score::85
+birthDate::1985-05-12
 
+==user
+dpodId::L3m9nP
+dpodWhenCreated::2026-03-01 10:05:00
+firstName::Stefan
+lastName::Groß
+email::stefan.gross@example.de
+notes::Hobbyläufer und Programmierer.
+score::92
+birthDate::1990-11-23
 
+==user
+dpodId::R5s4tV
+dpodWhenCreated::2026-03-01 10:10:00
+firstName::Bärbel
+lastName::Häupler
+email::baerbel.haeupler@example.de
+notes::Spezialistin für Qualitätssicherung.
+score::78
+birthDate::1975-03-08
+
+==user
+dpodId::F1a7bC
+dpodWhenCreated::2026-03-01 11:00:00
+firstName::Aurélie
+lastName::Michaud
+email::aurelie.michaud@example.fr
+notes::Elle travaille dans le marketing.
+score::88
+birthDate::1992-07-14
+
+==user
+dpodId::H4k2mQ
+dpodWhenCreated::2026-03-01 11:15:00
+firstName::François
+lastName::Renard
+email::francois.renard@example.fr
+notes::Un expert en gastronomie française.
+score::95
+birthDate::1982-04-20
