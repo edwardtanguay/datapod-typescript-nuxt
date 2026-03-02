@@ -12,7 +12,6 @@ const html = `
 </head>
 <body>
 	<h1>Datapod Debug Output</h1>
-	<hr/>
 	<!-- marker:bottom-of-body -->
 </body>
 </html>
