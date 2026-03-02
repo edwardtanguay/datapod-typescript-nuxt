@@ -228,9 +228,5 @@ export const writeToFile = (pathAndFileName: string, content: string): void => {
 	} catch (error) {
 		// if file doesn't exist, it's fine
 	}
-	fs.writeFile(pathAndFileName, content, (err: any) => {
-		if (err) {
-			console.error("Error writing to file:", err);
-		}
-	});
+	fs.writeFileSync(pathAndFileName, content, "utf-8");
 };

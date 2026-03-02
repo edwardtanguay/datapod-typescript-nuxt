@@ -19,6 +19,12 @@ export const clearDebug = (): void => {
 
 `;
 	qfil.writeToFile("~~/debug/output.html", html);
+	sleep(100);
+};
+
+export const sleep = (ms: number) => {
+	const end = Date.now() + ms;
+	while (Date.now() < end) {}
 };
 
 export const addToDebugHtml = (content: string): void => {
