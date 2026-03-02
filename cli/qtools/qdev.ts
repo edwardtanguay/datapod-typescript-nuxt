@@ -6,7 +6,8 @@ export const addToDebugHtml = (content: string): void => {
 
 export const getDebugBoxHtml = (title: string, lines: string[], extraClass: string = ""): string => {
 	let html = `<fieldset class="debugBox ${extraClass}">`;
-	html += `<legend>${title.toUpperCase()}</legend>`;
+	const lineLabel = lines.length === 1 ? "line" : "lines";
+	html += `<legend>${title.toUpperCase()} <span class="lineCount">(${lines.length} ${lineLabel})</span></legend>`;
 	lines.forEach((line) => {
 		html += `<div class="line">${line}</div>`;
 	});
