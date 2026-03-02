@@ -76,6 +76,15 @@ export class DpodFile {
 	}
 
 	public debugHtml() {
-		qdev.addToDebugHtml("<p>this is a test</p>");
+		let html = `<div class="dpodFile">`;
+		html += `<div class="fileInfo">`
+		html += `<p>Path and File Name: ${this.pathAndFileName}</p>`;
+		html += `<p>Number of Lines: ${this.lines.length}</p>`;
+		html += `</div>`
+		this.dpodLineBlocks.forEach((dpodLineBlock) => {
+			html += dpodLineBlock.debugHtml();
+		});
+		html += `</div>`;
+		qdev.addToDebugHtml(html);
 	}
 }

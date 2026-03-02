@@ -17,6 +17,32 @@ h1 {
 	font-weight: bold;
 }
 
+h2 {
+	font-size: 1.1rem;
+	text-transform: uppercase;
+	margin-bottom: 0.5rem;
+	font-weight: bold;
+	border-left: 4px solid #666;
+	padding-left: 0.5rem;
+}
+
+.dpodFile {
+	margin-top: 2rem;
+}
+
+.fileInfo {
+	border: 1px dashed #444;
+	padding: 1rem;
+	margin-bottom: 1rem;
+}
+
+.dpodLineBlock {
+	border: 1px solid #333;
+	padding: 1rem;
+	margin-bottom: 1.5rem;
+	background-color: #0c0c0c;
+}
+
 hr {
 	border: none;
 	border-top: 1px dashed #444;

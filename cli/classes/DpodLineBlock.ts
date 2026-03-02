@@ -20,4 +20,14 @@ export class DpodLineBlock {
 			qcli.message(line, "info");
 		});
 	}
+
+	public debugHtml(): string {
+		let html = `<div class="dpodLineBlock">`;
+		html += `<h2>DPOD LINE BLOCK</h2>`;
+		this.lines.forEach((line) => {
+			html += `<div>${line}</div>`;
+		});
+		html += `</div>`;
+		return html;
+	}
 }
