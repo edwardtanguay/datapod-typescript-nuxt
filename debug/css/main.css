@@ -44,7 +44,12 @@ legend {
 	margin-top: 1rem;
 }
 
-.line,
+.content {
+	white-space: pre-wrap;
+	font-family: inherit;
+	color: #bbb;
+}
+
 .infoLine {
 	margin-bottom: 0.25rem;
 	color: #bbb;

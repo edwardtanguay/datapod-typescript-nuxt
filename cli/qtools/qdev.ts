@@ -35,9 +35,7 @@ export const getDebugBoxHtml = (title: string, lines: string[], extraClass: stri
 	let html = `<fieldset class="debugBox ${extraClass}">`;
 	const lineLabel = lines.length === 1 ? "line" : "lines";
 	html += `<legend>${title.toUpperCase()} <span class="lineCount">(${lines.length} ${lineLabel})</span></legend>`;
-	lines.forEach((line) => {
-		html += `<div class="line">${line}</div>`;
-	});
+	html += `<pre class="content">${lines.join("\n")}</pre>`;
 	html += `</fieldset>`;
 	return html;
 };
