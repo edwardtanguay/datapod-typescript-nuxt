@@ -12,7 +12,9 @@ dpodWhenCreated::2026-03-01 10:00:00
 firstName::Jürgen
 lastName::Müller
 email::juergen.mueller@example.de
-notes::Jürgen ist ein sehr erfahrener Softwarearchitekt mit über 15 Jahren Berufserfahrung. In seiner Freizeit wandert er gerne in den Alpen und engagiert sich ehrenamtlich in der lokalen Gemeinde. Er ist bekannt für seine ruhige Art und seine präzisen Problemanalysen.
+notes::[[
+Jürgen ist ein sehr erfahrener Softwarearchitekt mit über 15 Jahren Berufserfahrung. In seiner Freizeit wandert er gerne in den Alpen und engagiert sich ehrenamtlich in der lokalen Gemeinde. Er ist bekannt für seine ruhige Art und seine präzisen Problemanalysen.
+]]
 score::85
 birthDate::1985-05-12
 
