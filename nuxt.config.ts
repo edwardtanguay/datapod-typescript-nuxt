@@ -10,7 +10,7 @@ export default defineNuxtConfig({
 		classSuffix: ''
 	},
 	devServer: {
-		port: 3338
+		port: 3141
 	},
 	app: {
 		head: {
