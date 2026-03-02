@@ -1,5 +1,6 @@
 import * as qstr from "../qtools/qstr";
 import * as qcli from "../qtools/qcli";
+import * as qdev from "../qtools/qdev";
 
 export class DpodLineBlock {
 	public lines: string[] = [];
@@ -22,12 +23,6 @@ export class DpodLineBlock {
 	}
 
 	public debugHtml(): string {
-		let html = `<fieldset class="dpodLineBlock">`;
-		html += `<legend>DPOD LINE BLOCK</legend>`;
-		this.lines.forEach((line) => {
-			html += `<div class="line">${line}</div>`;
-		});
-		html += `</fieldset>`;
-		return html;
+		return qdev.getDebugBoxHtml("DPOD LINE BLOCK", this.lines, "dpodLineBlock");
 	}
 }

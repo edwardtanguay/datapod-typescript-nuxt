@@ -77,11 +77,10 @@ export class DpodFile {
 
 	public debugHtml() {
 		let html = `<div class="dpodFile">`;
-		html += `<fieldset class="fileInfo">`
-		html += `<legend>FILE INFO</legend>`;
-		html += `<div class="infoLine">Path: ${this.pathAndFileName}</div>`;
-		html += `<div class="infoLine">Lines: ${this.lines.length}</div>`;
-		html += `</fieldset>`
+		html += qdev.getDebugBoxHtml("FILE INFO", [
+			`Path: ${this.pathAndFileName}`,
+			`Lines: ${this.lines.length}`
+		], "fileInfo");
 		this.dpodLineBlocks.forEach((dpodLineBlock) => {
 			html += dpodLineBlock.debugHtml();
 		});

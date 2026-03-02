@@ -4,6 +4,16 @@ export const addToDebugHtml = (content: string): void => {
 	qfil.addToTextFileBeforeMarker("~~/debug/output.html", content, "<!-- marker:bottom-of-body -->");
 };
 
+export const getDebugBoxHtml = (title: string, lines: string[], extraClass: string = ""): string => {
+	let html = `<fieldset class="debugBox ${extraClass}">`;
+	html += `<legend>${title.toUpperCase()}</legend>`;
+	lines.forEach((line) => {
+		html += `<div class="line">${line}</div>`;
+	});
+	html += `</fieldset>`;
+	return html;
+};
+
 /**
  * prints a debug line with timestamp
  *
