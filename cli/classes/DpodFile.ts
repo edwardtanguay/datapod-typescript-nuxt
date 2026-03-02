@@ -77,10 +77,11 @@ export class DpodFile {
 
 	public debugHtml() {
 		let html = `<div class="dpodFile">`;
-		html += `<div class="fileInfo">`
-		html += `<p>Path and File Name: ${this.pathAndFileName}</p>`;
-		html += `<p>Number of Lines: ${this.lines.length}</p>`;
-		html += `</div>`
+		html += `<fieldset class="fileInfo">`
+		html += `<legend>FILE INFO</legend>`;
+		html += `<div class="infoLine">Path: ${this.pathAndFileName}</div>`;
+		html += `<div class="infoLine">Lines: ${this.lines.length}</div>`;
+		html += `</fieldset>`
 		this.dpodLineBlocks.forEach((dpodLineBlock) => {
 			html += dpodLineBlock.debugHtml();
 		});

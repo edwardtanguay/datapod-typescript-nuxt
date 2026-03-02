@@ -22,12 +22,12 @@ export class DpodLineBlock {
 	}
 
 	public debugHtml(): string {
-		let html = `<div class="dpodLineBlock">`;
-		html += `<h2>DPOD LINE BLOCK</h2>`;
+		let html = `<fieldset class="dpodLineBlock">`;
+		html += `<legend>DPOD LINE BLOCK</legend>`;
 		this.lines.forEach((line) => {
-			html += `<div>${line}</div>`;
+			html += `<div class="line">${line}</div>`;
 		});
-		html += `</div>`;
+		html += `</fieldset>`;
 		return html;
 	}
 }
