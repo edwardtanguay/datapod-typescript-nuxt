@@ -1,4 +1,5 @@
 import * as fs from "fs";
+import * as path from "path";
 import * as qcli from "./qcli";
 
 /**
@@ -7,6 +8,7 @@ import * as qcli from "./qcli";
  * const lines = qfil.getLinesFromFile('../data/flashcards.txt');
  */
 export const getLinesFromFile = (filePath: string): string[] => {
+	filePath = resolvePath(filePath);
 	try {
 		const fileContent = fs.readFileSync(filePath, "utf-8");
 		return fileContent.split(/\r?\n/);
@@ -16,8 +18,16 @@ export const getLinesFromFile = (filePath: string): string[] => {
 	}
 };
 
+export const resolvePath = (filePath: string): string => {
+	if (filePath.startsWith("~~/")) {
+		return path.join(process.cwd(), "../../", filePath.substring(3));
+	}
+	return filePath;
+};
+
 // function that returns the content of a file
 export const getStringBlockFromFile = (filePath: string): string => {
+	filePath = resolvePath(filePath);
 	try {
 		const fileContent = fs.readFileSync(filePath, "utf-8");
 		return fileContent;
@@ -37,6 +47,7 @@ export default getLinesFromFile;
 export const getPathAndFileNamesFromDirectoryOneLevel = (
 	directoryPath: string
 ): string[] => {
+	directoryPath = resolvePath(directoryPath);
 	try {
 		const files = fs.readdirSync(directoryPath);
 		return files
@@ -54,6 +65,7 @@ export const getPathAndFileNamesFromDirectoryOneLevel = (
 export const getPathAndFileNamesFromAbsoluteDirectoryOneLevel = (
 	directoryPath: string
 ): string[] => {
+	directoryPath = resolvePath(directoryPath);
 	try {
 		const files = fs.readdirSync(directoryPath);
 		return files
@@ -73,6 +85,7 @@ export const getPathAndFileNamesFromAbsoluteDirectoryOneLevel = (
 export const getFileNamesFromAbsoluteDirectory = (
 	directoryPath: string
 ): string[] => {
+	directoryPath = resolvePath(directoryPath);
 	try {
 		const dirents = fs.readdirSync(directoryPath, { withFileTypes: true });
 		const fileNames: string[] = [];
@@ -84,7 +97,7 @@ export const getFileNamesFromAbsoluteDirectory = (
 			}
 		}
 		return fileNames;
-	} catch (err) {
+	} catch (err: any) {
 		console.error("Error reading directory:", err);
 		return [];
 	}
@@ -98,6 +111,7 @@ export const getFileNamesFromAbsoluteDirectory = (
 export const getDirectoriesFromAbsoluteDirectory = (
 	directoryPath: string
 ): string[] => {
+	directoryPath = resolvePath(directoryPath);
 	try {
 		const dirents = fs.readdirSync(directoryPath, { withFileTypes: true });
 		const directoryNames: string[] = [];
@@ -109,7 +123,7 @@ export const getDirectoriesFromAbsoluteDirectory = (
 			}
 		}
 		return directoryNames;
-	} catch (err) {
+	} catch (err: any) {
 		console.error("Error reading directory:", err);
 		return [];
 	}
@@ -124,6 +138,7 @@ export const saveStringArrayToJsonFile = (
 	str: string[],
 	jsonFileName: string
 ): void => {
+	jsonFileName = resolvePath(jsonFileName);
 	try {
 		const jsonData = JSON.stringify(str, null, 2);
 		fs.writeFileSync(jsonFileName, jsonData, "utf-8");
@@ -131,7 +146,7 @@ export const saveStringArrayToJsonFile = (
 			`Successfully saved ${str.length} strings to ${jsonFileName}`,
 			"success"
 		);
-	} catch (error) {
+	} catch (error: any) {
 		qcli.message(
 			`Error saving strings to ${jsonFileName}: ${error.message}`,
 			"error"
@@ -149,6 +164,7 @@ export const saveArrayOfObjectsToJsonFile = (
 	objects: unknown[],
 	jsonFileName: string
 ): void => {
+	jsonFileName = resolvePath(jsonFileName);
 	try {
 		const jsonData = JSON.stringify(objects, null, 2);
 		fs.writeFileSync(jsonFileName, jsonData, "utf-8");
@@ -156,7 +172,7 @@ export const saveArrayOfObjectsToJsonFile = (
 			`Successfully saved ${objects.length} objects to ${jsonFileName}`,
 			"success"
 		);
-	} catch (error) {
+	} catch (error: any) {
 		qcli.message(
 			`Error saving objects to ${jsonFileName}: ${error.message}`,
 			"error"
@@ -166,6 +182,7 @@ export const saveArrayOfObjectsToJsonFile = (
 
 // if file is the same as the content, don't write
 export const writeToFile = (pathAndFileName: string, content: string): void => {
+	pathAndFileName = resolvePath(pathAndFileName);
 	try {
 		const existingContent = fs.readFileSync(pathAndFileName, "utf-8");
 		if (existingContent === content) {
@@ -178,7 +195,7 @@ export const writeToFile = (pathAndFileName: string, content: string): void => {
 	} catch (error) {
 		// if file doesn't exist, it's fine
 	}
-	fs.writeFile(pathAndFileName, content, (err) => {
+	fs.writeFile(pathAndFileName, content, (err: any) => {
 		if (err) {
 			console.error("Error writing to file:", err);
 		} else {
