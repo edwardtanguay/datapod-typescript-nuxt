@@ -1,3 +1,5 @@
 import * as parserFlashcards from "../parsers/parser-flashcards";
+import * as parserUsers from "../parsers/parser-users";
 
-parserFlashcards.parseFlashcards();
+// parserFlashcards.parseFlashcards();
+parserUsers.parseUsers();
