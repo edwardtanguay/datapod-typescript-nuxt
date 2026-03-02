@@ -1,7 +1,7 @@
 import * as qfil from "./qfil";
 
 export const addToDebugHtml = (content: string): void => {
-	qfil.addToTextFile("~~/debug/output.html", content);
+	qfil.addToTextFileBeforeMarker("~~/debug/output.html", content, "<!-- marker:bottom-of-body -->");
 };
 
 /**

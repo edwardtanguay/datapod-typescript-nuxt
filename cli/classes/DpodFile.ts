@@ -76,6 +76,6 @@ export class DpodFile {
 	}
 
 	public debugHtml() {
-		qdev.addToDebugHtml("this is a <b>test</b>");
+		qdev.addToDebugHtml("<p>this is a test</p>");
 	}
 }

@@ -188,6 +188,32 @@ export const addToTextFile = (filePath: string, content: string): void => {
 	}
 };
 
+export const addToTextFileBeforeMarker = (
+	filePath: string,
+	content: string,
+	marker: string
+): void => {
+	filePath = resolvePath(filePath);
+	try {
+		const fileContent = fs.readFileSync(filePath, "utf-8");
+		const parts = fileContent.split(marker);
+		if (parts.length > 1) {
+			const newContent = parts[0] + content + marker + parts.slice(1).join(marker);
+			fs.writeFileSync(filePath, newContent, "utf-8");
+		} else {
+			qcli.message(
+				`Marker "${marker}" not found in ${filePath}`,
+				"warning"
+			);
+		}
+	} catch (error: any) {
+		qcli.message(
+			`Error adding to ${filePath}: ${error.message}`,
+			"error"
+		);
+	}
+};
+
 export const writeToFile = (pathAndFileName: string, content: string): void => {
 	pathAndFileName = resolvePath(pathAndFileName);
 	try {
