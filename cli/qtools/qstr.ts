@@ -330,10 +330,10 @@ export const breakIntoParts = (
 	}
 
 	// unmask
-	const unmaskedParts = [];
+	const unmaskedParts: string[] = [];
 	for (const part of parts) {
 		const unmaskedPart = qstr.replaceAll(part, mask, delimiter);
-		(unmaskedParts as string[]).push(unmaskedPart);
+		unmaskedParts.push(unmaskedPart);
 	}
 	parts = unmaskedParts;
 
