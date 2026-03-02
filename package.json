@@ -6,6 +6,7 @@
     "build": "nuxt build",
     "dev": "nuxt dev",
     "pd": "cd cli/commands && tsx parse-data.ts",
+    "cd": "cd cli/commands && tsx clear-debug-file.ts",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",

@@ -1,4 +1,8 @@
-// qdev = quick tools to make development easier
+import * as qfil from "./qfil";
+
+export const addToDebugHtml = (content: string): void => {
+	qfil.addToTextFile("~~/debug/output.html", content);
+};
 
 /**
  * prints a debug line with timestamp

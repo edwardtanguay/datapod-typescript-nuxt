@@ -1,6 +1,7 @@
 //dpod
 import * as qfil from "../qtools/qfil";
 import * as qstr from "../qtools/qstr";
+import * as qdev from "../qtools/qdev";
 import { DpodLineBlock } from "./DpodLineBlock";
 
 export class DpodFile {
@@ -72,5 +73,9 @@ export class DpodFile {
 		this.dpodLineBlocks.forEach((dpodLineBlock) => {
 			dpodLineBlock.debug();
 		});
+	}
+
+	public debugHtml() {
+		qdev.addToDebugHtml("this is a <b>test</b>");
 	}
 }
