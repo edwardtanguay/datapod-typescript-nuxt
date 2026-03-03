@@ -76,17 +76,6 @@ export class DpodFile {
 		});
 	}
 
-	public debug() {
-		console.log("pathAndFileName: " + this.pathAndFileName);
-		console.log("lines: " + this.lines.length);
-		this.dpodLineBlocks.forEach((dpodLineBlock) => {
-			dpodLineBlock.debug();
-		});
-		this.dpodMarkedLineBlocks.forEach((dpodMarkedLineBlock) => {
-			dpodMarkedLineBlock.debug();
-		});
-	}
-
 	public debugHtml(): string {
 		let html = `<div class="dpodFile">`;
 		html += qdev.getDebugBoxHtml("FILE INFO", [

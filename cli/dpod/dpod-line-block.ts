@@ -15,13 +15,6 @@ export class DpodLineBlock {
 		this.lines.push(line);
 	}
 
-	public debug() {
-		qcli.message("DPOD LINE BLOCK", "info");
-		this.lines.forEach((line) => {
-			qcli.message(line, "info");
-		});
-	}
-
 	public debugHtml(): string {
 		return qdev.getDebugBoxHtml("DPOD LINE BLOCK", this.lines, "dpodLineBlock");
 	}

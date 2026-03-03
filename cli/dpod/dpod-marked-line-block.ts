@@ -21,13 +21,6 @@ export class DpodMarkedLineBlock {
 		}
 	}
 
-	public debug() {
-		qcli.message(`DPOD MARKED LINE BLOCK: ${this.marker} ${this.label}`, "info");
-		this.lines.forEach((line) => {
-			qcli.message(line, "info");
-		});
-	}
-
 	public debugHtml(): string {
 		const title = `DPOD MARKED LINE BLOCK: ${this.marker} ${this.label}`;
 		return qdev.getDebugBoxHtml(title, this.lines, "dpodMarkedLineBlock");
