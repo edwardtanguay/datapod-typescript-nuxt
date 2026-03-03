@@ -1,5 +1,5 @@
-import { DataType } from "./data-types/data-type";
+import { DpodType } from "./dpod-types/dpod-type";
 
 export class DpodSchema {
-	public dataTypes: DataType[] = [];
+	public dpodTypes: DpodType[] = [];
 }

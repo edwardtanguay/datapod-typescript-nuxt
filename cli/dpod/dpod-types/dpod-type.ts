@@ -1,3 +1,3 @@
-export class DataType {
+export class DpodType {
 	public idCode: string = '';
 }
