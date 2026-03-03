@@ -1,6 +1,6 @@
 import * as qdev from "../qtools/qdev";
 
-import { DpodFile } from "./DpodFile";
+import { DpodFile } from "./dpod-file";
 
 export class DpodItems {
 
