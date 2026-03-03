@@ -9,9 +9,11 @@ export class DpodFile {
 	private lines: string[] = [];
 	public dpodLineBlocks: DpodLineBlock[] = [];
 	public dpodMarkedLineBlocks: DpodMarkedLineBlock[] = [];
+	public idCode: string = "";
 
 	constructor(pathAndFileName: string) {
 		this.pathAndFileName = pathAndFileName;
+		this.idCode = this.pathAndFileName.split("/").pop()?.split(".")[0] || "";
 		this.lines = qfil.getLinesFromFile(this.pathAndFileName);
 		this.createDpodLineBlocks();
 		this.createDpodMarkedLineBlocks();
@@ -80,6 +82,7 @@ export class DpodFile {
 		let html = `<div class="dpodFile">`;
 		html += qdev.getDebugBoxHtml("FILE INFO", [
 			`Path: ${this.pathAndFileName}`,
+			`IdCode: ${this.idCode}`,
 			`Lines: ${this.lines.length}`
 		], "fileInfo");
 
