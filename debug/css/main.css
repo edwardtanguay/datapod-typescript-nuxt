@@ -57,12 +57,18 @@ legend:hover {
 	white-space: pre-wrap;
 	font-family: inherit;
 	color: #fff;
+	border-left: 2px solid #222;
+	padding-left: 0.75rem;
+	margin-top: 0.5rem;
 }
 
 .infoLine {
 	margin-bottom: 0.25rem;
 	color: #fff;
 }
+
+
+
 
 
 .fileInfo {
