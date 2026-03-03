@@ -8,8 +8,9 @@ export class DpodMarkedLineBlock {
 	public label: string = "";
 
 	constructor(dpodLineBlock: DpodLineBlock) {
-		this.lines = dpodLineBlock.lines;
-		this.parseFirstLine(this.lines[0]);
+		const allLines = dpodLineBlock.lines;
+		this.parseFirstLine(allLines[0]);
+		this.lines = allLines.slice(1);
 	}
 
 	private parseFirstLine(line: string) {
