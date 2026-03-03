@@ -56,6 +56,17 @@ export const getDebugBoxHtml = (title: string, lines: string[], extraClass: stri
 	return html;
 };
 
+export const getDebugBoxSimpleHtml = (title: string, lines: string[], extraClass: string = "", preHtml: string = ""): string => {
+	let html = `<fieldset class="debugBox ${extraClass}">`;
+	html += `<legend>${title.toUpperCase()}</legend>`;
+	if (preHtml) {
+		html += preHtml;
+	}
+	html += `<pre class="contentSimple">${lines.join("\n")}</pre>`;
+	html += `</fieldset>`;
+	return html;
+};
+
 export const getDebugWrapperHtml = (title: string, content: string): string => {
 	let html = `<fieldset class="debugWrapper">`;
 	html += `<legend>${title}</legend>`;

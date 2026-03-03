@@ -80,6 +80,13 @@ legend:hover {
 	flex: 1;
 }
 
+.contentSimple {
+	white-space: pre-wrap;
+	font-family: inherit;
+	color: #fff;
+	margin: 0;
+}
+
 .infoLine {
 	margin-bottom: 0.25rem;
 	color: #fff;

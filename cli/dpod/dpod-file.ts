@@ -80,9 +80,8 @@ export class DpodFile {
 
 	public debugHtml(): string {
 		let html = `<div class="dpodFile">`;
-		html += qdev.getDebugBoxHtml("FILE INFO", [
+		html += qdev.getDebugBoxSimpleHtml("FILE INFO", [
 			`Path: ${this.pathAndFileName}`,
-			`IdCode: ${this.idCode}`,
 			`Lines: ${this.lines.length}`
 		], "fileInfo");
 
