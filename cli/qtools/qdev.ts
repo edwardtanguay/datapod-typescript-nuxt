@@ -18,7 +18,15 @@ export const clearDebug = (): void => {
 		document.addEventListener("click", (e) => {
 			const fieldset = e.target.closest("fieldset");
 			if (fieldset) {
+				const isOpening = fieldset.classList.contains("closed");
 				fieldset.classList.toggle("closed");
+				
+				if (!isOpening) {
+					// When closing, also close all children
+					const children = fieldset.querySelectorAll("fieldset");
+					children.forEach(child => child.classList.add("closed"));
+				}
+				
 				e.stopPropagation();
 			}
 		});
