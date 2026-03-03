@@ -53,13 +53,31 @@ legend:hover {
 	margin-top: 1rem;
 }
 
+.line {
+	display: flex;
+	align-items: stretch;
+}
+
+.lineNumber {
+	color: #444;
+	font-size: 0.65rem;
+	width: 2.2rem;
+	text-align: right;
+	padding-right: 0.6rem;
+	user-select: none;
+	line-height: 1.2;
+	padding-top: 0.15rem;
+	flex-shrink: 0;
+}
+
 .content {
 	white-space: pre-wrap;
 	font-family: inherit;
 	color: #fff;
 	border-left: 2px solid #222;
 	padding-left: 0.75rem;
-	margin-top: -0.3rem;
+	margin: 0;
+	flex: 1;
 }
 
 .infoLine {

@@ -47,7 +47,11 @@ export const getDebugBoxHtml = (title: string, lines: string[], extraClass: stri
 	if (preHtml) {
 		html += preHtml;
 	}
-	html += `<pre class="content">${lines.join("\n")}</pre>`;
+	html += `<div class="codeContainer">`;
+	lines.forEach((line, index) => {
+		html += `<div class="line"><div class="lineNumber">${index + 1}</div><pre class="content">${line}</pre></div>`;
+	});
+	html += `</div>`;
 	html += `</fieldset>`;
 	return html;
 };
