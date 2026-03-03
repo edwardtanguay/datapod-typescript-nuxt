@@ -1,3 +1,5 @@
-export class DataTypeWholeNumber {
-	public idCode: string = 'wholeNumber';
+import { DataType } from "./data-type";
+
+export class DataTypeWholeNumber extends DataType {
+	override idCode: string = 'wholeNumber';
 }
