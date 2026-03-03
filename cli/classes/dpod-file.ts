@@ -1,7 +1,7 @@
 import * as qfil from "../qtools/qfil";
 import * as qstr from "../qtools/qstr";
 import * as qdev from "../qtools/qdev";
-import { LineBlock } from "./line-block";
+import { LineBlock } from "../general-parsing/line-block";
 
 export class DpodFile {
 	private pathAndFileName: string;
