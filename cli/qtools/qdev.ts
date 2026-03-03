@@ -58,7 +58,7 @@ export const getDebugBoxHtml = (title: string, lines: string[], extraClass: stri
 
 export const getDebugWrapperHtml = (title: string, content: string): string => {
 	let html = `<fieldset class="debugWrapper">`;
-	html += `<legend>${title.toUpperCase()}</legend>`;
+	html += `<legend>${title}</legend>`;
 	html += `<div class="contentWrapper">`;
 	html += content;
 	html += `</div>`;

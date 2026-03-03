@@ -132,7 +132,8 @@ fieldset.closed>*:not(legend) {
 	margin-bottom: 0.2rem;
 }
 
-.preInfo .value {
+.value,
+legend .value {
 	color: #ffb74d;
 	/* light orange */
 	font-weight: bold;

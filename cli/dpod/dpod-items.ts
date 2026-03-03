@@ -16,7 +16,7 @@ export class DpodItems {
 
 	public debugHtml() {
 		const label = this.dpodFile.dpodMarkedLineBlocks[0]?.label || "";
-		const title = `DpodItems Object${label ? ": " + label : ""}`;
+		const title = `DpodItems Object${label ? ': <span class="value">' + label + "</span>" : ""}`;
 		let html = qdev.getDebugWrapperHtml(title, this.dpodFile.debugHtml());
 		qdev.addToDebugHtml(html);
 	}
