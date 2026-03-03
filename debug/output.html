@@ -78,8 +78,9 @@ score::95
 birthDate::1982-04-20</pre></fieldset></div></fieldset></div></div></fieldset><!-- marker:bottom-of-body -->
 	<script>
 		document.addEventListener("click", (e) => {
-			if (e.target.tagName === "LEGEND") {
-				const fieldset = e.target.parentElement;
+			const legend = e.target.closest("legend");
+			if (legend) {
+				const fieldset = legend.parentElement;
 				fieldset.classList.toggle("closed");
 			}
 		});

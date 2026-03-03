@@ -16,8 +16,9 @@ export const clearDebug = (): void => {
 	<!-- marker:bottom-of-body -->
 	<script>
 		document.addEventListener("click", (e) => {
-			if (e.target.tagName === "LEGEND") {
-				const fieldset = e.target.parentElement;
+			const legend = e.target.closest("legend");
+			if (legend) {
+				const fieldset = legend.parentElement;
 				fieldset.classList.toggle("closed");
 			}
 		});
