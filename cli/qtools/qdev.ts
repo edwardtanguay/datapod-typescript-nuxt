@@ -29,9 +29,8 @@ export const clearDebug = (): void => {
 					fieldset.classList.remove("closed");
 					children.forEach(child => child.classList.remove("closed"));
 				} else {
-					// Rule 2: Click in the area of a closed box -> open that box with all children closed
+					// Rule 2: Click in the area of a closed box -> open that box, preserve child states
 					fieldset.classList.remove("closed");
-					children.forEach(child => child.classList.add("closed"));
 				}
 			} else {
 				if (isLegend) {
@@ -39,10 +38,11 @@ export const clearDebug = (): void => {
 					fieldset.classList.add("closed");
 					children.forEach(child => child.classList.add("closed"));
 				} else {
-					// Rule 4: Click open box on area -> close box, but leave children as they are
+					// Rule 4: Click open box on area -> close box, preserve child states
 					fieldset.classList.add("closed");
 				}
 			}
+
 			
 			e.stopPropagation();
 		});
