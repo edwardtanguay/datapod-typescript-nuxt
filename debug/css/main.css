@@ -101,3 +101,21 @@ fieldset.closed {
 fieldset.closed>*:not(legend) {
 	display: none;
 }
+
+.preInfo {
+	margin-left: 0.75rem;
+	margin-bottom: 0.8rem;
+	font-family: inherit;
+	font-size: 0.85rem;
+	color: #999;
+}
+
+.preInfo .row {
+	margin-bottom: 0.2rem;
+}
+
+.preInfo .value {
+	color: #ffb74d;
+	/* light orange */
+	font-weight: bold;
+}

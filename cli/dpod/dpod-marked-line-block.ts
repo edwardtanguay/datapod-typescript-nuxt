@@ -23,7 +23,10 @@ export class DpodMarkedLineBlock {
 
 	public debugHtml(): string {
 		const title = `DPOD MARKED LINE BLOCK`;
-		const preHtml = `<div class="marker">${this.marker}</div><div class="label">${this.label}</div>`;
+		const preHtml = `<div class="preInfo">
+	<div class="row">marker: [<span class="value">${this.marker}</span>]</div>
+	<div class="row">label: [<span class="value">${this.label}</span>]</div>
+</div>`;
 		return qdev.getDebugBoxHtml(title, this.lines, "dpodMarkedLineBlock", preHtml);
 	}
 }
