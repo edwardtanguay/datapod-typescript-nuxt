@@ -1,27 +1,27 @@
 import * as qfil from "../qtools/qfil";
 import * as qstr from "../qtools/qstr";
 import * as qdev from "../qtools/qdev";
-import { LineBlock } from "../general-parsing/line-block";
+import { DpodLineBlock } from "../general-parsing/dpod-line-block";
 
 export class DpodFile {
 	private pathAndFileName: string;
 	private lines: string[] = [];
-	public lineBlocks: LineBlock[] = [];
+	public dpodLineBlocks: DpodLineBlock[] = [];
 
 	constructor(pathAndFileName: string) {
 		this.pathAndFileName = pathAndFileName;
 		this.lines = qfil.getLinesFromFile(this.pathAndFileName);
-		this.createLineBlocks();
+		this.createDpodLineBlocks();
 	}
 
-	private createLineBlocks() {
-		let lineBlock = new LineBlock();
-		let isRecordingLineBlock = false;
+	private createDpodLineBlocks() {
+		let dpodLineBlock = new DpodLineBlock();
+		let isRecordingDpodLineBlock = false;
 		let isInsideMultilineBlock = false;
 		for (const line of this.lines) {
 			// don't let a blank line inside a multiline block end the item
 			if (isInsideMultilineBlock && qstr.isEmpty(line)) {
-				lineBlock.addLine(line);
+				dpodLineBlock.addLine(line);
 				continue;
 			}
 
@@ -33,44 +33,44 @@ export class DpodFile {
 				if (line === "]]") {
 					isInsideMultilineBlock = false;
 				}
-				lineBlock.addLine(line);
+				dpodLineBlock.addLine(line);
 				continue;
 			}
 
 			// ignore empty lines in file
-			if (!isRecordingLineBlock && qstr.isEmpty(line)) {
+			if (!isRecordingDpodLineBlock && qstr.isEmpty(line)) {
 				continue;
 			}
 
 			// we need to start recording a line block again
-			if (!isRecordingLineBlock && !qstr.isEmpty(line)) {
-				lineBlock = new LineBlock();
-				isRecordingLineBlock = true;
+			if (!isRecordingDpodLineBlock && !qstr.isEmpty(line)) {
+				dpodLineBlock = new DpodLineBlock();
+				isRecordingDpodLineBlock = true;
 			}
 
 			// we are recording a line block and we need to add the current line
-			if (isRecordingLineBlock && !qstr.isEmpty(line)) {
-				lineBlock.addLine(line);
+			if (isRecordingDpodLineBlock && !qstr.isEmpty(line)) {
+				dpodLineBlock.addLine(line);
 			}
 
 			// we need to finish recording a line block
-			if (isRecordingLineBlock && qstr.isEmpty(line)) {
-				this.lineBlocks.push(lineBlock);
-				isRecordingLineBlock = false;
+			if (isRecordingDpodLineBlock && qstr.isEmpty(line)) {
+				this.dpodLineBlocks.push(dpodLineBlock);
+				isRecordingDpodLineBlock = false;
 			}
 		}
 
 		// record last one
-		if (isRecordingLineBlock) {
-			this.lineBlocks.push(lineBlock);
+		if (isRecordingDpodLineBlock) {
+			this.dpodLineBlocks.push(dpodLineBlock);
 		}
 	}
 
 	public debug() {
 		console.log("pathAndFileName: " + this.pathAndFileName);
 		console.log("lines: " + this.lines.length);
-		this.lineBlocks.forEach((lineBlock) => {
-			lineBlock.debug();
+		this.dpodLineBlocks.forEach((dpodLineBlock) => {
+			dpodLineBlock.debug();
 		});
 	}
 
@@ -81,12 +81,12 @@ export class DpodFile {
 			`Lines: ${this.lines.length}`
 		], "fileInfo");
 
-		let lineBlocksHtml = "";
-		this.lineBlocks.forEach((lineBlock) => {
-			lineBlocksHtml += lineBlock.debugHtml();
+		let dpodLineBlocksHtml = "";
+		this.dpodLineBlocks.forEach((dpodLineBlock) => {
+			dpodLineBlocksHtml += dpodLineBlock.debugHtml();
 		});
 
-		html += qdev.getDebugWrapperHtml(`Line Blocks (${this.lineBlocks.length})`, lineBlocksHtml);
+		html += qdev.getDebugWrapperHtml(`Dpod Line Blocks (${this.dpodLineBlocks.length})`, dpodLineBlocksHtml);
 		html += `</div>`;
 		return html;
 	}

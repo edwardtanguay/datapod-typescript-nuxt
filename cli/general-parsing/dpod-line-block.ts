@@ -2,7 +2,7 @@ import * as qstr from "../qtools/qstr";
 import * as qcli from "../qtools/qcli";
 import * as qdev from "../qtools/qdev";
 
-export class LineBlock {
+export class DpodLineBlock {
 	public lines: string[] = [];
 
 	constructor(line = "") {
@@ -16,13 +16,13 @@ export class LineBlock {
 	}
 
 	public debug() {
-		qcli.message("LINE BLOCK", "info");
+		qcli.message("DPOD LINE BLOCK", "info");
 		this.lines.forEach((line) => {
 			qcli.message(line, "info");
 		});
 	}
 
 	public debugHtml(): string {
-		return qdev.getDebugBoxHtml("LINE BLOCK", this.lines, "lineBlock");
+		return qdev.getDebugBoxHtml("DPOD LINE BLOCK", this.lines, "dpodLineBlock");
 	}
 }
