@@ -1,12 +1,12 @@
 import * as qfil from "../qtools/qfil";
 import * as qstr from "../qtools/qstr";
 import * as qdev from "../qtools/qdev";
-import { DpodLineBlock } from "./dpod-line-block";
+import { LineBlock } from "./line-block";
 
 export class DpodFile {
 	private pathAndFileName: string;
 	private lines: string[] = [];
-	public dpodLineBlocks: DpodLineBlock[] = [];
+	public lineBlocks: LineBlock[] = [];
 
 	constructor(pathAndFileName: string) {
 		this.pathAndFileName = pathAndFileName;
@@ -15,13 +15,13 @@ export class DpodFile {
 	}
 
 	private createLineBlocks() {
-		let dpodLineBlock = new DpodLineBlock();
+		let lineBlock = new LineBlock();
 		let isRecordingLineBlock = false;
 		let isInsideMultilineBlock = false;
 		for (const line of this.lines) {
 			// don't let a blank line inside a multiline block end the item
 			if (isInsideMultilineBlock && qstr.isEmpty(line)) {
-				dpodLineBlock.addLine(line);
+				lineBlock.addLine(line);
 				continue;
 			}
 
@@ -33,7 +33,7 @@ export class DpodFile {
 				if (line === "]]") {
 					isInsideMultilineBlock = false;
 				}
-				dpodLineBlock.addLine(line);
+				lineBlock.addLine(line);
 				continue;
 			}
 
@@ -44,33 +44,33 @@ export class DpodFile {
 
 			// we need to start recording a line block again
 			if (!isRecordingLineBlock && !qstr.isEmpty(line)) {
-				dpodLineBlock = new DpodLineBlock();
+				lineBlock = new LineBlock();
 				isRecordingLineBlock = true;
 			}
 
 			// we are recording a line block and we need to add the current line
 			if (isRecordingLineBlock && !qstr.isEmpty(line)) {
-				dpodLineBlock.addLine(line);
+				lineBlock.addLine(line);
 			}
 
 			// we need to finish recording a line block
 			if (isRecordingLineBlock && qstr.isEmpty(line)) {
-				this.dpodLineBlocks.push(dpodLineBlock);
+				this.lineBlocks.push(lineBlock);
 				isRecordingLineBlock = false;
 			}
 		}
 
 		// record last one
 		if (isRecordingLineBlock) {
-			this.dpodLineBlocks.push(dpodLineBlock);
+			this.lineBlocks.push(lineBlock);
 		}
 	}
 
 	public debug() {
 		console.log("pathAndFileName: " + this.pathAndFileName);
 		console.log("lines: " + this.lines.length);
-		this.dpodLineBlocks.forEach((dpodLineBlock) => {
-			dpodLineBlock.debug();
+		this.lineBlocks.forEach((lineBlock) => {
+			lineBlock.debug();
 		});
 	}
 
@@ -82,11 +82,11 @@ export class DpodFile {
 		], "fileInfo");
 
 		let lineBlocksHtml = "";
-		this.dpodLineBlocks.forEach((dpodLineBlock) => {
-			lineBlocksHtml += dpodLineBlock.debugHtml();
+		this.lineBlocks.forEach((lineBlock) => {
+			lineBlocksHtml += lineBlock.debugHtml();
 		});
 
-		html += qdev.getDebugWrapperHtml(`Line Blocks (${this.dpodLineBlocks.length})`, lineBlocksHtml);
+		html += qdev.getDebugWrapperHtml(`Line Blocks (${this.lineBlocks.length})`, lineBlocksHtml);
 		html += `</div>`;
 		return html;
 	}
