@@ -86,7 +86,7 @@ export class DpodFile {
 			lineBlocksHtml += dpodLineBlock.debugHtml();
 		});
 
-		html += qdev.getDebugWrapperHtml("Line Blocks", lineBlocksHtml);
+		html += qdev.getDebugWrapperHtml(`Line Blocks (${this.dpodLineBlocks.length})`, lineBlocksHtml);
 		html += `</div>`;
 		return html;
 	}
