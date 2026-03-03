@@ -17,19 +17,36 @@ export const clearDebug = (): void => {
 	<script>
 		document.addEventListener("click", (e) => {
 			const fieldset = e.target.closest("fieldset");
-			if (fieldset) {
-				const isOpening = fieldset.classList.contains("closed");
-				fieldset.classList.toggle("closed");
-				
-				if (!isOpening) {
-					// When closing, also close all children
-					const children = fieldset.querySelectorAll("fieldset");
+			if (!fieldset) return;
+
+			const isLegend = e.target.tagName === 'LEGEND' || e.target.closest('legend') !== null;
+			const isClosed = fieldset.classList.contains("closed");
+			const children = fieldset.querySelectorAll("fieldset");
+
+			if (isClosed) {
+				if (isLegend) {
+					// Rule 1: Click title of closed box -> open box and all of its children
+					fieldset.classList.remove("closed");
+					children.forEach(child => child.classList.remove("closed"));
+				} else {
+					// Rule 2: Click in the area of a closed box -> open that box with all children closed
+					fieldset.classList.remove("closed");
 					children.forEach(child => child.classList.add("closed"));
 				}
-				
-				e.stopPropagation();
+			} else {
+				if (isLegend) {
+					// Rule 3: Click open box on title -> close box and all children
+					fieldset.classList.add("closed");
+					children.forEach(child => child.classList.add("closed"));
+				} else {
+					// Rule 4: Click open box on area -> close box, but leave children as they are
+					fieldset.classList.add("closed");
+				}
 			}
+			
+			e.stopPropagation();
 		});
+
 	</script>
 </body>
 </html>
