@@ -1,0 +1,32 @@
+import * as qcli from "../qtools/qcli";
+import * as qdev from "../qtools/qdev";
+import { DpodLineBlock } from "./dpod-line-block";
+
+export class DpodMarkedLineBlock {
+	public lines: string[] = [];
+	public marker: string = "";
+	public label: string = "";
+
+	constructor(dpodLineBlock: DpodLineBlock) {
+		const allLines = dpodLineBlock.lines;
+		this.parseFirstLine(allLines[0]);
+		this.lines = allLines.slice(1);
+	}
+
+	private parseFirstLine(line: string) {
+		const match = line.match(/^([^a-zA-Z0-9\s]+)\s*(.*)$/);
+		if (match) {
+			this.marker = match[1];
+			this.label = match[2];
+		}
+	}
+
+	public debugHtml(): string {
+		const title = `DPOD MARKED LINE BLOCK`;
+		const preHtml = `<div class="preInfo">
+	<div class="row">marker: [<span class="value">${this.marker}</span>]</div>
+	<div class="row">label: [<span class="value">${this.label}</span>]</div>
+</div>`;
+		return qdev.getDebugBoxHtml(title, this.lines, "dpodMarkedLineBlock", preHtml);
+	}
+}

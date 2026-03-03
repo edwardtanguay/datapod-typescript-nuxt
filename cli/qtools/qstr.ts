@@ -177,18 +177,15 @@ export const forcePascalNotation = (term: string) => {
 		return "IdCode";
 	}
 
-	r = qstr.cleanForCamelAndPascalNotation(r);
-
 	// convert to "First Name"
 	r = qstr.forceTitleNotation(r);
+
+	r = qstr.cleanForCamelAndPascalNotation(r);
 
 	// force EVERY word to be uppercase, as it may be here "Save and Close"
 	r = qstr.forceCapitalizeFirstCharacterOfEveryWord(r);
 
 	// now simply take all spaces out
-	r = r.replace(" ", "");
-
-	// make sure no spaces are in the string, e.g. "showcaseType Script" --> "showcaseTypeScript"
 	r = qstr.replaceAll(r, " ", "");
 
 	return r;
@@ -277,6 +274,10 @@ export const forceTextNotation = (term: string) => {
 
 	r = r.trim();
 
+	// first change delimiters to spaces
+	r = qstr.replaceAll(r, "-", " ");
+	r = qstr.replaceAll(r, "_", " ");
+
 	// if is all caps like "FIRST ANNUAL REPORT" then we don't want "F I R S T   A N N U A L   R E P O R T"
 	// but "first annual report"
 	if (qstr.isAllUppercase(r)) {
@@ -287,10 +288,28 @@ export const forceTextNotation = (term: string) => {
 	// now lowercase everything
 	r = r.toLowerCase();
 
+	r = qstr.forceAllMultipleSpacesToSingleSpace(r);
 	r = r.trim();
 
 	return r;
 };
+
+export const forceSnakeNotation = (term: string) => {
+	let r = qstr.forceTextNotation(term);
+	r = qstr.cleanForCamelAndPascalNotation(r);
+	r = qstr.replaceAll(r, " ", "_");
+	return r;
+};
+
+export const forceKebabNotation = (term: string) => {
+	let r = qstr.forceTextNotation(term);
+	r = qstr.cleanForCamelAndPascalNotation(r);
+	r = qstr.replaceAll(r, " ", "-");
+	return r;
+};
+
+export const snake = (term: string) => qstr.forceSnakeNotation(term);
+export const kebab = (term: string) => qstr.forceKebabNotation(term);
 
 export const breakIntoParts = (
 	main: string,
@@ -365,6 +384,7 @@ export const renderEnglishTitleCapitalization = (term: string) => {
 		"With",
 		"Into",
 		"From",
+		"At",
 	];
 
 	// mask

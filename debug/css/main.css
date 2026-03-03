@@ -1,7 +1,7 @@
 body {
-	background-color: #111;
+	background-color: #0c0c0c;
 	font-family: 'Courier New', Courier, monospace;
-	color: #ccc;
+	color: #eee;
 	padding: 2rem;
 	line-height: 1.2;
 }
@@ -20,45 +20,151 @@ h1 {
 fieldset {
 	border: 1px solid #333;
 	border-radius: 6px;
-	padding: 1.25rem 1.25rem 1rem 1.25rem;
-	margin-bottom: 2rem;
+	padding: 0.8rem;
+	margin-bottom: 1.5rem;
 	background-color: #0c0c0c;
+	cursor: pointer;
+	transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+
+fieldset.closed:hover {
+	border-color: #555;
+	background-color: #161616;
+}
+
+fieldset.closed:has(fieldset.closed:hover) {
+	background-color: #0c0c0c;
+	border-color: #333;
 }
 
 legend {
 	padding: 0 0.75rem;
 	font-size: 0.7rem;
 	text-transform: uppercase;
-	color: #666;
+	color: #888;
+
+
 	letter-spacing: 2px;
+	user-select: none;
+	transition: color 0.2s ease;
+
 }
 
+legend:hover {
+	color: #fff;
+	cursor: pointer;
+}
+
+
+
+
+
+
+
 .lineCount {
-	color: #4a4a4a;
+	color: #777;
 	font-size: 0.75rem;
-	margin-left: 0.5rem;
 	text-transform: lowercase;
 }
 
+
 .dpodFile {
-	margin-top: 1rem;
+	margin-top: 0.2rem;
+}
+
+
+.line {
+	display: flex;
+	align-items: stretch;
+}
+
+.lineNumber {
+	color: #444;
+	font-size: 0.65rem;
+	width: 2.2rem;
+	text-align: right;
+	padding-right: 0.6rem;
+	user-select: none;
+	line-height: 1.2;
+	padding-top: 0.15rem;
+	flex-shrink: 0;
 }
 
 .content {
 	white-space: pre-wrap;
 	font-family: inherit;
-	color: #bbb;
+	color: #fff;
+	border-left: 2px solid #222;
+	padding-left: 0.75rem;
+	margin: 0;
+	flex: 1;
+}
+
+.contentSimple {
+	white-space: pre-wrap;
+	font-family: inherit;
+	color: #fff;
+	margin: 0;
 }
 
 .infoLine {
 	margin-bottom: 0.25rem;
-	color: #bbb;
+	color: #fff;
 }
+
+
+
+
 
 .fileInfo {
 	border-color: #444;
 }
 
-.fileInfo legend {
-	color: #888;
+
+.debugWrapper {
+	border-color: #444;
+}
+
+body>.debugWrapper {
+	margin-bottom: 1.5rem;
+}
+
+body>.debugWrapper.closed {
+	margin-bottom: 1.5rem;
+}
+
+
+.contentWrapper {
+	margin-left: 0.8rem;
+}
+
+
+fieldset.closed {
+	margin-bottom: 0.5rem;
+	padding-bottom: 0;
+	background-color: transparent;
+}
+
+fieldset.closed>*:not(legend) {
+	display: none;
+}
+
+.preInfo {
+	margin-left: 0.75rem;
+	margin-bottom: 0.8rem;
+	font-family: inherit;
+	font-size: 0.85rem;
+	color: #999;
+}
+
+.preInfo .row {
+	margin-bottom: 0.2rem;
+}
+
+.value,
+legend .value {
+	color: #ffb74d;
+	/* light orange */
+	font-weight: bold;
 }

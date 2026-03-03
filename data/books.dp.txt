@@ -1,0 +1,20 @@
+** Books
+Title;line
+Author;line
+Year;wholeNumber
+Description;paragraph
+
+==book
+The Great Gatsby
+F. Scott Fitzgerald
+1925
+A classic novel set in the Roaring Twenties.
+
+==book
+dpodId::B1k2m3
+title::1984
+author::George Orwell
+year::1949
+description::[[
+A dystopian social science fiction novel and cautionary tale about ubiquitous government surveillance.
+]]

@@ -14,6 +14,40 @@ export const clearDebug = (): void => {
 <body>
 	<h1>Datapod Debug Output</h1>
 	<!-- marker:bottom-of-body -->
+	<script>
+		document.addEventListener("click", (e) => {
+			const fieldset = e.target.closest("fieldset");
+			if (!fieldset) return;
+
+			const isLegend = e.target.tagName === 'LEGEND' || e.target.closest('legend') !== null;
+			const isClosed = fieldset.classList.contains("closed");
+			const children = fieldset.querySelectorAll("fieldset");
+
+			if (isClosed) {
+				if (isLegend) {
+					// Rule 1: Click title of closed box -> open box and all of its children
+					fieldset.classList.remove("closed");
+					children.forEach(child => child.classList.remove("closed"));
+				} else {
+					// Rule 2: Click in the area of a closed box -> open that box, preserve child states
+					fieldset.classList.remove("closed");
+				}
+			} else {
+				if (isLegend) {
+					// Rule 3: Click open box on title -> close box and all children
+					fieldset.classList.add("closed");
+					children.forEach(child => child.classList.add("closed"));
+				} else {
+					// Rule 4: Click open box on area -> close box, preserve child states
+					fieldset.classList.add("closed");
+				}
+			}
+
+			
+			e.stopPropagation();
+		});
+
+	</script>
 </body>
 </html>
 
@@ -31,11 +65,39 @@ export const addToDebugHtml = (content: string): void => {
 	qfil.addToTextFileBeforeMarker("~~/debug/output.html", content, "<!-- marker:bottom-of-body -->");
 };
 
-export const getDebugBoxHtml = (title: string, lines: string[], extraClass: string = ""): string => {
-	let html = `<fieldset class="debugBox ${extraClass}">`;
+export const getDebugBoxHtml = (title: string, lines: string[], extraClass: string = "", preHtml: string = ""): string => {
+	let html = `<fieldset class="debugBox closed ${extraClass}">`;
 	const lineLabel = lines.length === 1 ? "line" : "lines";
 	html += `<legend>${title.toUpperCase()} <span class="lineCount">(${lines.length} ${lineLabel})</span></legend>`;
-	html += `<pre class="content">${lines.join("\n")}</pre>`;
+	if (preHtml) {
+		html += preHtml;
+	}
+	html += `<div class="codeContainer">`;
+	lines.forEach((line, index) => {
+		html += `<div class="line"><div class="lineNumber">${index + 1}</div><pre class="content">${line}</pre></div>`;
+	});
+	html += `</div>`;
+	html += `</fieldset>`;
+	return html;
+};
+
+export const getDebugBoxSimpleHtml = (title: string, lines: string[], extraClass: string = "", preHtml: string = ""): string => {
+	let html = `<fieldset class="debugBox closed ${extraClass}">`;
+	html += `<legend>${title.toUpperCase()}</legend>`;
+	if (preHtml) {
+		html += preHtml;
+	}
+	html += `<pre class="contentSimple">${lines.join("\n")}</pre>`;
+	html += `</fieldset>`;
+	return html;
+};
+
+export const getDebugWrapperHtml = (title: string, content: string): string => {
+	let html = `<fieldset class="debugWrapper closed">`;
+	html += `<legend>${title}</legend>`;
+	html += `<div class="contentWrapper">`;
+	html += content;
+	html += `</div>`;
 	html += `</fieldset>`;
 	return html;
 };
