@@ -16,10 +16,10 @@ export const clearDebug = (): void => {
 	<!-- marker:bottom-of-body -->
 	<script>
 		document.addEventListener("click", (e) => {
-			const legend = e.target.closest("legend");
-			if (legend) {
-				const fieldset = legend.parentElement;
+			const fieldset = e.target.closest("fieldset");
+			if (fieldset) {
 				fieldset.classList.toggle("closed");
+				e.stopPropagation();
 			}
 		});
 	</script>

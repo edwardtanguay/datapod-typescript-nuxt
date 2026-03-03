@@ -35,10 +35,10 @@ Lines: 84</pre></fieldset><fieldset class="debugWrapper closed"><legend>Dpod Lin
 </div><div class="codeContainer"><div class="line"><div class="lineNumber">1</div><pre class="content">dpodId::H4k2mQ</pre></div><div class="line"><div class="lineNumber">2</div><pre class="content">dpodWhenCreated::2026-03-01 11:15:00</pre></div><div class="line"><div class="lineNumber">3</div><pre class="content">firstName::François</pre></div><div class="line"><div class="lineNumber">4</div><pre class="content">lastName::Renard</pre></div><div class="line"><div class="lineNumber">5</div><pre class="content">email::francois.renard@example.fr</pre></div><div class="line"><div class="lineNumber">6</div><pre class="content">notes::[[</pre></div><div class="line"><div class="lineNumber">7</div><pre class="content">François est un véritable expert en gastronomie française et adore partager ses découvertes culinaires with ses collègues. En dehors de son travail, il passe beaucoup de temps à explorer les vignobles et à perfectionner ses propres recettes de cuisine traditionnelle. Son enthousiasme est contagieux et illumine le bureau.</pre></div><div class="line"><div class="lineNumber">8</div><pre class="content"></pre></div><div class="line"><div class="lineNumber">9</div><pre class="content">Il gère également notre système de documentation interne, s'assurant que tous les processus sont clairement définis et faciles à suivre. Ses compétences organisationnelles sont de premier ordre.</pre></div><div class="line"><div class="lineNumber">10</div><pre class="content">]]</pre></div><div class="line"><div class="lineNumber">11</div><pre class="content">score::95</pre></div><div class="line"><div class="lineNumber">12</div><pre class="content">birthDate::1982-04-20</pre></div></div></fieldset></div></fieldset></div></div></fieldset><!-- marker:bottom-of-body -->
 	<script>
 		document.addEventListener("click", (e) => {
-			const legend = e.target.closest("legend");
-			if (legend) {
-				const fieldset = legend.parentElement;
+			const fieldset = e.target.closest("fieldset");
+			if (fieldset) {
 				fieldset.classList.toggle("closed");
+				e.stopPropagation();
 			}
 		});
 	</script>

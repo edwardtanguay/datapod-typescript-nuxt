@@ -24,6 +24,11 @@ fieldset {
 	padding: 1.25rem 1.25rem 1rem 1.25rem;
 	margin-bottom: 2rem;
 	background-color: #0c0c0c;
+	cursor: pointer;
+}
+
+fieldset:hover {
+	border-color: #555;
 }
 
 legend {
@@ -32,7 +37,6 @@ legend {
 	text-transform: uppercase;
 	color: #aaa;
 	letter-spacing: 2px;
-	cursor: pointer;
 	user-select: none;
 }
 
