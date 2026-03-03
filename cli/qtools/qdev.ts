@@ -40,6 +40,16 @@ export const getDebugBoxHtml = (title: string, lines: string[], extraClass: stri
 	return html;
 };
 
+export const getDebugWrapperHtml = (title: string, content: string): string => {
+	let html = `<fieldset class="debugWrapper">`;
+	html += `<legend>${title.toUpperCase()}</legend>`;
+	html += `<div class="contentWrapper">`;
+	html += content;
+	html += `</div>`;
+	html += `</fieldset>`;
+	return html;
+};
+
 /**
  * prints a debug line with timestamp
  *

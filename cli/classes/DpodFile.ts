@@ -74,7 +74,7 @@ export class DpodFile {
 		});
 	}
 
-	public debugHtml() {
+	public debugHtml(): string {
 		let html = `<div class="dpodFile">`;
 		html += qdev.getDebugBoxHtml("FILE INFO", [
 			`Path: ${this.pathAndFileName}`,
@@ -84,6 +84,6 @@ export class DpodFile {
 			html += dpodLineBlock.debugHtml();
 		});
 		html += `</div>`;
-		qdev.addToDebugHtml(html);
+		return html;
 	}
 }

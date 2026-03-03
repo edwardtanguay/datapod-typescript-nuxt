@@ -62,3 +62,15 @@ legend {
 .fileInfo legend {
 	color: #888;
 }
+
+.debugWrapper {
+	border-color: #333;
+}
+
+.debugWrapper legend {
+	color: #777;
+}
+
+.contentWrapper {
+	margin-left: 1.5rem;
+}
