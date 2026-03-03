@@ -15,7 +15,9 @@ export class DpodItems {
 	}
 
 	public debugHtml() {
-		let html = qdev.getDebugWrapperHtml("DpodItems Object", this.dpodFile.debugHtml());
+		const label = this.dpodFile.dpodMarkedLineBlocks[0]?.label || "";
+		const title = `DpodItems Object${label ? ": " + label : ""}`;
+		let html = qdev.getDebugWrapperHtml(title, this.dpodFile.debugHtml());
 		qdev.addToDebugHtml(html);
 	}
 }
