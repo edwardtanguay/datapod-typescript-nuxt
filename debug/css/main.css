@@ -91,15 +91,3 @@ fieldset.closed {
 fieldset.closed>*:not(legend) {
 	display: none;
 }
-
-fieldset.closed legend::after {
-	content: " [+]";
-	font-size: 0.6rem;
-	opacity: 0.5;
-}
-
-fieldset:not(.closed) legend::after {
-	content: " [-]";
-	font-size: 0.6rem;
-	opacity: 0.5;
-}
