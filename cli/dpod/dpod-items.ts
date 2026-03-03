@@ -7,9 +7,11 @@ export class DpodItems {
 
 	public dpodFile: DpodFile;
 	public dpodSchema: DpodSchema = new DpodSchema();
+	public idCode: string = "";
 
 	constructor(dpodFile: DpodFile) {
 		this.dpodFile = dpodFile;
+		this.idCode = this.dpodFile.idCode;
 	}
 
 	public debugHtml() {
