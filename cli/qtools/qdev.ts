@@ -41,7 +41,7 @@ export const addToDebugHtml = (content: string): void => {
 };
 
 export const getDebugBoxHtml = (title: string, lines: string[], extraClass: string = "", preHtml: string = ""): string => {
-	let html = `<fieldset class="debugBox ${extraClass}">`;
+	let html = `<fieldset class="debugBox closed ${extraClass}">`;
 	const lineLabel = lines.length === 1 ? "line" : "lines";
 	html += `<legend>${title.toUpperCase()} <span class="lineCount">(${lines.length} ${lineLabel})</span></legend>`;
 	if (preHtml) {
@@ -57,7 +57,7 @@ export const getDebugBoxHtml = (title: string, lines: string[], extraClass: stri
 };
 
 export const getDebugBoxSimpleHtml = (title: string, lines: string[], extraClass: string = "", preHtml: string = ""): string => {
-	let html = `<fieldset class="debugBox ${extraClass}">`;
+	let html = `<fieldset class="debugBox closed ${extraClass}">`;
 	html += `<legend>${title.toUpperCase()}</legend>`;
 	if (preHtml) {
 		html += preHtml;
@@ -68,7 +68,7 @@ export const getDebugBoxSimpleHtml = (title: string, lines: string[], extraClass
 };
 
 export const getDebugWrapperHtml = (title: string, content: string): string => {
-	let html = `<fieldset class="debugWrapper">`;
+	let html = `<fieldset class="debugWrapper closed">`;
 	html += `<legend>${title}</legend>`;
 	html += `<div class="contentWrapper">`;
 	html += content;
