@@ -80,9 +80,13 @@ export class DpodFile {
 			`Path: ${this.pathAndFileName}`,
 			`Lines: ${this.lines.length}`
 		], "fileInfo");
+
+		let lineBlocksHtml = "";
 		this.dpodLineBlocks.forEach((dpodLineBlock) => {
-			html += dpodLineBlock.debugHtml();
+			lineBlocksHtml += dpodLineBlock.debugHtml();
 		});
+
+		html += qdev.getDebugWrapperHtml("Line Blocks", lineBlocksHtml);
 		html += `</div>`;
 		return html;
 	}
