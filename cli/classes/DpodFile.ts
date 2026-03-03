@@ -1,4 +1,3 @@
-//dpod
 import * as qfil from "../qtools/qfil";
 import * as qstr from "../qtools/qstr";
 import * as qdev from "../qtools/qdev";
