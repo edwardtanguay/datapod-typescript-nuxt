@@ -31,7 +31,14 @@ legend {
 	text-transform: uppercase;
 	color: #666;
 	letter-spacing: 2px;
+	cursor: pointer;
+	user-select: none;
 }
+
+legend:hover {
+	color: #999;
+}
+
 
 .lineCount {
 	color: #4a4a4a;
@@ -73,4 +80,26 @@ legend {
 
 .contentWrapper {
 	margin-left: 1.5rem;
+}
+
+fieldset.closed {
+	margin-bottom: 0.5rem;
+	padding-bottom: 0;
+	background-color: transparent;
+}
+
+fieldset.closed>*:not(legend) {
+	display: none;
+}
+
+fieldset.closed legend::after {
+	content: " [+]";
+	font-size: 0.6rem;
+	opacity: 0.5;
+}
+
+fieldset:not(.closed) legend::after {
+	content: " [-]";
+	font-size: 0.6rem;
+	opacity: 0.5;
 }

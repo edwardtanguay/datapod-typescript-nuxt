@@ -14,6 +14,14 @@ export const clearDebug = (): void => {
 <body>
 	<h1>Datapod Debug Output</h1>
 	<!-- marker:bottom-of-body -->
+	<script>
+		document.addEventListener("click", (e) => {
+			if (e.target.tagName === "LEGEND") {
+				const fieldset = e.target.parentElement;
+				fieldset.classList.toggle("closed");
+			}
+		});
+	</script>
 </body>
 </html>
 

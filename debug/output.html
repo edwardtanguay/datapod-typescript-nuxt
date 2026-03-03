@@ -76,6 +76,14 @@ Il gère également notre système de documentation interne, s'assurant que tous
 ]]
 score::95
 birthDate::1982-04-20</pre></fieldset></div></div></fieldset><!-- marker:bottom-of-body -->
+	<script>
+		document.addEventListener("click", (e) => {
+			if (e.target.tagName === "LEGEND") {
+				const fieldset = e.target.parentElement;
+				fieldset.classList.toggle("closed");
+			}
+		});
+	</script>
 </body>
 </html>
 
