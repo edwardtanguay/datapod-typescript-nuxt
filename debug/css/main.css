@@ -42,14 +42,23 @@ legend {
 	padding: 0 0.75rem;
 	font-size: 0.7rem;
 	text-transform: uppercase;
-	color: #aaa;
+	color: #888;
+
+
 	letter-spacing: 2px;
 	user-select: none;
+	transition: color 0.2s ease;
+
 }
 
 legend:hover {
 	color: #fff;
+	cursor: pointer;
 }
+
+
+
+
 
 
 
@@ -111,17 +120,11 @@ legend:hover {
 	border-color: #444;
 }
 
-.fileInfo legend {
-	color: #ccc;
-}
 
 .debugWrapper {
 	border-color: #444;
 }
 
-.debugWrapper legend {
-	color: #bbb;
-}
 
 
 .contentWrapper {
