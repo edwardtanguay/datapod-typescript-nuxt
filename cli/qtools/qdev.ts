@@ -40,10 +40,13 @@ export const addToDebugHtml = (content: string): void => {
 	qfil.addToTextFileBeforeMarker("~~/debug/output.html", content, "<!-- marker:bottom-of-body -->");
 };
 
-export const getDebugBoxHtml = (title: string, lines: string[], extraClass: string = ""): string => {
+export const getDebugBoxHtml = (title: string, lines: string[], extraClass: string = "", preHtml: string = ""): string => {
 	let html = `<fieldset class="debugBox ${extraClass}">`;
 	const lineLabel = lines.length === 1 ? "line" : "lines";
 	html += `<legend>${title.toUpperCase()} <span class="lineCount">(${lines.length} ${lineLabel})</span></legend>`;
+	if (preHtml) {
+		html += preHtml;
+	}
 	html += `<pre class="content">${lines.join("\n")}</pre>`;
 	html += `</fieldset>`;
 	return html;
