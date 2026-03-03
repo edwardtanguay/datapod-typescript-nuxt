@@ -127,6 +127,13 @@ legend:hover {
 	border-color: #444;
 }
 
+body>.debugWrapper {
+	margin-bottom: 1.5rem;
+}
+
+body>.debugWrapper.closed {
+	margin-bottom: 1.5rem;
+}
 
 
 .contentWrapper {
