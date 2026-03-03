@@ -2,16 +2,19 @@ import * as qfil from "../qtools/qfil";
 import * as qstr from "../qtools/qstr";
 import * as qdev from "../qtools/qdev";
 import { DpodLineBlock } from "./dpod-line-block";
+import { DpodMarkedLineBlock } from "./dpod-marked-line-block";
 
 export class DpodFile {
 	private pathAndFileName: string;
 	private lines: string[] = [];
 	public dpodLineBlocks: DpodLineBlock[] = [];
+	public dpodMarkedLineBlocks: DpodMarkedLineBlock[] = [];
 
 	constructor(pathAndFileName: string) {
 		this.pathAndFileName = pathAndFileName;
 		this.lines = qfil.getLinesFromFile(this.pathAndFileName);
 		this.createDpodLineBlocks();
+		this.createDpodMarkedLineBlocks();
 	}
 
 	private createDpodLineBlocks() {
@@ -66,11 +69,21 @@ export class DpodFile {
 		}
 	}
 
+	private createDpodMarkedLineBlocks() {
+		this.dpodLineBlocks.forEach((dpodLineBlock) => {
+			const dpodMarkedLineBlock = new DpodMarkedLineBlock(dpodLineBlock);
+			this.dpodMarkedLineBlocks.push(dpodMarkedLineBlock);
+		});
+	}
+
 	public debug() {
 		console.log("pathAndFileName: " + this.pathAndFileName);
 		console.log("lines: " + this.lines.length);
 		this.dpodLineBlocks.forEach((dpodLineBlock) => {
 			dpodLineBlock.debug();
+		});
+		this.dpodMarkedLineBlocks.forEach((dpodMarkedLineBlock) => {
+			dpodMarkedLineBlock.debug();
 		});
 	}
 
@@ -86,7 +99,13 @@ export class DpodFile {
 			dpodLineBlocksHtml += dpodLineBlock.debugHtml();
 		});
 
+		let dpodMarkedLineBlocksHtml = "";
+		this.dpodMarkedLineBlocks.forEach((dpodMarkedLineBlock) => {
+			dpodMarkedLineBlocksHtml += dpodMarkedLineBlock.debugHtml();
+		});
+
 		html += qdev.getDebugWrapperHtml(`Dpod Line Blocks (${this.dpodLineBlocks.length})`, dpodLineBlocksHtml);
+		html += qdev.getDebugWrapperHtml(`Dpod Marked Line Blocks (${this.dpodMarkedLineBlocks.length})`, dpodMarkedLineBlocksHtml);
 		html += `</div>`;
 		return html;
 	}
