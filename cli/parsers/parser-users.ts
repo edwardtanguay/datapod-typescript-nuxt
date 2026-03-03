@@ -1,5 +1,5 @@
-import { DpodFile } from "../classes/dpod-file";
-import { DpodItems } from "../classes/dpod-items";
+import { DpodFile } from "../dpod/dpod-file";
+import { DpodItems } from "../dpod/dpod-items";
 import * as qdev from "../qtools/qdev";
 
 export const parseUsers = () => {
