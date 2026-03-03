@@ -292,6 +292,23 @@ export const forceTextNotation = (term: string) => {
 	return r;
 };
 
+export const forceSnakeNotation = (term: string) => {
+	let r = qstr.cleanForCamelAndPascalNotation(term);
+	r = qstr.forceTextNotation(r);
+	r = qstr.replaceAll(r, " ", "_");
+	return r;
+};
+
+export const forceKebabNotation = (term: string) => {
+	let r = qstr.cleanForCamelAndPascalNotation(term);
+	r = qstr.forceTextNotation(r);
+	r = qstr.replaceAll(r, " ", "-");
+	return r;
+};
+
+export const snake = (term: string) => qstr.forceSnakeNotation(term);
+export const kebab = (term: string) => qstr.forceKebabNotation(term);
+
 export const breakIntoParts = (
 	main: string,
 	delimiter: string = ",",

@@ -8,7 +8,9 @@ const notations = [
 	{ label: "Title Notation", value: qstr.forceTitleNotation(phrase) },
 	{ label: "Text Notation", value: qstr.forceTextNotation(phrase) },
 	{ label: "Camel Notation", value: qstr.forceCamelNotation(phrase) },
-	{ label: "Pascal Notation", value: qstr.forcePascalNotation(phrase) }
+	{ label: "Pascal Notation", value: qstr.forcePascalNotation(phrase) },
+	{ label: "Snake Notation", value: qstr.forceSnakeNotation(phrase) },
+	{ label: "Kebab Notation", value: qstr.forceKebabNotation(phrase) }
 ];
 
 let html = `<!DOCTYPE html>
