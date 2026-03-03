@@ -25,10 +25,17 @@ fieldset {
 	margin-bottom: 2rem;
 	background-color: #0c0c0c;
 	cursor: pointer;
+	transition: background-color 0.2s ease, border-color 0.2s ease;
 }
 
-fieldset:hover {
+fieldset.closed:hover {
 	border-color: #555;
+	background-color: #161616;
+}
+
+fieldset.closed:has(fieldset.closed:hover) {
+	background-color: #0c0c0c;
+	border-color: #333;
 }
 
 legend {
