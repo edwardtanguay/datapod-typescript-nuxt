@@ -80,7 +80,7 @@ legend:hover {
 }
 
 .lineNumber {
-	color: #444;
+	color: #777;
 	font-size: 0.65rem;
 	width: 2.2rem;
 	text-align: right;
@@ -118,12 +118,12 @@ legend:hover {
 
 
 .fileInfo {
-	border-color: #444;
+	border-color: #777;
 }
 
 
 .debugWrapper {
-	border-color: #444;
+	border-color: #777;
 }
 
 body>.debugWrapper {
