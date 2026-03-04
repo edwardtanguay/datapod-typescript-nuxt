@@ -1,0 +1,20 @@
+** Users
+First Name;line
+Last Name;line
+Email;email
+Notes;paragraph
+Score;wholeNumber
+Birth Date;date
+
+** Books
+Title;line
+Author;line
+Year;wholeNumber
+Description;paragraph
+EXTRASOURCE>> api:https://www.googleapis.com/books/v1/volumes?user=tanguay
+
+** External News Items
+Title;line
+Link;line
+Body;paragraph
+SOURCE>> api:https://newsapi.org/v2/everything?q=datapod&apiKey=[]
