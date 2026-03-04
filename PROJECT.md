@@ -54,7 +54,17 @@
 			CreatedAt;dateTime
 			Author;line
 			Text;paragraph
-			SOURCE=mysql:login
+			SOURCE=mysql:host=localhost;port=3306;user=cruduser;password=[APP_DB_PASSWORD];database=app_db
+
+			** Blog Posts
+			Title;line
+			Author;line
+			Body;markdown
+			CreatedAt;dateTime
+			DPOD_DATA_STRUCTURE=itemFiles
+
+			TODO: customParsing singleFile (jobapplications)
+			TODO: customParsing itemFiles (howtoarticles)
 			------------------------------------------------
 		- users
 			- this is the simplest form of an item type
@@ -77,15 +87,35 @@
 				- two local files, one with a relative path and one with an absolute path
 			- note that the name of the field in the API and DpodFile data is "headline" but on the frontend it will be shown as "Title"
 		- logEntries and robotTrackingItems
-			- these are examples of item types that have a high volume and so are saved in tables in a local SQLite database
+			- these are examples of item types that have a high frequency of updates and so are saved in tables in a local SQLite database
 			- the DpodManager provides full CRUD access
 			- in general, the idea is particularly for sites with a single user, the preferered format is a dpodFile
 				- if you have a lot of data, an SQLite file, which still keeps all data internal in the project
-				- if you have numerous users, then a classic MySQL or Postgres, e.g. in a Docker container or in the cloud 
-					
+				- if you have numerous users, then a classic MySQL or Postgres, e.g. in a Docker container or in the cloud, see comments below
+		- comments
+			- this is a typical example of an item type that has multiple users, and a potential high volume of data, and so is stored in a MySQL database
+			- note that you can have blog posts in a dpodFile, and comments on those blog posts in a MySQL database
+				- so you have a single user editing blog posts, and multiple users commenting on them
+				- the blog posts are in text files which are easy to edit, can be edited in any editor, etc.
+		- blogEntries
+			- will be saved in ~~/data/blogEntries/ as individual files, e.g.
+				- ~~/data/blogEntries/2026-03-05-tripToAmsterdam.txt
+				- ~~/data/blogEntries/2026-03-09-tripToParis.txt
+			- the structure of these files would be e.g.
+				-------------------------------------------
+				title::Trip to Amsterdam
+				author::Edward
+				body::[[
+					I had a great time in Amsterdam.
+				]]
+				whenCreated::2026-03-05 10:00:00
+				-------------------------------------------
+			- so this is still a DpodDataKind="dataset" but the DpodDataStructure is "itemFiles"
+			- you would use this when each item could be extremely large which would make it difficult to have numerous in one file
+			- this is also useful if you have numerous contributors, each can create an edit their own file and then e.g. have it copied to the data directory where it immediately becomes an item in the application
 	- DpodDataKind
-		- Document
-		- Dataset
+		- dataset (default)
+		- customParsing
 	- DpodDataStructure
-		- ItemFile
-		- BatchFile
+		- singleFile (default)
+		- itemFiles

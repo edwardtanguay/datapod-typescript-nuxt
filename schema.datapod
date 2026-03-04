@@ -18,3 +18,9 @@ Title;line
 Link;line
 Body;paragraph
 SOURCE>> api:https://newsapi.org/v2/everything?q=datapod&apiKey=[]
+
+** Comments
+CreatedAt;dateTime
+Author;line
+Text;paragraph
+SOURCE>> mysql:host=localhost;port=3306;user=root;password=password;database=comments_db
