@@ -129,8 +129,7 @@ SOURCE=file:/home/edward/datafeeds/news.dp.txt
 		- `$trim=false`
 	- it uses the "extra syntax" of `$variable=value` separated by semicolons
 
-
-
+### SQLite item types
 
 ```
 ** Log Entries
@@ -144,6 +143,20 @@ Latitude;latitude
 Longitude;longitude
 Action;line
 SOURCE=sqlite:~~/data/fastAccessData.sqlite
+```
+
+- these are two examples of item types that have a high frequency of updates and so are saved in tables in a local SQLite database
+- a unique feature of Datapod is its simplicity, e.g. data sources that are both easy to edit and contained in the project
+	- for this reason, for high-volume data, an SQLite file is a good choice
+	- it keeps all data internal in the project, and so can still be version controlled
+	- it is still relatively easy to edit (e.g. the free DB Browser tool on Windows/Mac/Linux)
+- the DpodManager on the frontend will provide full CRUD access for SQLite item types
+- in general, the idea is particularly for sites with a single user, the preferered format is a dpodFile
+	- if you have a lot of data, an SQLite file, which still keeps all data internal in the project
+	- if you have numerous users, then a classic MySQL or Postgres, e.g. in a Docker container or in the cloud, see the next example
+
+
+```
 
 ** Comments
 CreatedAt;dateTime
@@ -224,14 +237,6 @@ ITEM_KIND=document
 ```
 
 #### TODO: PROCESS THESE:
-
-### logEntries and robotTrackingItems
-
-- these are examples of item types that have a high frequency of updates and so are saved in tables in a local SQLite database
-- the DpodManager provides full CRUD access
-- in general, the idea is particularly for sites with a single user, the preferered format is a dpodFile
-- if you have a lot of data, an SQLite file, which still keeps all data internal in the project
-- if you have numerous users, then a classic MySQL or Postgres, e.g. in a Docker container or in the cloud, see comments below
 
 ### comments
 
