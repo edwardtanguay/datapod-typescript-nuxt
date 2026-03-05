@@ -3,24 +3,24 @@
 ## Progressive Disclosure (UX concept)
 
 - Datapod practices progressive disclosure in the way it can be used
-- to begin working with Datapod, you basically just need to:
+- this means it is easy to begin working with but offers increasing functionality as you go
+- to start, you basically just need to:
 	- create a text file in `~~/data`
 	- execute `npm run pd` (parse-data)
 	- and you can immediately start editing your data in the frontend
-- you can then add more item types, more data files, various kinds of sources as you go
+- beyond that, there are many other features described in this document
 
 ## DpodManager
 
-- the main object that manages data in your datapod
-- it's where you get data from, your query source
-- it lives in the CLI
-- it is the object that backend API routes will use to perform CRUD operations on your data
+- this is the main object that manages data in your datapod
+- it's where the application gets all its data from
+- it is the object that backend API routes use to perform CRUD operations
 
 ## schema.datapod
 
-- this is the file that defines the item types of an application
-- item types are basically 1-to-1 with the tables in your database
-- except that item types can also be of kind "document" or "dataset"
+- this is the file that defines the structure and origin of data for the application
+- item types can be of kind "dataset" or "custom" (fileParsingType)
+	- 
 	- this makes Datapod more like a NoSQL database
 - and both document and dataset items can be of structure "ItemFile" or "BatchFile"
 - lives in the root of your project
@@ -115,6 +115,23 @@ Location;line
 Description;paragraph
 EXTRA_SOURCE=cinemaEvents
 
+# this is where I keep all my ideas on various topics
+# it displays on the frontend with grouping, sorting, searching, etc.
+)) brainstorming
+ITEM_KIND=document
+FILE_COUNT_TYPE=single
+
+)) learnTexts
+ITEM_KIND=document
+FILE_COUNT_TYPE=multiple
+
+
+// TODO: itemKind="document" as fileCountType="single"
+// TODO: itemKind="document" as fileCountType="multiple"
+
+// this is an example of a "document" item type
+** 
+ITEM_KIND=document
 
 ```
 
@@ -185,7 +202,30 @@ whenCreated::2026-03-05 10:00:00
 	- and they can each work individually on their own file
 	- then have it copied to the data directory where it immediately becomes an item in the application
 
-### FileParsingType
+### brainstorming
+
+- this is an example of a document item type (not dataset) 
+- it gets its data from `~~/data/brainstorming.dpdoc.txt` 
+- that file has a custom syntax
+- the user uses it to write ideas in a loose format
+- but it has markers in it that can be semantically parsed
+- the custom parser creates a file `~~/parsed-data/brainstorming.json`
+- this JSON file is not in dataset format, but deeply nested, etc.
+- it gets validated with Zod
+- it is a nested object of information that the frontend uses as is
+- the JSON file is not editable on the frontend interface
+
+### itemKind
+
+- `dataset` - the "SQL" type (default)
+	- can be copied 1-to-1 into a database table
+	- this can be a `single` or `multiple` fileCountType
+- `document` - the "NoSQL" type
+	- enables the user to enter data in any format they want
+	- requires a custom parser
+	- this can be a `single` or `multiple` fileCountType
+
+### fileParsingType
 
 - `dataset` - the "SQL" type (default)
 	- can be copied 1-to-1 into a database table
@@ -193,7 +233,7 @@ whenCreated::2026-03-05 10:00:00
 	- enables the user to enter data in any format they want
 	- requires a custom parser
 
-### FileCountType
+### fileCountType
 
 - `single` (default)
 	- all items are saved in a single file
