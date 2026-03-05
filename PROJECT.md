@@ -122,10 +122,10 @@ TODO: make item types that are parsed out of Meetings and Howtos above
 
 ### blogEntries
 
-- will be saved in ~~/data/blogEntries/ as individual files, e.g.
-- ~~/data/blogEntries/2026-03-05-tripToAmsterdam.txt
-- ~~/data/blogEntries/2026-03-09-tripToParis.txt
-- the structure of these files would be e.g.
+- all items will be saved in the directory `~~/data/blogEntries/` as individual files, e.g.
+	- `~~/data/blogEntries/2026-03-05-tripToAmsterdam.txt`
+	- `~~/data/blogEntries/2026-03-09-tripToParis.txt`
+- an example of a file would be this, notice that it has the dataset syntax for fields:
 
 ```
 title::Trip to Amsterdam
@@ -138,10 +138,11 @@ In the evening, the city transforms as the lights from the bridges reflect on th
 whenCreated::2026-03-05 10:00:00
 ```
 
-- so this is still a DpodDataKind="dataset" but the DpodDataStructure is "itemFiles"
-- you would use this when each item could be extremely large which would make it difficult to have numerous in one file
-- this is also useful if you have numerous contributors, each can create an edit their own file and then 
-- e.g. have it copied to the data directory where it immediately becomes an item in the application
+- so this is still a dpodDatafileParsing=`dataset` but the dpodDataFileCount is `multiple`
+- you would use this when each item could be extremely large which would make it difficult to have numerous items in one file
+- this is also useful if you have numerous contributors, since each can create an edit their own file
+	- and they can each work individually on their own file
+	- then have it copied to the data directory where it immediately becomes an item in the application
 
 ### DpodDataFileParsing
 
@@ -153,9 +154,9 @@ whenCreated::2026-03-05 10:00:00
 
 ### DpodDataFileCount
 
-- single (default)
+- `single` (default)
 	- all items are saved in a single file
 	- used when items are smaller and don't have fields with large amounts of text, e.g. users, comments, etc.
-- multiple
+- `multiple`
 	- each item is saved in its own file
 	- useful for large items, e.g. blog posts, reports, etc.
