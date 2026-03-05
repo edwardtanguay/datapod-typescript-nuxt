@@ -63,8 +63,13 @@
 			CreatedAt;dateTime
 			DPOD_DATA_STRUCTURE=itemFiles
 
-			TODO: customParsing singleFile (jobapplications)
-			TODO: customParsing itemFiles (howtoarticles)
+			)) Meetings
+			DPOD_DATA_FILE_COUNT=single
+
+			)) Howtos
+			DPOD_DATA_FILE_COUNT=multiple
+
+			TODO: make item types that are parsed out of Meetings and Howtos above
 			------------------------------------------------
 		- users
 			- this is the simplest form of an item type
@@ -113,9 +118,9 @@
 			- so this is still a DpodDataKind="dataset" but the DpodDataStructure is "itemFiles"
 			- you would use this when each item could be extremely large which would make it difficult to have numerous in one file
 			- this is also useful if you have numerous contributors, each can create an edit their own file and then e.g. have it copied to the data directory where it immediately becomes an item in the application
-	- DpodDataKind
+	- DpodDataFileParsing
 		- dataset (default)
-		- customParsing
-	- DpodDataStructure
-		- singleFile (default)
-		- itemFiles
+		- custom
+	- DpodDataFileCount
+		- single (default)
+		- multiple
