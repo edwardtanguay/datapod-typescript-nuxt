@@ -44,7 +44,7 @@
 - it is simply a list of schemas from top to bottom in any order
 - here are examples every type of possible item type
 
-### Users
+### Simplest item type
 
 ```
 ** Users
@@ -76,11 +76,11 @@ Birth Date;d
 - some dataTypes have abbreviations, e.g. `p` for `paragraph`, `d` for `date`, `dt` for `dateTime`, etc.
 - some field Titles have a default dpodType, e.g. "Email" has `email` dpodType
 - the identical schema will be in that file as well at the top
-	- if a this schema in schema.datapod is changed, it will change the schema in the data file as well
-	- if the schema in the data file is changed, it will be changed back to the schema in schema.datapod
+	- if this schema in schema.datapod is changed, it will change the schema in the data file as well
+	- if the schema in the data file is changed, it will be changed back to match the schema in schema.datapod
 	- so the schema in schema.datapod is the source of truth for the item type
 
-### Books
+### Item type with two data sources
 
 ```
 ** Books
@@ -88,31 +88,51 @@ Title
 Author
 Year;wholeNumber
 Description;p
-EXTRA_SOURCE=api:https://www.googleapis.com/books/v1/volumes?user=tanguay
+EXTRA_SOURCE=api:https://www.tanguay.info/api/books?starting=2020-01-01
 ```
 
 - this is an example of an item type that has two sources
-	- (1) the default data file: ~~/data/books.dp.txt
+	- (1) the default data file: `~~/data/books.dp.txt`
 	- (2) an external API
 - when the front end requests "all books", it will get the books from both sources
-- in the frontend item type CRUD manager, only the books from the default data file will be editable
+- an item type can have an unlimited number of data sources, e.g. a local dpod file, a few APIs, an Excel file, etc.
+	- the schema ensures that the data from all sources is validated according to its dpodTypes
+- the items that come from the local dpod file will be editable on the frontend
+	- those from the API will not since it is read-only
 
-
-
-
-
+### Read-only external data source
 
 ```
-
-** External News Items
+** News Items
 Title;line;$idCode=headline
-Link;line
-Body;paragraph
+Link;url
+Body;p
 SOURCE=api:https://newsapi.org/v2/everything?category=general&apiKey=[NEWSAPI_KEY]
 SOURCE=api:https://newsapi.org/v2/everything?category=technology&apiKey=[NEWSAPI_KEY]
 SOURCE=file:../company/news.dp.txt
 SOURCE=file:/home/edward/datafeeds/news.dp.txt
+```
 
+- note that the sources are all defined as `SOURCE` and not `EXTRA_SOURCE`
+	- this means that there is no local dpod file used
+	- all data comes from other sources
+	- in this case: two APIs and two local files outside the site's project folder
+	- this means that this item type is read-only
+- note that the name of the field in the API and DpodFile data is `headline` but on the frontend it will be shown as `Title`
+	- there are many other ways you can give meta information like this to the fields, e.g.
+		- `$required`
+		- `$choices=red|green|blue` 
+		- `$highlighted`
+		- `$default=3.5`
+		- `$min=1`
+		- `$max=5`
+		- `$trim=false`
+	- it uses the "extra syntax" of `$variable=value` separated by semicolons
+
+
+
+
+```
 ** Log Entries
 Message;line
 WhenRecorded;dateTime
@@ -204,13 +224,6 @@ ITEM_KIND=document
 ```
 
 #### TODO: PROCESS THESE:
-
-### externalNewsItems
-
-- this is an example of a read-only item type that has multiple sources
-- two API calls to newsapi.org getting news items on general and technology topics
-- two local files, one with a relative path and one with an absolute path
-- note that the name of the field in the API and DpodFile data is "headline" but on the frontend it will be shown as "Title"
 
 ### logEntries and robotTrackingItems
 
