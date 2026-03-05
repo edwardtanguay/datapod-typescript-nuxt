@@ -1,15 +1,15 @@
 # Datapod Concepts
 
-## Progressive Disclosure (UX concept)
+## Progressive Disclosure
 
-- Datapod practices progressive disclosure in the way it can be used
-- this means it is very easy to begin working 
+- Datapod practices *progressive disclosure* as a DX concept
+- this means it is very easy to begin working with, and to get a quick site up with dynamic data
 - yet it offers increasing functionality as you need it
 - to start, you basically:
-	- create a text file in `~~/data`
+	- create a text file with data in `~~/data`
 	- execute `npm run pd` (parse-data)
-	- and you can immediately start editing your data in the frontend
-- beyond that, there are many other features,  described in this document
+	- you can immediately edit your data via the frontend or by editing the text file
+- beyond that, there are many other concepts and features, described in this document
 
 ## ItemTypes
 
@@ -39,9 +39,12 @@
 - each dpodType is a class in a file, so you can copy them, or extend them
 
 ## `schema.datapod`
-- this is the file that defines the structure and origin of every item type in your application
+- this is a text file that defines the structure and origin of every item type in your application
 - it is located in the root of your project
-- here's an example of a `schema.datapod` file, containing every type of possible item type
+- it is simply a list of schemas from top to bottom in any order
+- here are examples every type of possible item type
+
+### Users
 
 ```
 ** Users
@@ -51,13 +54,55 @@ Email;email
 Notes;paragraph
 Score;wholeNumber
 Birth Date;date
+```
 
+- this is the simplest form and most common form of an item type
+	- it has the default fileParsingType (`dataset`) - like SQL tables
+	- it has the default fileCountType (`single`) - only one data file containing all items
+	- it has the default data file name (`~~/data/users.dp.txt`)
+- note that it could be made even simpler:
+
+```
+** Users
+First Name
+Last Name
+Email
+Notes;p
+Score;wn
+Birth Date;d
+```
+
+- fields without a specified dpodType are automatically assigned the `line` dpodType
+- some dataTypes have abbreviations, e.g. `p` for `paragraph`, `d` for `date`, `dt` for `dateTime`, etc.
+- some field Titles have a default dpodType, e.g. "Email" has `email` dpodType
+- the identical schema will be in that file as well at the top
+	- if a this schema in schema.datapod is changed, it will change the schema in the data file as well
+	- if the schema in the data file is changed, it will be changed back to the schema in schema.datapod
+	- so the schema in schema.datapod is the source of truth for the item type
+
+### Books
+
+```
 ** Books
 Title
 Author
 Year;wholeNumber
 Description;p
 EXTRA_SOURCE=api:https://www.googleapis.com/books/v1/volumes?user=tanguay
+```
+
+- this is an example of an item type that has two sources
+	- (1) the default data file: ~~/data/books.dp.txt
+	- (2) an external API
+- when the front end requests "all books", it will get the books from both sources
+- in the frontend item type CRUD manager, only the books from the default data file will be editable
+
+
+
+
+
+
+```
 
 ** External News Items
 Title;line;$idCode=headline
@@ -158,41 +203,7 @@ ITEM_KIND=document
 
 ```
 
-## Explanation of the above schema.datapod
-
-`users`
-
-- this is the simplest form of an item type
-	- it has the default fileParsingType (`dataset`)
-	- it has the default fileCountType (`single`)
-	- it has the default data file name (`~~/data/users.dp.txt`)
-- note that it could be made even simpler:
-
-```
-** Users
-First Name
-Last Name
-Email
-Notes;p
-Score;wn
-Birth Date;d
-```
-
-- fields without a specified dpodType are automatically assigned the `line` dpodType
-- some dataTypes have abbreviations, e.g. `p` for `paragraph`, `d` for `date`, `dt` for `dateTime`, etc.
-- some field Titles have a default dpodType, e.g. "Email" has `email` dpodType
-- the identical schema will be in that file as well at the top
-	- if a this schema in schema.datapod is changed, it will change the schema in the data file as well
-	- if the schema in the data file is changed, it will be changed back to the schema in schema.datapod
-	- so the schema in schema.datapod is the source of truth for the item type
-
-### books
-
-- this is an example of an item type that has two sources
-- the default data file: ~~/data/books.dp.txt
-- an external API
-- when the front end requests "all books", it will get the books from both sources
-- in the frontend item type CRUD manager, only the books from the default data file will be editable
+#### TODO: PROCESS THESE:
 
 ### externalNewsItems
 
