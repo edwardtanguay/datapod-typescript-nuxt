@@ -53,10 +53,10 @@ Score;wholeNumber
 Birth Date;date
 
 ** Books
-Title;line
-Author;line
+Title
+Author
 Year;wholeNumber
-Description;paragraph
+Description;p
 EXTRA_SOURCE=api:https://www.googleapis.com/books/v1/volumes?user=tanguay
 
 ** External News Items
@@ -163,13 +163,28 @@ ITEM_KIND=document
 `users`
 
 - this is the simplest form of an item type
-- default dpodDataFileParsing is `dataset`
-- default dpodDataFileCount is `single`
-- default data file name is: `~~/data/users.dp.txt`
+	- it has the default fileParsingType (`dataset`)
+	- it has the default fileCountType (`single`)
+	- it has the default data file name (`~~/data/users.dp.txt`)
+- note that it could be made even simpler:
+
+```
+** Users
+First Name
+Last Name
+Email
+Notes;p
+Score;wn
+Birth Date;d
+```
+
+- fields without a specified dpodType are automatically assigned the `line` dpodType
+- some dataTypes have abbreviations, e.g. `p` for `paragraph`, `d` for `date`, `dt` for `dateTime`, etc.
+- some field Titles have a default dpodType, e.g. "Email" has `email` dpodType
 - the identical schema will be in that file as well at the top
-- if a this schema in schema.datapod is changed, it will change the schema in the data file as well
-- if the schema in the data file is changed, it will be changed back to the schema in schema.datapod
-- so the schema in schema.datapod is the source of truth for the item type
+	- if a this schema in schema.datapod is changed, it will change the schema in the data file as well
+	- if the schema in the data file is changed, it will be changed back to the schema in schema.datapod
+	- so the schema in schema.datapod is the source of truth for the item type
 
 ### books
 
