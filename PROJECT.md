@@ -1,5 +1,14 @@
 # Datapod Concepts
 
+## Progressive Disclosure (UX concept)
+
+- Datapod practices progressive disclosure in the way it can be used
+- to begin working with Datapod, you basically just need to:
+	- create a text file in `~~/data`
+	- execute `npm run pd` (parse-data)
+	- and you can immediately start editing your data in the frontend
+- you can then add more item types, more data files, various kinds of sources as you go
+
 ## DpodManager
 
 - the main object that manages data in your datapod
@@ -66,15 +75,47 @@ Title;line
 Author;line
 Body;markdown
 CreatedAt;dateTime
-DPOD_DATA_STRUCTURE=itemFiles
+FILE_COUNT_TYPE=multiple
+EXTRA_SOURCE=easyBlogEntryItems
 
-)) Meetings
-DPOD_DATA_FILE_COUNT=single
+)) notesOnMeetings
 
-)) Howtos
-DPOD_DATA_FILE_COUNT=multiple
+** Meetings
+idCode
+When;dateTime
+Title
+Type;choice;$choices=team|client|other
+SOURCE=notesOnMeetings
 
-TODO: make item types that are parsed out of Meetings and Howtos above
+** Tasks
+Origin;meeting-idCode
+Title
+Status;choice;$choices=open|closed
+SOURCE=notesOnMeetings
+
+** Ideas
+Title
+Description;p
+SOURCE=notesOnMeetings
+
+// these are files that have a simpler syntax that the BlogItem syntax 
+)) easyBlogEntryItems
+FILE_COUNT_TYPE=multiple
+
+// this is the main Excel file where I keep my notes for our club
+// the cinema events are on second worksheet
+// note that these events can also be entered directly in the dpod file
+)) cinemaEvents
+SOURCE=file:~~/data/central-notes.xlsx
+
+** Cinema Events
+Title;line
+When;dateTime
+Location;line
+Description;paragraph
+EXTRA_SOURCE=cinemaEvents
+
+
 ```
 
 ## Explanation of the above schema.datapod
@@ -160,12 +201,3 @@ whenCreated::2026-03-05 10:00:00
 - `multiple`
 	- each item is saved in its own file
 	- useful for large items, e.g. blog posts, reports, etc.
-
-## Progressive Disclosure (UX concept)
-
-- Datapod practices progressive disclosure in the way it can be used
-- to begin working with Datapod, you basically just need to:
-	- create a text file in /data
-	- execute `npm run pd` (parse-data)
-	- and you can immediately start editing your data on the frontend
-- you can then add more item types, more data files, more sources, etc. as you go
