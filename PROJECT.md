@@ -129,9 +129,11 @@ TODO: make item types that are parsed out of Meetings and Howtos above
 
 ```
 title::Trip to Amsterdam
-author::Edward
+author::Marco
 body::[[
-	I had a great time in Amsterdam.
+Walking through the narrow streets of Amsterdam, one is immediately struck by the unique architecture of the canal houses and the vibrant atmosphere of the flower markets. The city feels alive with cyclists weaving through traffic and the gentle sound of boats passing under historic stone bridges.
+
+In the evening, the city transforms as the lights from the bridges reflect on the dark water of the canals. Cafes and bars fill with locals and tourists alike, creating a sense of "gezelligheid" that is uniquely Dutch and perfectly captures the welcoming spirit of the Netherlands.
 ]]
 whenCreated::2026-03-05 10:00:00
 ```
