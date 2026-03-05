@@ -3,29 +3,40 @@
 ## Progressive Disclosure (UX concept)
 
 - Datapod practices progressive disclosure in the way it can be used
-- this means it is easy to begin working with but offers increasing functionality as you go
-- to start, you basically just need to:
+- this means it is very easy to begin working 
+- yet it offers increasing functionality as you need it
+- to start, you basically:
 	- create a text file in `~~/data`
 	- execute `npm run pd` (parse-data)
 	- and you can immediately start editing your data in the frontend
-- beyond that, there are many other features described in this document
+- beyond that, there are many other features,  described in this document
 
 ## DpodManager
 
-- this is the main object that manages data in your datapod
-- it's where the application gets all its data from
-- it is the object that backend API routes use to perform CRUD operations
+- item types are the data collections in an application, e.g. users, books, etc.
+- item types can be `dataset` or `custom` (fileParsingType)
+	- `dataset` item types are analogous to tables in a relational database
+	- `custom` item types are more like free-form documents in a NoSQL database
 
-## schema.datapod
+## Parsing
+- a unique feature of Datapod is that item types are easy to edit, their data can be stored in:
+	- text files in an easy to understand data format (Datapod format for dataset data)
+	- text files in free-form format 
+	- MD files
+	- Excel files
+	- CSV files
+	- API calls
+	- SQL queries
+	- (anything that is easy for the user to edit)
+- then, these item types are parsed into JSON files stored in `~~/data-parsed` for easy-access use by the frontend
 
+## ItemTypes
+
+## `schema.datapod`
 - this is the file that defines the structure and origin of data for the application
-- item types can be of kind "dataset" or "custom" (fileParsingType)
-	- 
-	- this makes Datapod more like a NoSQL database
-- and both document and dataset items can be of structure "ItemFile" or "BatchFile"
-- lives in the root of your project
+- it is located in the root of your project
 - contains information about the structure and datasources of the application's item types
-- here's an example of a `schema.datapod` file
+- here's an example of a `schema.datapod` file, containing every type of possible item type
 
 ```
 ** Users
