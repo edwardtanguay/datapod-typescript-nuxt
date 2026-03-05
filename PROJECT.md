@@ -11,7 +11,7 @@
 	- and you can immediately start editing your data in the frontend
 - beyond that, there are many other features,  described in this document
 
-## DpodManager
+## ItemTypes
 
 - item types are the data collections in an application, e.g. users, books, etc.
 - item types can be `dataset` or `custom` (fileParsingType)
@@ -20,7 +20,7 @@
 
 ## Parsing
 - a unique feature of Datapod is that item types are easy to edit, their data can be stored in:
-	- text files in an easy to understand data format (Datapod format for dataset data)
+	- text files in a dataset format that is flexible and easy to understand
 	- text files in free-form format 
 	- MD files
 	- Excel files
@@ -28,14 +28,19 @@
 	- API calls
 	- SQL queries
 	- (anything that is easy for the user to edit)
-- then, these item types are parsed into JSON files stored in `~~/data-parsed` for easy-access use by the frontend
+- these item types are parsed into JSON files stored in `~~/data-parsed` for easy-access use by the frontend
 
-## ItemTypes
+## DpodTypes
+
+- each field in a `dataset` item type has a `dpodType` that defines the type of data in the field
+- these are classic field types such as line (string), paragraph (text), date, datetime, wholeNumber, currency, etc.
+- there are also some special dpodTypes such as `idCode`, `logSeverity`, `latitude`, `longitude`, etc.
+- dpodTypes are responsible for validation and cleansing of data
+- each dpodType is a class in a file, so you can copy them, or extend them
 
 ## `schema.datapod`
-- this is the file that defines the structure and origin of data for the application
+- this is the file that defines the structure and origin of every item type in your application
 - it is located in the root of your project
-- contains information about the structure and datasources of the application's item types
 - here's an example of a `schema.datapod` file, containing every type of possible item type
 
 ```
