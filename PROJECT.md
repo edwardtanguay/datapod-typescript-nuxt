@@ -121,6 +121,13 @@ EXTRA_SOURCE=cinemaEvents
 ITEM_KIND=document
 FILE_COUNT_TYPE=single
 
+# these are a texts for language learning
+# they are copied from online articles, I read them, mark them up
+# for example, I add a definition to words I don't know, e.g. 
+# "è possibile prendere in [prestito;loan] gratuitamente"
+# in the JSON File, these are all listed separately as 
+# "difficult vocabulary in this text"
+# the frontend end tests the read first on these words, for instance
 )) learnTexts
 ITEM_KIND=document
 FILE_COUNT_TYPE=multiple
@@ -214,6 +221,18 @@ whenCreated::2026-03-05 10:00:00
 - it gets validated with Zod
 - it is a nested object of information that the frontend uses as is
 - the JSON file is not editable on the frontend interface
+
+### learnTexts
+
+- this is an example of a document item type (not dataset) 
+- but it is alwso fileCountType="multiple"
+- this means the data source is a directory of files
+- the directory is `~~/data/learnTexts/`
+- each "learn text" is in its own file
+- the custom parser creates one JSON file: `~~/parsed-data/learnTexts.json`
+- the JSON file an object with meta info about all the texts
+- e.g. it has an array of all the vocabulary words from all the texts
+- and also an array of all the texts
 
 ### itemKind
 
