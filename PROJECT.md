@@ -144,7 +144,7 @@ whenCreated::2026-03-05 10:00:00
 	- and they can each work individually on their own file
 	- then have it copied to the data directory where it immediately becomes an item in the application
 
-### DpodDataFileParsing
+### FileParsingType
 
 - `dataset` - the "SQL" type (default)
 	- can be copied 1-to-1 into a database table
@@ -152,7 +152,7 @@ whenCreated::2026-03-05 10:00:00
 	- enables the user to enter data in any format they want
 	- requires a custom parser
 
-### DpodDataFileCount
+### FileCountType
 
 - `single` (default)
 	- all items are saved in a single file
@@ -160,3 +160,12 @@ whenCreated::2026-03-05 10:00:00
 - `multiple`
 	- each item is saved in its own file
 	- useful for large items, e.g. blog posts, reports, etc.
+
+## Progressive Disclosure (UX concept)
+
+- Datapod practices progressive disclosure in the way it can be used
+- to begin working with Datapod, you basically just need to:
+	- create a text file in /data
+	- execute `npm run pd` (parse-data)
+	- and you can immediately start editing your data on the frontend
+- you can then add more item types, more data files, more sources, etc. as you go
