@@ -105,5 +105,13 @@ export class DpodSchema {
 		return qdev.getDebugWrapperHtml(`Schema: "${this.idCode}"`, html);
 	}
 
+	public getLines(): string[] {
+		return this.dpodLineBlock.lines;
+	}
+
+	public getFieldIdCodes(): string[] {
+		return Array.from(this.dpodTypes.keys());
+	}
+
 
 }

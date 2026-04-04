@@ -5,16 +5,41 @@ Year;wholeNumber
 Description;paragraph
 
 ==book
-The Great Gatsby
-F. Scott Fitzgerald
-1925
-A classic novel set in the Roaring Twenties.
+dpodId::lF6ys8
+dpodWhenCreated::2026-04-04 23:34:28
+title::On the Road
+author::Jack Kerouac
+year::1957
+description::A novel about the Beat Generation.
 
 ==book
-dpodId::B1k2m3
-title::1984
-author::George Orwell
-year::1949
-description::[[
-A dystopian social science fiction novel and cautionary tale about ubiquitous government surveillance.
-]]
+dpodId::urshAo
+dpodWhenCreated::2026-04-04 23:40:13
+title::Don Quixote
+author::Miguel de Cervantes
+year::1605
+description::A novel about the Beat Generation.
+
+==book
+dpodId::NVYcmQ
+dpodWhenCreated::2026-04-04 23:39:36
+title::Crime and Punishment
+author::Fyodor Dostoevsky
+year::1866
+description::A psychological novel about a poor student in St. Petersburg who murders a pawnbroker.
+
+==book
+dpodId::MjzJfH
+dpodWhenCreated::2026-04-04 23:35:03
+title::All is Quiet on the Western Front
+author::Erich Maria Remarque
+year::1929
+description::A novel about the horrors of World War I and its consequences.
+
+==book
+dpodId::J8PkfC
+dpodWhenCreated::2026-04-04 23:35:35
+title::Sapiens
+author::Yuval Harari
+year::2011
+description::A brief history of humankind.

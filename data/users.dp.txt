@@ -40,9 +40,7 @@ dpodWhenCreated::2026-03-01 10:10:00
 firstName::Bärbel
 lastName::Häupler
 email::baerbel.haeupler@example.de
-notes::[[
-Bärbel ist unsere Spezialistin für Qualitätssicherung und hat ein extrem scharfes Auge für Details. Dank ihrer gründlichen Tests konnten wir die Stabilität unserer Anwendungen in den letzten Jahren signifikant verbessern. Sie ist eine unverzichtbare Stütze für das gesamte Entwicklungsteam.
-]]
+notes::Bärbel ist unsere Spezialistin für Qualitätssicherung und hat ein extrem scharfes Auge für Details. Dank ihrer gründlichen Tests konnten wir die Stabilität unserer Anwendungen in den letzten Jahren signifikant verbessern. Sie ist eine unverzichtbare Stütze für das gesamte Entwicklungsteam.
 score::78
 birthDate::1975-03-08
 

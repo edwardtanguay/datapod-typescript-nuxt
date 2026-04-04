@@ -13,13 +13,13 @@ export class DpodFile {
 	public dpodKeyStringValueBlocks: DpodKeyStringValueBlock[] = [];
 	public idCode: string = "";
 
-	constructor(pathAndFileName: string) {
+	constructor(pathAndFileName: string, fieldIdCodes: string[] = []) {
 		this.pathAndFileName = pathAndFileName;
 		this.idCode = this.pathAndFileName.split("/").pop()?.split(".")[0] || "";
 		this.lines = qfil.getLinesFromFile(this.pathAndFileName);
 		this.createDpodLineBlocks();
 		this.createDpodMarkedLineBlocks();
-		this.createDpodKeyStringValueBlocks();
+		this.createDpodKeyStringValueBlocks(fieldIdCodes);
 	}
 
 	private createDpodLineBlocks() {
@@ -81,10 +81,10 @@ export class DpodFile {
 		});
 	}
 
-	private createDpodKeyStringValueBlocks() {
+	private createDpodKeyStringValueBlocks(fieldIdCodes: string[] = []) {
 		this.dpodMarkedLineBlocks.forEach((dpodMarkedLineBlock) => {
 			if (dpodMarkedLineBlock.marker === "==") {
-				const dpodKeyStringValueBlock = new DpodKeyStringValueBlock(dpodMarkedLineBlock);
+				const dpodKeyStringValueBlock = new DpodKeyStringValueBlock(dpodMarkedLineBlock, fieldIdCodes);
 				this.dpodKeyStringValueBlocks.push(dpodKeyStringValueBlock);
 			}
 		});

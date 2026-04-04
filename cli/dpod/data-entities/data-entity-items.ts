@@ -2,6 +2,7 @@ import { DataEntity } from "./data-entity";
 import { DpodSchema } from "../dpod-schemas/dpod-schema";
 import * as qdev from "../../qtools/qdev";
 import * as qstr from "../../qtools/qstr";
+import * as qfil from "../../qtools/qfil";
 
 export class DataEntityItems extends DataEntity {
 	public dataSourcePathAndFileName: string = "";
@@ -12,6 +13,19 @@ export class DataEntityItems extends DataEntity {
 	public parse(): void {
 		this.dataSourcePathAndFileName = `~~/data/${qstr.forceKebabNotation(this.idCode)}.txt`;
 		this.dataSourceDirectoryName = `~~/data/${qstr.forceKebabNotation(this.idCode)}`;
+		this.forceDataSourceFileToExist();
+	}
+
+	private forceDataSourceFileToExist(): void {
+		if (this.dpodSchema.fileCountType === "single") {
+			if (!qfil.fileExists(this.dataSourcePathAndFileName)) {
+				qfil.saveLinesToFile(this.dataSourcePathAndFileName, []);
+			}
+		} else {
+			if (!qfil.directoryExists(this.dataSourceDirectoryName)) {
+				qfil.createDirectory(this.dataSourceDirectoryName);
+			}
+		}
 	}
 
 	private displayDataSource(): string {

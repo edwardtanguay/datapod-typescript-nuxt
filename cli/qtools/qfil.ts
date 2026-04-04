@@ -25,6 +25,11 @@ export const resolvePath = (filePath: string): string => {
 	return filePath;
 };
 
+export const fileExists = (filePath: string): boolean => {
+	filePath = resolvePath(filePath);
+	return fs.existsSync(filePath);
+};
+
 // function that returns the content of a file
 export const getStringBlockFromFile = (filePath: string): string => {
 	filePath = resolvePath(filePath);
@@ -243,3 +248,15 @@ export const saveLinesToFile = (pathAndFileName: string, lines: string[]): void 
 		);
 	}
 };
+export const directoryExists = (directoryPath: string): boolean => {
+	directoryPath = resolvePath(directoryPath);
+	return fs.existsSync(directoryPath) && fs.statSync(directoryPath).isDirectory();
+};
+
+export const createDirectory = (directoryPath: string): void => {
+	directoryPath = resolvePath(directoryPath);
+	if (!fs.existsSync(directoryPath)) {
+		fs.mkdirSync(directoryPath, { recursive: true });
+	}
+};
+
