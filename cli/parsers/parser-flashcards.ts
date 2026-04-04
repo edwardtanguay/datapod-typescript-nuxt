@@ -1,7 +1,7 @@
 import * as qfil from "../qtools/qfil";
 import * as qcli from "../qtools/qcli";
 import * as qstr from "../qtools/qstr";
-import * as utils from "../commands/utils";
+import * as utils from "./utils";
 import { Flashcard } from "../types";
 
 export const parseFlashcards = () => {

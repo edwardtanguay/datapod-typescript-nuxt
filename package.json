@@ -5,11 +5,10 @@
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
-    "pd": "cd cli/commands && tsx parse-data.ts",
-    "cd": "cd cli/commands && tsx clear-debug-file.ts",
+    "pd": "cd cli/commands && tsx cmd-parse-data.ts",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "testn": "cd cli/commands && tsx testn.ts",
+    "testdf": "cd cli/commands && tsx cmd-test-dynamic-file.ts",
     "postinstall": "nuxt prepare",
     "gh": "git log --pretty=format:\"%ad | %h | %s\" --date=format:\"%Y-%m-%d %H:%M:%S\"",
     "backup": "bash -c 'git archive --format=zip HEAD -o \"../BACKUP/datapod-typescript-nuxt-$(date +%F-%H-%M-%S).zip\"'"

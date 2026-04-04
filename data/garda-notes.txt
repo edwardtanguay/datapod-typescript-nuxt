@@ -1,0 +1,56 @@
+- hike
+	- infos
+		- Euro-Hike codice: IT-GAWRI-08X
+		- [blog 1](https://www.eurohike.at/en/blog/around-lake-garda-part-2)
+		- vecchio nome di Riva del Garda: Benacus (Benaco)
+	- panoramica di ogni giorno
+		- [interactive map](https://www.eurohike.at/en/destinations/walking-holidays-italy/around-lake-garda-8-days#package=160195406&year=2026)##hikemap	
+	- Sabato 30 maggio: arrivo a Riva del Garda
+	- Domenica 31 maggio: 
+		- escursione al lago Tanno? (5K + 5K)
+			- sentiero##tolaketanno
+			- Lago di Tenno##lakeTenno
+			- Non ci sono sentieri pedonali che conducono al lago
+		- escursione Monte Brione
+			- sentiero##monteBrione
+			- [sentiero2](https://www.outdooractive.com/en/route/hiking-trail/garda-trentino/scenic-hike-along-lago-di-garda-lake-garda-/806991284/#caml=aur,1snc6g,7l6nwg,0,0&dm=1)##montebrione2
+			- [foto dell'escursione](https://www.komoot.com/de-de/smarttour/30455700/gallery)
+	- Lundì 1 giugnio: Riva del Garda --> Limone (autobus + 13K)
+		- mappa##hikeday1
+		- da dove inizieremo##whereWeStart
+		- Sentiero del Sole##sentieroDelSole
+		- Limone
+			- Fishing Museum 
+	- Martedì 2 giugnio: Limone --> Gardone Riviera (barca + 12K)
+		- mappa##hikeday2
+		- vista su Toscolano-Maderno, con il Monte Baldo e Punta San Vigilio sullo sfondo##overtoscolanomaderno
+		- Vittoriale degli Italiani
+			- vista con statue di cani##vittorialeDegliItalianiDogs 
+			- nei gardini##inthegardens
+	- Mercoledì 3 giugno: Gardone Riviera --> Desenzano (autobus + 15K + barca)
+		- mappa##hikeday3
+		- da una recensione: "etwas defizitäre Hotel Bonotto in Deszenzano"
+	- Giovedì 4 giugno: Desenzano del Garda --> Garda (barca + 12K)
+		- mappa##hikeday4
+		- vista dalla Rocca di Garda sulla città di Garda, in direzione nord##viewFromRoccaDiGarda
+	- Venerdì 5 giugno: Garda --> Malcesine (autobus + 11K + funivia)
+		- mappa##hikeday5
+		- percorso realistico da Assenza alla funivia##pathFromAssenzaToCableCar
+		- la vista dalla cima del Monte Baldo##fromAtopMonteBaldo
+		- [funivia per Monte Baldo](https://www.funiviedelbaldo.it/en/funivia-malcesine-monte-baldo)
+		- [Hotel Erika](https://www.erikahotel.net) - consigliato in una recensione
+			- l'hotel gode di una vista sul castello di Malcesine##hotelerika
+		- la vista sopra Malcesine##overlookingMalcesine
+	- Sabato 6 giugno: Malcesine --> Riva del Garda (autobus + 15K)
+		- mappa##hikeday6 
+		- il sentiero escursionistico Busatte-Tempesta è uno dei percorsi più popolari nella zona alta del Lago di Garda. Il sentiero è facile da percorrere e offre splendide viste panoramiche. Tre suggestive scalinate, per un totale di circa 400 gradini, permettono di superare i tratti più ripidi del percorso##panoramicoTempesta
+		- guardando verso Riva del Garda e Nago-Torbole##torivadelgardaAndNagoTorbole
+		- guardando indietro verso sud sulla Busatte Tempesta##panoramicoBusatteTempesta
+		- guardando verso Torbole dove attraverseremo##torbolaLookingOut
+		- uno sguardo al lago da Monte Brione##atoplookingback
+	- Domenica 7 giugno: Riva del Garda - riposo
+	- Lunedì 8 giugno: Riva del Garda --> Rovereto --> Berlin
+- Lake Garda Marathon
+	- [marathon trailer video](https://www.youtube.com/watch?v=B5T6eJrf40A)
+	- in April 
+	- half marathon and marathon##lakegarda42

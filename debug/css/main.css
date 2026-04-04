@@ -41,7 +41,6 @@ fieldset.closed:has(fieldset.closed:hover) {
 legend {
 	padding: 0 0.75rem;
 	font-size: 0.7rem;
-	text-transform: uppercase;
 	color: #888;
 
 
@@ -80,7 +79,7 @@ legend:hover {
 }
 
 .lineNumber {
-	color: #444;
+	color: #777;
 	font-size: 0.65rem;
 	width: 2.2rem;
 	text-align: right;
@@ -118,12 +117,12 @@ legend:hover {
 
 
 .fileInfo {
-	border-color: #444;
+	border-color: #777;
 }
 
 
 .debugWrapper {
-	border-color: #444;
+	border-color: #777;
 }
 
 body>.debugWrapper {
@@ -165,6 +164,19 @@ fieldset.closed>*:not(legend) {
 .value,
 legend .value {
 	color: #ffb74d;
-	/* light orange */
+	font-weight: bold;
+}
+
+.dim {
+	color: #aaa;
+	font-weight: normal;
+}
+
+.newlineToken {
+	color: rgb(126, 126, 235);
+}
+
+.key {
+	color: #fbfcbf; 
 	font-weight: bold;
 }

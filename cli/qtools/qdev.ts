@@ -1,4 +1,6 @@
 import * as qfil from "./qfil";
+import * as qstr from "./qstr";
+
 
 export const clearDebug = (): void => {
 	const html = `
@@ -7,14 +9,18 @@ export const clearDebug = (): void => {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Datapod Debug Output</title>
+    <title>Datapod Parsing Output</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-	<h1>Datapod Debug Output</h1>
+	<h1>Datapod Parsing Output</h1>
 	<!-- marker:bottom-of-body -->
 	<script>
+		document.addEventListener("DOMContentLoaded", () => {
+			document.querySelectorAll("body > fieldset").forEach(fs => fs.classList.remove("closed"));
+		});
+
 		document.addEventListener("click", (e) => {
 			const fieldset = e.target.closest("fieldset");
 			if (!fieldset) return;
@@ -82,8 +88,8 @@ export const getDebugBoxHtml = (title: string, lines: string[], extraClass: stri
 };
 
 export const getDebugBoxSimpleHtml = (title: string, lines: string[], extraClass: string = "", preHtml: string = ""): string => {
-	let html = `<fieldset class="debugBox closed ${extraClass}">`;
-	html += `<legend>${title.toUpperCase()}</legend>`;
+	let html = `<fieldset class="debugWrapper closed ${extraClass}">`;
+	html += `<legend>${title}</legend>`;
 	if (preHtml) {
 		html += preHtml;
 	}
@@ -101,6 +107,17 @@ export const getDebugWrapperHtml = (title: string, content: string): string => {
 	html += `</fieldset>`;
 	return html;
 };
+
+export const getDebugBoxKeyValueHtml = (title: string, fields: Map<string, string>, extraClass: string = ""): string => {
+	const lines: string[] = [];
+	for (const [key, value] of fields.entries()) {
+		let displayValue = qstr.convertFromHtml(value);
+		displayValue = qstr.replaceAll(displayValue, "\\n", `<span class="newlineToken">\\n</span>`);
+		lines.push(`<span class="key">${key}</span>: <span class="dim">[</span><span class="value">${displayValue}</span><span class="dim">]</span>`);
+	}
+	return getDebugBoxHtml(title, lines, extraClass);
+};
+
 
 /**
  * prints a debug line with timestamp

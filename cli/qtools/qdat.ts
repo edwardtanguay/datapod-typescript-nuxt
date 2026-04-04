@@ -1,6 +1,6 @@
 import dayjs from "dayjs";
 
-export function getNiceDate(dateString: string): string {
+export const getNiceDate = (dateString: string): string => {
 	const date = new Date(dateString);
 	const options: Intl.DateTimeFormatOptions = {
 		year: "numeric",

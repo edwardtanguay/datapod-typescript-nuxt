@@ -3,12 +3,14 @@ import * as qstr from "../qtools/qstr";
 import * as qdev from "../qtools/qdev";
 import { DpodLineBlock } from "./dpod-line-block";
 import { DpodMarkedLineBlock } from "./dpod-marked-line-block";
+import { DpodKeyStringValueBlock } from "./dpod-key-string-value-block";
 
 export class DpodFile {
-	private pathAndFileName: string;
-	private lines: string[] = [];
+	public pathAndFileName: string;
+	public lines: string[] = [];
 	public dpodLineBlocks: DpodLineBlock[] = [];
 	public dpodMarkedLineBlocks: DpodMarkedLineBlock[] = [];
+	public dpodKeyStringValueBlocks: DpodKeyStringValueBlock[] = [];
 	public idCode: string = "";
 
 	constructor(pathAndFileName: string) {
@@ -17,6 +19,7 @@ export class DpodFile {
 		this.lines = qfil.getLinesFromFile(this.pathAndFileName);
 		this.createDpodLineBlocks();
 		this.createDpodMarkedLineBlocks();
+		this.createDpodKeyStringValueBlocks();
 	}
 
 	private createDpodLineBlocks() {
@@ -78,12 +81,17 @@ export class DpodFile {
 		});
 	}
 
+	private createDpodKeyStringValueBlocks() {
+		this.dpodMarkedLineBlocks.forEach((dpodMarkedLineBlock) => {
+			if (dpodMarkedLineBlock.marker === "==") {
+				const dpodKeyStringValueBlock = new DpodKeyStringValueBlock(dpodMarkedLineBlock);
+				this.dpodKeyStringValueBlocks.push(dpodKeyStringValueBlock);
+			}
+		});
+	}
+
 	public debugHtml(): string {
 		let html = `<div class="dpodFile">`;
-		html += qdev.getDebugBoxSimpleHtml("FILE INFO", [
-			`Path: ${this.pathAndFileName}`,
-			`Lines: ${this.lines.length}`
-		], "fileInfo");
 
 		let dpodLineBlocksHtml = "";
 		this.dpodLineBlocks.forEach((dpodLineBlock) => {
@@ -95,8 +103,14 @@ export class DpodFile {
 			dpodMarkedLineBlocksHtml += dpodMarkedLineBlock.debugHtml();
 		});
 
-		html += qdev.getDebugWrapperHtml(`Dpod Line Blocks (${this.dpodLineBlocks.length})`, dpodLineBlocksHtml);
-		html += qdev.getDebugWrapperHtml(`Dpod Marked Line Blocks (${this.dpodMarkedLineBlocks.length})`, dpodMarkedLineBlocksHtml);
+		let dpodKeyStringValueBlocksHtml = "";
+		this.dpodKeyStringValueBlocks.forEach((dpodKeyStringValueBlock) => {
+			dpodKeyStringValueBlocksHtml += dpodKeyStringValueBlock.debugHtml();
+		});
+
+		html += qdev.getDebugWrapperHtml(`Line Blocks (${this.dpodLineBlocks.length})`, dpodLineBlocksHtml);
+		html += qdev.getDebugWrapperHtml(`Marked Line Blocks (${this.dpodMarkedLineBlocks.length})`, dpodMarkedLineBlocksHtml);
+		html += qdev.getDebugWrapperHtml(`Key/StringValue Fields (${this.dpodKeyStringValueBlocks.length})`, dpodKeyStringValueBlocksHtml);
 		html += `</div>`;
 		return html;
 	}

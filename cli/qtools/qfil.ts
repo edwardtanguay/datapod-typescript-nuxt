@@ -230,3 +230,16 @@ export const writeToFile = (pathAndFileName: string, content: string): void => {
 	}
 	fs.writeFileSync(pathAndFileName, content, "utf-8");
 };
+
+export const saveLinesToFile = (pathAndFileName: string, lines: string[]): void => {
+	pathAndFileName = resolvePath(pathAndFileName);
+	try {
+		const fileContent = lines.join("\n");
+		fs.writeFileSync(pathAndFileName, fileContent, "utf-8");
+	} catch (error: any) {
+		qcli.message(
+			`Error saving lines to ${pathAndFileName}: ${error.message}`,
+			"error"
+		);
+	}
+};

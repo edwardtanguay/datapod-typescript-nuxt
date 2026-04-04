@@ -1,0 +1,5 @@
+public dislayDebug(): string {
+	const @@fileName = "fileName";
+	console.log(@@fileName);
+	return @@fileName;
+}

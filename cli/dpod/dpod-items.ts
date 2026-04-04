@@ -1,12 +1,9 @@
-import * as qdev from "../qtools/qdev";
 
 import { DpodFile } from "./dpod-file";
-import { DpodSchema } from "./dpod-schema";
 
 export class DpodItems {
 
 	public dpodFile: DpodFile;
-	public dpodSchema: DpodSchema = new DpodSchema();
 	public idCode: string = "";
 
 	constructor(dpodFile: DpodFile) {
@@ -14,10 +11,9 @@ export class DpodItems {
 		this.idCode = this.dpodFile.idCode;
 	}
 
-	public debugHtml() {
+	public debugHtml(): string {
 		const label = this.dpodFile.dpodMarkedLineBlocks[0]?.label || "";
-		const title = `DpodItems Object${label ? ': <span class="value">' + label + "</span>" : ""}`;
-		let html = qdev.getDebugWrapperHtml(title, this.dpodFile.debugHtml());
-		qdev.addToDebugHtml(html);
+		const html = this.dpodFile.debugHtml();
+		return html;
 	}
 }

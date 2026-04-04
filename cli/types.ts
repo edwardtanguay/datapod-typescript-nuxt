@@ -4,3 +4,5 @@ export type Flashcard = {
 	front: string;
 	back: string;
 };
+
+export type DpodSchemaType = "dpod_items" | "document" | "items";
