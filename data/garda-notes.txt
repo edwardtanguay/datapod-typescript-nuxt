@@ -24,6 +24,7 @@
 	- Martedì 2 giugnio: Limone --> Gardone Riviera (barca + 12K)
 		- mappa##hikeday2
 		- vista su Toscolano-Maderno, con il Monte Baldo e Punta San Vigilio sullo sfondo##overtoscolanomaderno
+		- Terrazza del Brivido##terrazzaDelBrivido
 		- Vittoriale degli Italiani
 			- vista con statue di cani##vittorialeDegliItalianiDogs 
 			- nei gardini##inthegardens
