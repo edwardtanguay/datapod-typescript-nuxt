@@ -9,6 +9,7 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "testdf": "cd cli/commands && tsx cmd-test-dynamic-file.ts",
+    "pgt": "cd cli/commands && tsx cmd-paragraphize-text.ts",
     "postinstall": "nuxt prepare",
     "gh": "git log --pretty=format:\"%ad | %h | %s\" --date=format:\"%Y-%m-%d %H:%M:%S\"",
     "backup": "bash -c 'git archive --format=zip HEAD -o \"../BACKUP/datapod-typescript-nuxt-$(date +%F-%H-%M-%S).zip\"'"
