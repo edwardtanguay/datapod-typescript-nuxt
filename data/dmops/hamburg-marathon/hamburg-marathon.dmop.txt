@@ -1,0 +1,13 @@
+- INFO
+	- title::Hamburg Marathon
+	- export::C:\edward\webs\hm
+- FRI 24
+	- 10:38 Berlin Hbf
+	- 13:12 Hamburg Hbf
+	- pick up Hannah
+- SAT 25
+	- nnn pick up numbers
+	- 16:30 Marathon Mass
+		- Hauptkirche St. Petri
+		- Bei der Petrikirche 2
+		- "In diesem besonderen Gottesdienst, der ganz im Zeichen des Laufens steht, könnt ihr euch gemeinsam auf den Marathon am Sonntag einstimmen."

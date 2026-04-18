@@ -31,3 +31,6 @@ FILE_COUNT_TYPE=multiple
 Url
 Title
 Category;idcode
+
+**DMOPS**
+IMPORT=C:\WORK\import

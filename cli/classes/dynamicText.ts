@@ -5,10 +5,10 @@ export class DynamicText {
 	private textTemplatePathAndFileName: string = "";
 	private variables: Map<string, string> = new Map();
 
-	constructor(textTemplateIdCode: string, variables: Map<string, string> = new Map()) {
+	constructor(textTemplateIdCode: string, variables: Map<string, string> = new Map(), fullPath: string = "") {
 		this.textTemplateIdCode = textTemplateIdCode;
 		this.variables = variables;
-		this.textTemplatePathAndFileName = `~~/cli/text-templates/text-template-${textTemplateIdCode}.txt`;
+		this.textTemplatePathAndFileName = fullPath ? fullPath : `~~/cli/text-templates/text-template-${textTemplateIdCode}.txt`;
 	}
 
 	public getText(): string {

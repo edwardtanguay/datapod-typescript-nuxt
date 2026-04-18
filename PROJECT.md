@@ -387,3 +387,8 @@ FILE_COUNT_TYPE=multiple
 ## Easy and free AI use
 	- since Datapod is based on exporting and importing text files, Datapod creates prompts that you can copy and paste into LLMs, then copy and paste the responses back into Datapod
 		- this makes it free and easy to use AI with Datapod
+
+### DMOPS
+	- Dpod Multimedia Outline Pages
+	- DMOPS are a way to create multimedia content using Datapod
+	- they are stored in `~~/data/dmops`

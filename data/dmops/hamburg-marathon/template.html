@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburg Marathon</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header>
+        <div class="hero">
+            <h1>Hamburg Marathon Weekend</h1>
+            <p class="subtitle">April 24th, 25th & 26th</p>
+        </div>
+    </header>
+
+    <main>
+        <div id="softgate-area" class="softgate-card fade-in">
+            <h2>Access Code Required</h2>
+            <div id="pin-display">
+                <div class="dot-container"></div>
+            </div>
+            <div class="keypad">
+                <button class="key" data-val="1">1</button>
+                <button class="key" data-val="2">2</button>
+                <button class="key" data-val="3">3</button>
+                <button class="key" data-val="4">4</button>
+                <button class="key" data-val="5">5</button>
+                <button class="key" data-val="6">6</button>
+                <button class="key" data-val="7">7</button>
+                <button class="key" data-val="8">8</button>
+                <button class="key" data-val="9">9</button>
+                <button class="key clear" id="btn-clear">C</button>
+                <button class="key" data-val="0">0</button>
+                <button class="key delet" id="btn-del">←</button>
+            </div>
+        </div>
+        <div id="content-area" class="container fade-in" style="display: none;">
+            @@content
+        </div>
+    </main>
+
+    <footer>
+        <p>Created with <a href="https://edwards-projects.vercel.app/project/datapod-typescript-nuxt" target="_blank">Datapod</a></p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,5 +1,6 @@
 import * as fs from "fs";
 import * as path from "path";
+import * as yaml from "js-yaml";
 import * as qcli from "./qcli";
 
 /**
@@ -40,6 +41,25 @@ export const getStringBlockFromFile = (filePath: string): string => {
 		console.error(`Error reading file at ${filePath}:`, error);
 		return "";
 	}
+};
+
+export const getVariablesFromYamlPathAndFileName = (
+	pathAndFileName: string
+): Map<string, string> => {
+	pathAndFileName = resolvePath(pathAndFileName);
+	const variables = new Map<string, string>();
+	try {
+		const fileContent = fs.readFileSync(pathAndFileName, "utf-8");
+		const data = yaml.load(fileContent) as Record<string, any>;
+		if (data && typeof data === "object" && !Array.isArray(data)) {
+			for (const [key, value] of Object.entries(data)) {
+				variables.set(key, String(value));
+			}
+		}
+	} catch (error) {
+		console.error(`Error reading YAML file at ${pathAndFileName}:`, error);
+	}
+	return variables;
 };
 
 export default getLinesFromFile;
@@ -260,3 +280,30 @@ export const createDirectory = (directoryPath: string): void => {
 	}
 };
 
+export const copyFile = (source: string, destination: string): void => {
+	source = resolvePath(source);
+	destination = resolvePath(destination);
+	try {
+		fs.copyFileSync(source, destination);
+	} catch (error: any) {
+		qcli.message(
+			`Error copying file from ${source} to ${destination}: ${error.message}`,
+			"error"
+		);
+	}
+};
+
+export const copyDirectory = (source: string, destination: string): void => {
+	source = resolvePath(source);
+	destination = resolvePath(destination);
+	try {
+		if (fs.existsSync(source)) {
+			fs.cpSync(source, destination, { recursive: true });
+		}
+	} catch (error: any) {
+		qcli.message(
+			`Error copying directory from ${source} to ${destination}: ${error.message}`,
+			"error"
+		);
+	}
+};
