@@ -13,7 +13,7 @@
 		- [Website: Velora Hotel](http://www.hotelveneziariva.com/de)##hotelvelora
 		- Via Franz Kafka 7-9{location: https://maps.app.goo.gl/ajEp85tkFxBJiPXx6}##locationVelora
 		- Lage am See##orientationRiva
-- **So 31.05. Riva del Garda**
+- **So 31.05. Riva del Garda (2. Tag)**
 	- {hotel: Velora Hotel (2. Tag)}
 		- E-Mail: info@hotelveneziariva.com
 		- Telefon: +39 0464 552216
