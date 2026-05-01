@@ -28,7 +28,12 @@
 		- Via Tamas 20{location: https://maps.app.goo.gl/RCCfCHYPwtXttFSb9}##locationLimone
 		- Lage am See##orientationLimone
 - **Di 02.06.**
-	- nnn
+	- {hotel: Hotel Savoy Palace}
+		- Telefon: +39 0365 290588
+		- E-Mail: info@savoypalace.it
+		- [Website: Hotel Savoy Palace](https://www.savoypalace.it/)##hotelgardone
+		- Via Zanardelli 2/4{location: https://maps.app.goo.gl/Tv2qobUbDUohZvC47}##locationgardone
+		- Lage am See##orientationGardone
 - **Mi 03.06.**
 	- nnn
 - **Do 04.06.**
