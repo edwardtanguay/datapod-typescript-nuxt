@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
             setTimeout(() => fadeIn(contentArea), 10);
         }
         if (saveToStorage) {
-            localStorage.setItem('hm_logged_in', 'true');
+            localStorage.setItem('gs_logged_in', 'true');
         }
     };
 
@@ -47,11 +47,11 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         currentCode = "";
         updateDots();
-        localStorage.removeItem('hm_logged_in');
+        localStorage.removeItem('gs_logged_in');
     };
 
     // Check initial state
-    if (localStorage.getItem('hm_logged_in') === 'true') {
+    if (localStorage.getItem('gs_logged_in') === 'true') {
         unlockSite(false);
     } else {
         if (softgateArea) {
@@ -96,10 +96,10 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Font Size Controls
-    let currentScale = parseInt(localStorage.getItem('hm_font_scale')) || 100;
+    let currentScale = parseInt(localStorage.getItem('gs_font_scale')) || 100;
     const updateFontScale = (saveToStorage = true) => {
         document.documentElement.style.setProperty('--content-scale', `${currentScale}%`);
-        if (saveToStorage) localStorage.setItem('hm_font_scale', currentScale);
+        if (saveToStorage) localStorage.setItem('gs_font_scale', currentScale);
     };
     updateFontScale(false); // Apply initial scale
 
@@ -132,11 +132,11 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         if (sunIcon) sunIcon.style.display = isDark ? 'none' : 'block';
         if (moonIcon) moonIcon.style.display = isDark ? 'block' : 'none';
-        if (saveToStorage) localStorage.setItem('hm_theme', isDark ? 'dark' : 'light');
+        if (saveToStorage) localStorage.setItem('gs_theme', isDark ? 'dark' : 'light');
     };
 
     // Load initial theme
-    const savedTheme = localStorage.getItem('hm_theme') || 'dark';
+    const savedTheme = localStorage.getItem('gs_theme') || 'dark';
     if (savedTheme === 'dark') {
         applyTheme(true, false);
     } else {
