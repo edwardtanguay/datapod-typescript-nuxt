@@ -77,7 +77,7 @@ export class DmopFileParser {
 			qfil.writeToFile(pathAndFileName, this.htmlContent);
 
 			// copy directories
-			const subDirs = ["css", "js", "images"];
+			const subDirs = ["css", "js", "images", "media"];
 			for (const subDir of subDirs) {
 				const source = `${this.sourceDirectoryPath}/${subDir}`;
 				const destination = `${exportPath}/${subDir}`;
