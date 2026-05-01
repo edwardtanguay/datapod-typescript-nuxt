@@ -26,7 +26,7 @@
 		- E-Mail: cristina@parchotels.it
 		- [Website: Hotel Cristina Limone](https://www.hotelcristinalimone.it)##hotellimone
 		- Via Tamas 20{location: https://maps.app.goo.gl/RCCfCHYPwtXttFSb9}##locationLimone
-		- Limone sul Garda##orientationLimone
+		- Lage am See##orientationLimone
 - **Di 02.06.**
 	- nnn
 - **Mi 03.06.**
