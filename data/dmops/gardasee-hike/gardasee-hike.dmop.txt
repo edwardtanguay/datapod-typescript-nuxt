@@ -14,9 +14,19 @@
 		- Via Franz Kafka 7-9{location: https://maps.app.goo.gl/ajEp85tkFxBJiPXx6}##locationVelora
 		- Lage am See##orientationRiva
 - **So 31.05.**
-	- nnn
+	- {hotel: Velora Hotel}
+		- E-Mail: info@hotelveneziariva.com
+		- Telefon: +39 0464 552216
+		- [Website: Velora Hotel](http://www.hotelveneziariva.com/de)##hotelvelora
+		- Via Franz Kafka 7-9{location: https://maps.app.goo.gl/ajEp85tkFxBJiPXx6}##locationVelora
+		- Lage am See##orientationRiva
 - **Mo 01.06.**
-	- nnn
+	- {hotel: Hotel Cristina Limone}
+		- Telefon: +39 0365 958111
+		- E-Mail: cristina@parchotels.it
+		- [Website: Hotel Cristina Limone](https://www.hotelcristinalimone.it)##hotellimone
+		- Via Tamas 20{location: https://maps.app.goo.gl/RCCfCHYPwtXttFSb9}##locationLimone
+		- Limone sul Garda##orientationLimone
 - **Di 02.06.**
 	- nnn
 - **Mi 03.06.**
