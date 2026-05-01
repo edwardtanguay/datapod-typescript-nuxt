@@ -34,8 +34,13 @@
 		- [Website: Hotel Savoy Palace](https://www.savoypalace.it/)##hotelgardone
 		- Via Zanardelli 2/4{location: https://maps.app.goo.gl/Tv2qobUbDUohZvC47}##locationgardone
 		- Lage am See##orientationGardone
-- **Mi 03.06.**
-	- nnn
+- **Mi 03.06. Desenzano**
+	- {hotel: Hotel Lido International}
+		- Telefon: +39 030 914 1027
+		- E-Mail: info@lidointernational.it
+		- [Website: Hotel Lido International](http://www.lidointernational.it)##hoteldesenzano
+		- Viale Tommaso dal Molin 63{location: https://maps.app.goo.gl/HqRYPb9Hh9ykxCPM8}##locationdesenzano
+		- Lage am See##orientationDesenzano
 - **Do 04.06.**
 	- nnn
 - **Fr 05.06.**
