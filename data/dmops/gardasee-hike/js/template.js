@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Keypad and Content Area Logic
     let currentCode = "";
     const dotContainer = document.querySelector('.dot-container');
-    const validHash = "534343"; 
+    const validHash = "131343"; 
     const softgateArea = document.getElementById('softgate-area');
     const contentArea = document.getElementById('content-area');
 
