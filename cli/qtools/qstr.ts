@@ -540,7 +540,7 @@ export const parseDpodMarkdown = (text: string): string => {
 	r = qstr.parseTimes(r);
 	r = r.replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>");
 	r = r.replace(/\*(.*?)\*/g, "<em>$1</em>");
-	r = r.replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2" target="_blank">$1</a>');
+	r = r.replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2" target="_blank" class="dmop-link-pill"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" style="width:12px; height:12px; display:inline-block; vertical-align:middle; margin-right:2px; filter: drop-shadow(0 0 2px rgba(255, 204, 0, 0.5));"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></span>$1</a>');
 	r = r.replace(/(?<!href=")(^|\s)(https?:\/\/([^\/\s]+)[^\s]*)/g, (match, boundary, url, host) => {
 		return `${boundary}<a href="${url}" target="_blank">${host}</a>`;
 	});

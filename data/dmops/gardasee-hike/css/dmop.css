@@ -133,11 +133,50 @@
     font-size: 1em;
 }
 
+.dmop-link-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    background: #f0f9ff;
+    border: 1px solid #bae6fd;
+    color: #0369a1 !important;
+    padding: 0px 8px 0px 4px;
+    border-radius: 6px;
+    font-size: 0.85em;
+    font-weight: 600;
+    vertical-align: middle;
+    margin: 0 2px;
+    position: relative;
+    top: -1px;
+    text-decoration: none !important;
+    transition: all 0.2s ease;
+}
+
+.dmop-link-pill:hover {
+    background: #e0f2fe;
+    border-color: #7dd3fc;
+    color: #075985 !important;
+    transform: translateY(-1px);
+}
+
+.dmop-link-pill .icon {
+    color: #ffcc00;
+    display: flex;
+    align-items: center;
+    filter: drop-shadow(0 0 1px rgba(255, 204, 0, 0.4));
+}
+
 /* Dark Mode Color Overrides for Pills */
 .container.dark-mode .dmop-time-pill {
     background: rgba(59, 130, 246, 0.15); /* blue-500 with opacity */
     border-color: rgba(59, 130, 246, 0.3);
     color: #93c5fd !important;
+}
+
+.container.dark-mode .dmop-link-pill {
+    background: rgba(14, 165, 233, 0.15);
+    border-color: rgba(14, 165, 233, 0.3);
+    color: #7dd3fc !important;
 }
 
 /* Dark Mode Override */
