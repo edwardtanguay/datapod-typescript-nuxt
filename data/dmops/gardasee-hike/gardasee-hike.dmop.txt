@@ -9,10 +9,10 @@
 	- 16:17 Rovereto
 - **So 31.05.**
 	- {hotel: Velora Hotel}
-		- Via Franz Kafka 7-9, 38066 Riva del Garda {location: https://maps.app.goo.gl/ajEp85tkFxBJiPXx6}
 		- E-Mail: info@hotelveneziariva.com
 		- Telefon: +39 0464 552216
 		- [Website: Velora Hotel](http://www.hotelveneziariva.com/de)##hotelvelora
+		- Via Franz Kafka 7-9, 38066 Riva del Garda {location: https://maps.app.goo.gl/ajEp85tkFxBJiPXx6}##locationVelora
 - **Mo 01.06.**
 	- nnn
 - **Di 02.06.**
