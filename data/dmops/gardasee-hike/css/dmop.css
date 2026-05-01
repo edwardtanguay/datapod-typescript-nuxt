@@ -4,7 +4,8 @@
 
 .dmop-line {
     display: flex;
-    align-items: flex-start; /* Align to the top for multi-line support */
+    align-items: flex-start;
+    /* Align to the top for multi-line support */
     gap: 9px;
     margin-bottom: 8px;
     font-size: 1em;
@@ -17,13 +18,14 @@
     height: 10px;
     border-radius: 50%;
     flex-shrink: 0;
-    margin-top: calc((1.4 * 1em - 10px) / 2); /* Exact center for 1.4 line-height */
+    margin-top: calc((1.4 * 1em - 10px) / 2);
+    /* Exact center for 1.4 line-height */
     /* Lighter slate marble effect */
     background: radial-gradient(circle at 35% 35%, #cbd5e1, #64748b);
-    box-shadow: 
-        inset -2px -2px 4px rgba(0,0,0,0.2),
-        inset 1px 1px 2px rgba(255,255,255,0.4),
-        0 2px 3px rgba(0,0,0,0.1);
+    box-shadow:
+        inset -2px -2px 4px rgba(0, 0, 0, 0.2),
+        inset 1px 1px 2px rgba(255, 255, 255, 0.4),
+        0 2px 3px rgba(0, 0, 0, 0.1);
 }
 
 .dmop-text {
@@ -51,34 +53,94 @@
     margin-top: 45px;
 }
 
-.dmop-image-container + .dmop-line.level-0 {
-    margin-top: 60px; /* Compensate for image container negative margin-bottom */
+.dmop-image-container+.dmop-line.level-0 {
+    margin-top: 60px;
+    /* Compensate for image container negative margin-bottom */
 }
 
 .dmop-line:not(.level-0) {
     margin-bottom: 5px;
 }
 
-.level-1 { margin-left: var(--indent); }
-.level-1 .dmop-icon { background: radial-gradient(circle at 35% 35%, #f57c00, #ff4500); }
-.level-2 { margin-left: calc(var(--indent) * 2); }
-.level-2 .dmop-icon { background: radial-gradient(circle at 35% 35%, #daa520, #b8860b); }
-.level-3 { margin-left: calc(var(--indent) * 3); }
-.level-3 .dmop-icon { background: radial-gradient(circle at 35% 35%, #94a3b8, #475569); }
-.level-4 { margin-left: calc(var(--indent) * 4); }
-.level-4 .dmop-icon { background: radial-gradient(circle at 35% 35%, #475569, #0f172a); }
-.level-5 { margin-left: calc(var(--indent) * 5); }
-.level-5 .dmop-icon { background: radial-gradient(circle at 35% 35%, #475569, #0f172a); }
-.level-6 { margin-left: calc(var(--indent) * 6); }
-.level-6 .dmop-icon { background: radial-gradient(circle at 35% 35%, #475569, #0f172a); }
-.level-7 { margin-left: calc(var(--indent) * 7); }
-.level-7 .dmop-icon { background: radial-gradient(circle at 35% 35%, #475569, #0f172a); }
-.level-8 { margin-left: calc(var(--indent) * 8); }
-.level-8 .dmop-icon { background: radial-gradient(circle at 35% 35%, #475569, #0f172a); }
-.level-9 { margin-left: calc(var(--indent) * 9); }
-.level-9 .dmop-icon { background: radial-gradient(circle at 35% 35%, #475569, #0f172a); }
-.level-10 { margin-left: calc(var(--indent) * 10); }
-.level-10 .dmop-icon { background: radial-gradient(circle at 35% 35%, #475569, #0f172a); }
+.level-1 {
+    margin-left: var(--indent);
+}
+
+.level-1 .dmop-icon {
+    background: radial-gradient(circle at 35% 35%, #f57c00, #ff4500);
+}
+
+.level-2 {
+    margin-left: calc(var(--indent) * 2);
+}
+
+.level-2 .dmop-icon {
+    background: radial-gradient(circle at 35% 35%, #daa520, #b8860b);
+}
+
+.level-3 {
+    margin-left: calc(var(--indent) * 3);
+}
+
+.level-3 .dmop-icon {
+    background: radial-gradient(circle at 35% 35%, #94a3b8, #475569);
+}
+
+.level-4 {
+    margin-left: calc(var(--indent) * 4);
+}
+
+.level-4 .dmop-icon {
+    background: radial-gradient(circle at 35% 35%, #475569, #0f172a);
+}
+
+.level-5 {
+    margin-left: calc(var(--indent) * 5);
+}
+
+.level-5 .dmop-icon {
+    background: radial-gradient(circle at 35% 35%, #475569, #0f172a);
+}
+
+.level-6 {
+    margin-left: calc(var(--indent) * 6);
+}
+
+.level-6 .dmop-icon {
+    background: radial-gradient(circle at 35% 35%, #475569, #0f172a);
+}
+
+.level-7 {
+    margin-left: calc(var(--indent) * 7);
+}
+
+.level-7 .dmop-icon {
+    background: radial-gradient(circle at 35% 35%, #475569, #0f172a);
+}
+
+.level-8 {
+    margin-left: calc(var(--indent) * 8);
+}
+
+.level-8 .dmop-icon {
+    background: radial-gradient(circle at 35% 35%, #475569, #0f172a);
+}
+
+.level-9 {
+    margin-left: calc(var(--indent) * 9);
+}
+
+.level-9 .dmop-icon {
+    background: radial-gradient(circle at 35% 35%, #475569, #0f172a);
+}
+
+.level-10 {
+    margin-left: calc(var(--indent) * 10);
+}
+
+.level-10 .dmop-icon {
+    background: radial-gradient(circle at 35% 35%, #475569, #0f172a);
+}
 
 .dpod-location-btn {
     display: inline-flex;
@@ -97,7 +159,8 @@
     vertical-align: middle;
     text-transform: lowercase;
     position: relative;
-    top: -1px; /* nudge for optical centering */
+    top: -1px;
+    /* nudge for optical centering */
 }
 
 .dpod-location-btn:hover {
@@ -105,7 +168,7 @@
     border-color: #94a3b8;
     color: #1e293b !important;
     transform: translateY(-1px);
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .dpod-location-btn .icon {
@@ -172,7 +235,8 @@
 
 /* Dark Mode Color Overrides for Pills */
 .container.dark-mode .dmop-time-pill {
-    background: rgba(59, 130, 246, 0.15); /* blue-500 with opacity */
+    background: rgba(59, 130, 246, 0.15);
+    /* blue-500 with opacity */
     border-color: rgba(59, 130, 246, 0.3);
     color: #93c5fd !important;
 }
@@ -196,7 +260,8 @@
 }
 
 .dmop-image-container {
-    padding-left: 19px; /* icon width + gap */
+    padding-left: 19px;
+    /* icon width + gap */
     margin-bottom: -15px;
     margin-top: -18px;
 }
@@ -205,7 +270,7 @@
     max-width: 100%;
     height: auto;
     border-radius: 12px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
     display: block;
 }
 
@@ -227,13 +292,15 @@
 .dmop-hotel-label {
     display: flex;
     align-items: center;
-    background: rgba(234, 88, 12, 0.15); /* orange-600 */
+    background: rgba(234, 88, 12, 0.15);
+    /* orange-600 */
     border: 2px solid rgba(234, 88, 12, 0.5);
     padding: 10px 16px;
     border-radius: 12px;
-    color: #7c2d12; /* orange-900 */
+    color: #7c2d12;
+    /* orange-900 */
     font-weight: 900;
-    font-size: 1.15em;
+    font-size: 1em;
     margin: 6px 0 10px 0;
     width: 100%;
     box-sizing: border-box;
@@ -241,17 +308,20 @@
 }
 
 .dmop-hotel-label .icon {
-    color: #ea580c; /* orange-600 */
+    color: #ea580c;
+    /* orange-600 */
     filter: drop-shadow(0 0 3px rgba(234, 88, 12, 0.4));
     display: flex;
     align-items: center;
-    margin-right: 12px;
+    margin-right: 6px;
 }
 
 .container.dark-mode .dmop-hotel-label {
-    background: rgba(251, 146, 60, 0.15); /* orange-400 */
+    background: rgba(251, 146, 60, 0.15);
+    /* orange-400 */
     border-color: rgba(251, 146, 60, 0.6);
-    color: #fff7ed; /* orange-50 */
+    color: #fff7ed;
+    /* orange-50 */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
@@ -263,5 +333,3 @@
 .dmop-line:has(.dmop-hotel-label) .dmop-icon {
     margin-top: 0;
 }
-
-
