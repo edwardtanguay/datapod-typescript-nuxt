@@ -168,7 +168,8 @@ footer a:hover {
     }
 
     .container.dark-mode {
-        box-shadow: 0 0 25px rgba(255, 255, 255, 0.253);
+        box-shadow: none;
+        border: 1px solid rgba(255, 255, 255, 0.3);
     }
 
     h2 {
