@@ -333,3 +333,12 @@
 .dmop-line:has(.dmop-hotel-label) .dmop-icon {
     margin-top: 0;
 }
+
+.dmop-header-info {
+    color: #475569; /* slate-600 for light mode */
+    font-weight: 500;
+}
+
+.container.dark-mode .dmop-header-info {
+    color: #facc15; /* yellow-400 for dark mode */
+}

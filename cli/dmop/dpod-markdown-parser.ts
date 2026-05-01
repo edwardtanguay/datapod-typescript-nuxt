@@ -15,6 +15,7 @@ export class DpodMarkdownParser {
 
 	public parse(): string {
 		if (!this.isParsed) {
+			this.parseHeaderHighlight();
 			this.parseDpodLocation();
 			this.parseDpodEmojis();
 			this.parseTimes();
@@ -28,6 +29,10 @@ export class DpodMarkdownParser {
 			this.isParsed = true;
 		}
 		return this.dpodLine.displayAsHtmlWithText(this.text);
+	}
+
+	private parseHeaderHighlight() {
+		this.text = this.text.replace(/^(\**)([a-z]{2,3}\s\d{2}\.\d{2}\.)\s+(.+?)(\**)$/i, '$1$2 <span class="dmop-header-info">$3</span>$4');
 	}
 
 	private parseEmail() {
