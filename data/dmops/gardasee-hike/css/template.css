@@ -23,7 +23,7 @@ body {
 header {
     min-height: 90vh;
     padding: 100px 20px;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/content/hero.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../images/content/hero.jpg') no-repeat center center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
