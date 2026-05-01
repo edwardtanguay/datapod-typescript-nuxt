@@ -522,11 +522,11 @@ export const wrapAsJsonContent = (innerJsonContent: string) => {
 
 export const parseDpodEmojis = (text: string): string => {
 	const emojiMap: { [key: string]: string } = {
-		"think": `<img src="images/content/think.png" class="dmop-emoji" alt="thinking">`,
-		"smile": `<img src="images/content/smile.png" class="dmop-emoji" alt="smile">`,
-		"green_check": `<img src="images/content/green_check.png" class="dmop-emoji" alt="check">`,
-		"celebrate": `<img src="images/content/celebrate.png" class="dmop-emoji" alt="celebrate">`,
-		"balloons": `<img src="images/content/balloons.png" class="dmop-emoji" alt="balloons">`
+		"think": `<img src="images/site/think.png" class="dmop-emoji" alt="thinking">`,
+		"smile": `<img src="images/site/smile.png" class="dmop-emoji" alt="smile">`,
+		"green_check": `<img src="images/site/green_check.png" class="dmop-emoji" alt="check">`,
+		"celebrate": `<img src="images/site/celebrate.png" class="dmop-emoji" alt="celebrate">`,
+		"balloons": `<img src="images/site/balloons.png" class="dmop-emoji" alt="balloons">`
 	};
 	return text.replace(/::(.*?)::/g, (match, p1) => {
 		return emojiMap[p1] || match;
