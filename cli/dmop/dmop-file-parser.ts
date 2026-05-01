@@ -3,6 +3,7 @@ import * as qfil from "../qtools/qfil";
 import * as qstr from "../qtools/qstr";
 import { DynamicText } from "../classes/dynamicText";
 import { DmopLine } from "./dmop-line";
+import { DpodMarkdownParser } from "./dpod-markdown-parser";
 
 export class DmopFileParser {
 	private htmlContent: string = "";
@@ -62,8 +63,9 @@ export class DmopFileParser {
 
 	private getHtmlContent(parseVars: Map<string, string>): string {
 		let dmopHtml = "";
-		for (const dpodLine of this.dpodLines) {
-			dmopHtml += dpodLine.displayAsHtml() + "\n";
+		for (const line of this.lines) {
+			const parser = new DpodMarkdownParser(line, parseVars, this.importPathAndFileName, this.sourceDirectoryPath);
+			dmopHtml += parser.parse() + "\n";
 		}
 		parseVars.set("content", dmopHtml);
 		const dt = new DynamicText("template", parseVars, this.templatePathAndFileName);

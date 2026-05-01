@@ -520,42 +520,4 @@ export const wrapAsJsonContent = (innerJsonContent: string) => {
 	return qstr.convertLinesToStringBlock(newLines);
 };
 
-export const parseDpodEmojis = (text: string): string => {
-	const emojiMap: { [key: string]: string } = {
-		"think": `<img src="images/site/think.png" class="dmop-emoji" alt="thinking">`,
-		"smile": `<img src="images/site/smile.png" class="dmop-emoji" alt="smile">`,
-		"green_check": `<img src="images/site/green_check.png" class="dmop-emoji" alt="check">`,
-		"celebrate": `<img src="images/site/celebrate.png" class="dmop-emoji" alt="celebrate">`,
-		"balloons": `<img src="images/site/balloons.png" class="dmop-emoji" alt="balloons">`
-	};
-	return text.replace(/::(.*?)::/g, (match, p1) => {
-		return emojiMap[p1] || match;
-	});
-};
 
-export const parseDpodMarkdown = (text: string): string => {
-	let r = text;
-	r = qstr.parseDpodLocation(r);
-	r = qstr.parseDpodEmojis(r);
-	r = qstr.parseTimes(r);
-	r = r.replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>");
-	r = r.replace(/\*(.*?)\*/g, "<em>$1</em>");
-	r = r.replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2" target="_blank" class="dmop-link-pill"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" style="width:12px; height:12px; display:inline-block; vertical-align:middle; margin-right:2px; filter: drop-shadow(0 0 2px rgba(255, 204, 0, 0.5));"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></span>$1</a>');
-	r = r.replace(/(?<!href=")(^|\s)(https?:\/\/([^\/\s]+)[^\s]*)/g, (match, boundary, url, host) => {
-		return `${boundary}<a href="${url}" target="_blank">${host}</a>`;
-	});
-	return r;
-};
-
-export const parseTimes = (text: string): string => {
-	let r = text;
-	// match 10:38, 9:21, 02:33 etc.
-	r = r.replace(/\b(\d{1,2}:\d{2})\b/g, '<span class="dmop-time-pill"><span class="icon">🕒</span> $1</span>');
-	return r;
-};
-
-export const parseDpodLocation = (text: string): string => {
-	let r = text;
-	r = r.replace(/\{location:(.*?)\}/g, '<a href="$1" target="_blank" class="dpod-location-btn"><span class="icon">🌍</span> <span class="text">location</span></a>');
-	return r;
-};

@@ -21,7 +21,6 @@ export class DmopLine {
 		this.calculateLevel();
 		this.parseImage();
 		this.extractMarker();
-		this.parse();
 	}
 
 	private parseImage() {
@@ -61,14 +60,6 @@ export class DmopLine {
 		}
 	}
 
-	private parse() {
-		this.parseDpodMarkdown();
-	}
-
-	private parseDpodMarkdown() {
-		this.textContent = qstr.parseDpodMarkdown(this.textContent);
-	}
-
 	private calculateLevel() {
 		let level = 0;
 		for (let i = 0; i < this.line.length; i++) {
@@ -82,7 +73,11 @@ export class DmopLine {
 	}
 
 	displayAsHtml() {
-		let html = `<div class="dmop-line level-${this.level}"><div class="dmop-icon"></div><span class="dmop-text">${this.textContent}</span></div>`;
+		return this.displayAsHtmlWithText(this.textContent);
+	}
+
+	displayAsHtmlWithText(textContent: string) {
+		let html = `<div class="dmop-line level-${this.level}"><div class="dmop-icon"></div><span class="dmop-text">${textContent}</span></div>`;
 		if (this.imageIdCode) {
 			html += `<div class="dmop-image-container level-${this.level}"><img src="images/content/${this.imageIdCode}.png" class="dmop-image"></div>`;
 		}

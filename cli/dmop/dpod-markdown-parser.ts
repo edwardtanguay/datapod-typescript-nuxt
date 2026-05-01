@@ -4,14 +4,54 @@ export class DpodMarkdownParser {
 	private dpodLine: DmopLine;
 	private text: string;
 	private parseVars: Map<string, string>;
+	private isParsed: boolean = false;
 
-	constructor(line: string, parseVars: Map<string, string>) {
-		this.dpodLine = new DmopLine(line, "", "");
+	constructor(line: string, parseVars: Map<string, string>, importPathAndFileName: string, sourceDirectoryPath: string) {
+		this.dpodLine = new DmopLine(line, importPathAndFileName, sourceDirectoryPath);
 		this.parseVars = parseVars;
-		this.text = this.dpodLine.displayAsHtml();
+		this.text = this.dpodLine.textContent;
+		this.parse();
 	}
 
 	public parse(): string {
-		return this.text;
+		if (!this.isParsed) {
+			this.parseDpodLocation();
+			this.parseDpodEmojis();
+			this.parseTimes();
+			this.parseMarkdown();
+			this.isParsed = true;
+		}
+		return this.dpodLine.displayAsHtmlWithText(this.text);
+	}
+
+	private parseDpodLocation() {
+		this.text = this.text.replace(/\{location:(.*?)\}/g, '<a href="$1" target="_blank" class="dpod-location-btn"><span class="icon">🌍</span> <span class="text">location</span></a>');
+	}
+
+	private parseDpodEmojis() {
+		const emojiMap: { [key: string]: string } = {
+			"think": `<img src="images/site/think.png" class="dmop-emoji" alt="thinking">`,
+			"smile": `<img src="images/site/smile.png" class="dmop-emoji" alt="smile">`,
+			"green_check": `<img src="images/site/green_check.png" class="dmop-emoji" alt="check">`,
+			"celebrate": `<img src="images/site/celebrate.png" class="dmop-emoji" alt="celebrate">`,
+			"balloons": `<img src="images/site/balloons.png" class="dmop-emoji" alt="balloons">`
+		};
+		this.text = this.text.replace(/::(.*?)::/g, (match, p1) => {
+			return emojiMap[p1] || match;
+		});
+	}
+
+	private parseTimes() {
+		// match 10:38, 9:21, 02:33 etc.
+		this.text = this.text.replace(/\b(\d{1,2}:\d{2})\b/g, '<span class="dmop-time-pill"><span class="icon">🕒</span> $1</span>');
+	}
+
+	private parseMarkdown() {
+		this.text = this.text.replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>");
+		this.text = this.text.replace(/\*(.*?)\*/g, "<em>$1</em>");
+		this.text = this.text.replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2" target="_blank" class="dmop-link-pill"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" style="width:12px; height:12px; display:inline-block; vertical-align:middle; margin-right:2px; filter: drop-shadow(0 0 2px rgba(255, 204, 0, 0.5));"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></span>$1</a>');
+		this.text = this.text.replace(/(?<!href=")(^|\s)(https?:\/\/([^\/\s]+)[^\s]*)/g, (match, boundary, url, host) => {
+			return `${boundary}<a href="${url}" target="_blank">${host}</a>`;
+		});
 	}
 }
