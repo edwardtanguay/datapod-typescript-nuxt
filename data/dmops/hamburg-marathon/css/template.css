@@ -1,0 +1,437 @@
+:root {
+    --primary: #2e7d32;
+    /* Spring Green */
+    --secondary: #0288d1;
+    /* Sky Blue */
+    --accent: #f43f5e;
+    /* Cherry Blossom Pink */
+    --bg-footer: #0f172a;
+    /* Slate Blue footer */
+    --bg-body: #05070a;
+    /* Deepest black-blue body */
+    --text-on-dark: #f8fafc;
+    --text-on-white: #1e293b;
+    --white: #ffffff;
+}
+
+body {
+    font-family: 'Outfit', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--bg-body);
+    color: var(--text-on-dark);
+}
+
+header {
+    min-height: 90vh;
+    padding: 100px 20px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/site/start.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--white);
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
+}
+
+.hero h1 {
+    font-size: 5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    font-weight: 950;
+    color: #ffcc00;
+    line-height: 1.1;
+    text-shadow:
+        0 8px 30px rgba(0, 0, 0, 1),
+        0 0 15px rgba(255, 204, 0, 0.4);
+    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.5));
+}
+
+.subtitle {
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-top: 25px;
+    color: #ffcc00;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    background: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    padding: 15px 40px;
+    border-radius: 60px;
+    border: 3px solid #ffcc00;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6), 0 0 20px rgba(255, 204, 0, 0.4);
+}
+
+.container, .container * {
+    transition: background-color 0.5s ease, color 0.5s ease, border-color 0.5s ease, box-shadow 0.5s ease;
+}
+
+.container {
+    max-width: 1000px;
+    margin: -100px auto 80px;
+    background-color: #ffffff; /* Use explicit white */
+    padding: 70px;
+    border-radius: 30px;
+    box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.3), 0 15px 30px -10px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #1e293b; /* Use explicit slate */
+    position: relative;
+    z-index: 10;
+    font-size: var(--content-scale, 100%);
+}
+
+.container.dark-mode {
+    background-color: #1e1e1e;
+    color: #e2e8f0;
+    box-shadow: 0 40px 80px -15px rgba(0, 0, 0, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+h2 {
+    color: var(--primary);
+    border-bottom: 4px solid var(--secondary);
+    display: inline-block;
+    padding-bottom: 8px;
+    margin-top: 40px;
+    font-size: 2.2em;
+}
+
+p {
+    margin-bottom: 25px;
+    font-size: 1.15em;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin: 30px 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+a, a:visited {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 60px;
+    background: var(--bg-footer);
+    color: var(--white);
+    font-size: 1rem;
+}
+
+footer a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ff9800;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    header {
+        min-height: 60vh;
+        padding: 60px 15px;
+    }
+
+    .hero h1 {
+        font-size: clamp(2rem, 10vw, 3.5rem);
+        letter-spacing: 4px;
+    }
+
+    .subtitle {
+        font-size: clamp(0.8rem, 4.5vw, 1.4rem);
+        padding: 10px 25px;
+        white-space: nowrap;
+        letter-spacing: 1px;
+        border-width: 2px;
+    }
+
+    .container {
+        margin: -40px 10px 40px;
+        padding: 20px 15px;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+}
+
+.softgate-card {
+    max-width: 420px;
+    margin: -60px auto 40px;
+    background: #1a1a1a;
+    background-image: linear-gradient(135deg, #222, #111);
+    color: var(--white);
+    padding: 50px 30px;
+    border-radius: 40px;
+    text-align: center;
+    box-shadow: 0 50px 100px -20px rgba(0, 0, 0, 0.8), inset 0 0 20px rgba(255, 255, 255, 0.05);
+    position: relative;
+    z-index: 20;
+    border: 2px solid #333;
+}
+
+.softgate-card h2 {
+    color: #fff;
+    background: linear-gradient(to bottom, #fff, #999);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 0;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Pin Display */
+#pin-display {
+    padding: 15px 0;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    margin: 15px 0;
+    border: 1px solid #333;
+}
+
+.dot-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    min-height: 20px;
+    /* Prevents jumping */
+}
+
+.dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid #444;
+    transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dot.active {
+    background: #00f2fe;
+    border-color: #00f2fe;
+    box-shadow: 0 0 25px rgba(0, 242, 254, 0.8), 0 0 5px #fff;
+    transform: scale(1.4);
+}
+
+/* Keypad */
+.keypad {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.key {
+    background: linear-gradient(145deg, #d1d5db, #9ca3af);
+    border: none;
+    border-radius: 12px;
+    padding: 18px;
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: #1f2937;
+    cursor: pointer;
+    box-shadow: 0 6px 0 #4b5563, 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+    transition: all 0.1s ease;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.key:hover {
+    filter: brightness(1.1);
+}
+
+.key:active {
+    transform: translateY(4px);
+    box-shadow: 0 2px 0 #4b5563, 0 5px 5px -3px rgba(0, 0, 0, 0.8);
+}
+
+.key.clear {
+    background: linear-gradient(145deg, #ef4444, #b91c1c);
+    color: white;
+    box-shadow: 0 6px 0 #7f1d1d;
+}
+
+.key.clear:active {
+    box-shadow: 0 2px 0 #7f1d1d;
+}
+
+.key.delet {
+    background: linear-gradient(145deg, #4b5563, #374151);
+    color: white;
+    box-shadow: 0 6px 0 #111827;
+}
+
+.key.delet:active {
+    box-shadow: 0 2px 0 #111827;
+}
+
+@media (max-width: 480px) {
+    .softgate-card {
+        margin: -40px 15px 40px;
+    }
+
+    .key {
+        padding: 15px;
+        font-size: 1.4rem;
+    }
+}
+
+/* Controls Shared Styles */
+.theme-controls,
+.logout-controls,
+.font-controls {
+    position: absolute;
+    top: -45px;
+    z-index: 100;
+    user-select: none;
+    font-size: 16px !important;
+    display: flex;
+    gap: 7px;
+}
+
+.theme-controls { left: 0; }
+.font-controls { right: 0; }
+
+.theme-controls button, .font-controls button {
+    background: #000000;
+    border: none;
+    border-radius: 6px;
+    width: 36px;
+    height: 36px;
+    font-family: inherit;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffcc00;
+    padding: 0;
+    line-height: 1;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    box-sizing: border-box;
+    overflow: hidden; /* Added to keep corners rounded when img fills space */
+    -webkit-tap-highlight-color: transparent; /* Removes mobile blue flash */
+    outline: none;
+    transition: transform 0.3s ease; /* For hover tilt */
+}
+
+/* Hover tilt for theme buttons - restricted to mouse users to prevent sticking on mobile */
+@media (hover: hover) and (pointer: fine) {
+    .theme-controls button:hover {
+        transform: perspective(400px) rotateY(30deg);
+    }
+}
+
+
+.theme-controls button img, .font-controls button svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: 0;
+    box-shadow: none;
+    border-radius: 0;
+    object-fit: contain;
+}
+
+/* Light hover for desktop only */
+@media (hover: hover) {
+    .font-controls button:hover {
+        background: #111111;
+    }
+}
+
+/* Flip Animation */
+.flip-anim {
+    animation: flip-fast 0.5s ease-in-out forwards;
+}
+
+@keyframes flip-fast {
+    0% { transform: perspective(400px) rotateY(0); }
+    100% { transform: perspective(400px) rotateY(360deg); }
+}
+
+.logout-controls {
+    position: absolute;
+    top: -45px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+}
+
+#btn-logout {
+    background: transparent;
+    border: 1px solid rgba(255, 204, 0, 0.6);
+    color: rgba(255, 204, 0, 0.75);
+    padding: 6px 15px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    white-space: nowrap;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+#btn-logout:hover {
+    background: rgba(255, 204, 0, 0.1);
+    color: #ffcc00;
+    border-color: #ffcc00;
+    opacity: 1;
+}
+
+/* Dark Mode Overrides */
+.container.dark-mode h2 {
+    color: #66bb6a;
+}
+.container.dark-mode p {
+    color: #cbd5e1;
+}
+.container.dark-mode .level-0 {
+    background: linear-gradient(to right, #334155, rgba(51, 65, 85, 0)) !important;
+    border-left: 5px solid #f8fafc;
+    color: #f8fafc;
+    border-radius: 0 4px 4px 0 !important;
+}
+.container.dark-mode .dmop-text {
+    color: #e2e8f0;
+}
+.container.dark-mode a, .container.dark-mode a:visited {
+    color: #60a5fa; /* blue-400 equivalent for better contrast in dark mode */
+}
+
+@media (max-width: 768px) {
+    .theme-controls, .font-controls {
+        top: -40px;
+    }
+    .theme-controls button, .font-controls button {
+        width: 32px;
+        height: 32px;
+        font-size: 0.75rem;
+    }
+}

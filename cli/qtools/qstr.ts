@@ -81,7 +81,7 @@ export const trimAllLinesInLinesArray = (lines: string[]) => {
 	return newLines;
 };
 
-// returns a lines array that has front and end blank strings, as one without these blanks
+// returns a lines array so that there are no blank lines at the beginning or end
 export const trimLinesOfEndBlanks = (lines: string[]) => {
 	lines = qstr.trimBeginningLinesOfBlanks(lines);
 	lines = lines.reverse();
@@ -457,8 +457,29 @@ export const convertLinesToStringBlock = (lines: string[]) => {
 	return r;
 };
 
+export const encodeHtml = (text: string): string => {
+	return text
+		.replace(/&/g, "&amp;")
+		.replace(/</g, "&lt;")
+		.replace(/>/g, "&gt;")
+		.replace(/"/g, "&quot;")
+		.replace(/'/g, "&#039;");
+};
+
+export const decodeHtml = (html: string): string => {
+	const map: Record<string, string> = {
+		"&amp;": "&",
+		"&lt;": "<",
+		"&gt;": ">",
+		"&quot;": "\"",
+		"&#039;": "'"
+	};
+	return html.replace(/&amp;|&lt;|&gt;|&quot;|&#039;/g, m => map[m]);
+};
+
 export const convertFromHtml = (text: string) => {
 	let r = text;
+	r = qstr.encodeHtml(r);
 	r = qstr.replaceAll(r, "\n", "\\n");
 	r = qstr.replaceAll(r, "\t", "\\t");
 	return r;
@@ -497,4 +518,44 @@ export const wrapAsJsonContent = (innerJsonContent: string) => {
 	}
 	newLines.push("]");
 	return qstr.convertLinesToStringBlock(newLines);
+};
+
+export const parseDpodEmojis = (text: string): string => {
+	const emojiMap: { [key: string]: string } = {
+		"think": `<img src="images/content/think.png" class="dmop-emoji" alt="thinking">`,
+		"smile": `<img src="images/content/smile.png" class="dmop-emoji" alt="smile">`,
+		"green_check": `<img src="images/content/green_check.png" class="dmop-emoji" alt="check">`,
+		"celebrate": `<img src="images/content/celebrate.png" class="dmop-emoji" alt="celebrate">`,
+		"balloons": `<img src="images/content/balloons.png" class="dmop-emoji" alt="balloons">`
+	};
+	return text.replace(/::(.*?)::/g, (match, p1) => {
+		return emojiMap[p1] || match;
+	});
+};
+
+export const parseDpodMarkdown = (text: string): string => {
+	let r = text;
+	r = qstr.parseDpodLocation(r);
+	r = qstr.parseDpodEmojis(r);
+	r = qstr.parseTimes(r);
+	r = r.replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>");
+	r = r.replace(/\*(.*?)\*/g, "<em>$1</em>");
+	r = r.replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2" target="_blank">$1</a>');
+	r = r.replace(/(?<!href=")(^|\s)(https?:\/\/([^\/\s]+)[^\s]*)/g, (match, boundary, url, host) => {
+		return `${boundary}<a href="${url}" target="_blank">${host}</a>`;
+	});
+	return r;
+};
+
+export const parseTimes = (text: string): string => {
+	let r = text;
+	// match 10:38, 9:21, 02:33 etc.
+	r = r.replace(/\b(\d{1,2}:\d{2})\b/g, '<span class="dmop-time-pill"><span class="icon">🕒</span> $1</span>');
+	return r;
+};
+
+export const parseDpodLocation = (text: string): string => {
+	let r = text;
+	r = r.replace(/\{location:(.*?)\}/g, '<a href="$1" target="_blank" class="dpod-location-btn"><span class="icon">🌍</span> <span class="text">location</span></a>');
+	return r;
 };

@@ -21,7 +21,6 @@ export class DmopParser {
 		}
 		for (const dmopFileParser of this.dmopFileParsers) {
 			dmopFileParser.parse();
-			dmopFileParser.createWebsite();
 		}
 	}
 

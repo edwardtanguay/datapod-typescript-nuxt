@@ -1,3 +1,3 @@
-import { DmopParser } from "../dpod/dmop-parser";
+import { DmopParser } from "../dmop/dmop-parser";
 
 DmopParser.execute();

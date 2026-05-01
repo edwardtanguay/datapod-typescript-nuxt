@@ -1,5 +1,6 @@
 import * as qfil from "./qfil";
 import * as qstr from "./qstr";
+import * as path from "path";
 
 
 export const clearDebug = (): void => {
@@ -22,35 +23,31 @@ export const clearDebug = (): void => {
 		});
 
 		document.addEventListener("click", (e) => {
-			const fieldset = e.target.closest("fieldset");
+			const target = e.target;
+			const fieldset = target.closest("fieldset");
 			if (!fieldset) return;
 
-			const isLegend = e.target.tagName === 'LEGEND' || e.target.closest('legend') !== null;
+			// Check if we clicked on the legend or something inside it
+			const isLegend = target.tagName === 'LEGEND' || target.closest('legend') !== null;
 			const isClosed = fieldset.classList.contains("closed");
 			const children = fieldset.querySelectorAll("fieldset");
 
 			if (isClosed) {
+				// If closed, any click expands it
+				fieldset.classList.remove("closed");
 				if (isLegend) {
-					// Rule 1: Click title of closed box -> open box and all of its children
-					fieldset.classList.remove("closed");
+					// Rule: Click legend of closed box -> open box and all of its nested children
 					children.forEach(child => child.classList.remove("closed"));
-				} else {
-					// Rule 2: Click in the area of a closed box -> open that box, preserve child states
-					fieldset.classList.remove("closed");
 				}
 			} else {
+				// If open, click on legend collapses it
 				if (isLegend) {
-					// Rule 3: Click open box on title -> close box and all children
 					fieldset.classList.add("closed");
 					children.forEach(child => child.classList.add("closed"));
-				} else {
-					// Rule 4: Click open box on area -> close box, preserve child states
-					fieldset.classList.add("closed");
 				}
+				// Optional: clicking non-legend area of an OPEN box could also collapse it, 
+				// but let's keep it simple and only collapse on legend to allow text selection etc.
 			}
-
-			
-			e.stopPropagation();
 		});
 
 	</script>
@@ -144,4 +141,16 @@ export const log = (line: string = ""): string => {
 	const now = new Date();
 	const timestamp = now.toISOString().replace("T", " ").substring(0, 19);
 	return `${timestamp}|${line}\n`;
+};
+
+export const copyFile = (source: string, destination: string): void => {
+	const destinationDir = path.dirname(destination);
+	if (!qfil.directoryExists(destinationDir)) {
+		qfil.createDirectory(destinationDir);
+	}
+	qfil.copyFile(source, destination);
+};
+
+export const fileExists = (filePath: string): boolean => {
+	return qfil.fileExists(filePath);
 };

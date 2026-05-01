@@ -1,13 +1,58 @@
-- INFO
-	- title::Hamburg Marathon
-	- export::C:\edward\webs\hm
+- SPECTATOR INFOS		
+	- cheering points map:##cheer222		
+	- **CHEER POINT 1** 
+		- **2K** - be at S1 Reeperbahn at **9:15** {location:https://maps.app.goo.gl/EmBLfa8EAb6YKYcSA}
+		- **10K** - walk down Davidstraße to the Davidtreppe by **10:00** {location:https://maps.app.goo.gl/MpS4WxkzruasZvQZ9} 
+	- **CHEER POINT 2** 
+		- **21K** - travel with S-Bahn/U-Bahn to U3 Borgweg by **11:15** {location: https://maps.app.goo.gl/4iHGrhDzfNGv9gbQ9} 
+	- **CHEER POINT 3** 
+		- **30K** - travel with U-Bahn to Ulsdorf by **12:15** {location: https://maps.app.goo.gl/9ruP8TU8jdcaH4FA6} 
+	- **CHEER POINT 4** 
+		- **39K** - travel to U-Bahn Hallerstraße and walk to Alsterpark by **13:15** U-Bahn is here {location: https://maps.app.goo.gl/YKDgdF1MAYmMsimbA} cheering point is here {location:https://maps.app.goo.gl/XKGdHQYFfBk7ExKY7}
+			- *"Am Kilometer 39, direkt am Harvestehuder Weg im Alsterpark, wartet mit dem Haspa Cheering Point noch einmal ein echtes Highlight auf den letzten Metern."*
+	- You can install the Hamburg Marathon app on your phone (search for "haspa marathon hamburg"), but to track runners, you unfortunately have to pay:##appsmall
+		- Gisi installed the app on her phone and paid the fee, so if you're in our cheer group, she'll be tracking all the runners in our group:##thetracckkc
+	- Note the above times are the expected times for **Hannah**/**Edward**
+		- Hannah/Edward plan to be running with a 4:45 balloon group ::balloons::
+		- to see **Leo**, **Paul** and **Andreas**, be sure to get to the points earlier ::smile::	
+	- this [interactive map](https://mhv-maps.de/Marathon/Strecke) shows all 42 kilometer points, bands, etc.##themapsmajj
+	- MARATHON ROUTE: Load this [KMZ file](https://tanguay.info/run/kmz/hamburg-marathon.kmz) in your e.g. **Google Earth** App##hammarathon
+- HAMBURG INFOS
+	- U-Bahn##thehamubahn
+	- S-Bahn##ssbahan
 - FRI 24
+	- bring
+		- change for lockers at Hbf
+		- bandages
+		- gels
 	- 10:38 Berlin Hbf
 	- 13:12 Hamburg Hbf
-	- pick up Hannah
+		- backpacks etc. in lockers
+	- 14:45-15:15 pick up Hannah ::smile::
+	- 12:00-19:00 Startunterlagenausgabe, oder Samstag? ::think::
+	- Tostedt, check into Airbnb ::green_check::
 - SAT 25
-	- nnn pick up numbers
-	- 16:30 Marathon Mass
-		- Hauptkirche St. Petri
-		- Bei der Petrikirche 2
-		- "In diesem besonderen Gottesdienst, der ganz im Zeichen des Laufens steht, könnt ihr euch gemeinsam auf den Marathon am Sonntag einstimmen."
+	- 9:00-19:00 Startunterlagenausgabe ::think::
+		- pick them up here {location:https://maps.app.goo.gl/A4Zk4Zc8Yp4FB1h48}
+		- *"Bitte denkt daran, euren Ausweis sowie die Anmeldebestätigung mitzubringen"*
+	- 13:00 ::think:: power protein lunch at Stadtsalat {location:https://maps.app.goo.gl/HyFkXcSkp4EFoarx5}##proteinlunch
+	- 16:30 Marathon Mass ::think::
+		- *"In diesem besonderen Gottesdienst, der ganz im Zeichen des Laufens steht, könnt ihr euch gemeinsam auf den Marathon am Sonntag einstimmen."*
+		- Hauptkirche St. Petri {location:https://maps.app.goo.gl/b31kJphYgR8S8FTZ8}##stpetri
+	- 20:11 Karla arrives Hamburg Hbf ::celebrate::
+- SUN 26
+	- die offizielle [Teilnehmerinfo-Seite](https://haspa-marathon-hamburg.de/teilnehmerinfos-marathon/)
+	- 07:10 Tostedt train
+		- give Hannah all her gels/bandages to carry
+	- 07:45 arrive Hamburg Hbf
+	- 07:50 S5
+	- 07:58 arrive Dammtor##dammtor
+	- 09:00-09:15 Bereich "O" startet:##theoooo
+- MON 27
+	- Karla, Gisi, Eddie back to Berlin
+		- 11:49 Hamburg Hbf
+		- 14:21 Berlin Hbf
+- CONTACT
+	- if you want to get in touch during the weekend or meet up, etc. I'll be checking:
+		- LinkedIn
+		- WhatsApp: +49 179 66 48604

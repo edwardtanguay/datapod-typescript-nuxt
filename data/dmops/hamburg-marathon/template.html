@@ -3,8 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hamburg Marathon</title>
-    <link rel="stylesheet" href="css/main.css">
+    <title>Hamburg Marathon Weekend</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="These are the infos for our weekend trip complete with links, times, locations, runner tracking, etc.">
+    <meta property="og:title" content="Hamburg Marathon Weekend">
+    <meta property="og:description" content="These are the infos for our weekend trip complete with links, times, locations, runner tracking, etc.">
+    <meta property="og:image" content="https://tanguay.info/hm/images/site/seo-thumbnail.png">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Hamburg Marathon Weekend">
+    <meta name="twitter:description" content="These are the infos for our weekend trip complete with links, times, locations, runner tracking, etc.">
+    <meta name="twitter:image" content="https://tanguay.info/hm/images/site/seo-thumbnail.png">
+
+    <!-- Mobile Home Screen Icons -->
+    <link rel="apple-touch-icon" href="https://tanguay.info/hm/images/seo-thumbnail.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="https://tanguay.info/hm/images/seo-thumbnail.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&family=Outfit:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/template.css?nn@@cache_bust">
+    <link rel="stylesheet" href="css/dmop.css?nn@@cache_bust">
 </head>
 <body>
     <header>
@@ -16,7 +36,7 @@
 
     <main>
         <div id="softgate-area" class="softgate-card fade-in">
-            <h2>Access Code Required</h2>
+            <h2>Access Code</h2>
             <div id="pin-display">
                 <div class="dot-container"></div>
             </div>
@@ -32,10 +52,28 @@
                 <button class="key" data-val="9">9</button>
                 <button class="key clear" id="btn-clear">C</button>
                 <button class="key" data-val="0">0</button>
-                <button class="key delet" id="btn-del">←</button>
+                <button class="key delet" id="btn-del">
+                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round" style="pointer-events: none; display: block;">
+                        <line x1="19" y1="12" x2="5" y2="12"></line>
+                        <polyline points="12 19 5 12 12 5"></polyline>
+                    </svg>
+                </button>
             </div>
         </div>
-        <div id="content-area" class="container fade-in" style="display: none;">
+        <div id="content-area" class="container dark-mode fade-in" style="display: none;">
+            <div class="theme-controls">
+                <button id="btn-theme-toggle" title="Toggle Light/Dark Mode">
+                    <img src="images/site/sun.png" class="icon-sun" alt="Sun" style="display: none;">
+                    <img src="images/site/moon.png" class="icon-moon" alt="Moon">
+                </button>
+            </div>
+            <div class="logout-controls">
+                <button id="btn-logout">logout</button>
+            </div>
+            <div class="font-controls" id="font-controls-panel">
+                <button id="btn-font-dec" title="Decrease font size">A-</button>
+                <button id="btn-font-inc" title="Increase font size">A+</button>
+            </div>
             @@content
         </div>
     </main>
@@ -44,6 +82,7 @@
         <p>Created with <a href="https://edwards-projects.vercel.app/project/datapod-typescript-nuxt" target="_blank">Datapod</a></p>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script src="js/template.js"></script>
+    <script src="js/dmops.js"></script>
 </body>
 </html>
