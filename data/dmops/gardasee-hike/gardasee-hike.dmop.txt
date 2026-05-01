@@ -11,8 +11,10 @@
 		- E-Mail: info@hotelveneziariva.com
 		- Telefon: +39 0464 552216
 		- [Website: Velora Hotel](http://www.hotelveneziariva.com/de)##hotelvelora
-		- Via Franz Kafka 7-9, Riva del Garda {location: https://maps.app.goo.gl/ajEp85tkFxBJiPXx6}##locationVelora
+		- Via Franz Kafka 7-9{location: https://maps.app.goo.gl/ajEp85tkFxBJiPXx6}##locationVelora
+		- Riva del Garda##orientationRiva
 - **So 31.05.**
+	- nnn
 - **Mo 01.06.**
 	- nnn
 - **Di 02.06.**
