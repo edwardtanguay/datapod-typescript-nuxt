@@ -51,6 +51,10 @@
     margin-top: 45px;
 }
 
+.dmop-image-container + .dmop-line.level-0 {
+    margin-top: 60px; /* Compensate for image container negative margin-bottom */
+}
+
 .dmop-line:not(.level-0) {
     margin-bottom: 5px;
 }
