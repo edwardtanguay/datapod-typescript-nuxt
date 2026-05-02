@@ -48,8 +48,13 @@
 		- [Website: Hotel La Perla](https://www.hotelperlagarda.com)##hotelgarda
 		- Viale Tommaso dal Molin 63{location: https://maps.app.goo.gl/dbfqF7XtvQVh1jdu5}##locationgarda
 		- Lage am See##orientationGarda
-- **Fr 05.06.**
-	- nnn
+- **Fr 05.06. Malcesine**
+	- {hotel: Hotel Lago di Garda}
+		- Telefon: +39 045 740 0633
+		- E-Mail: info@hldg.it
+		- [Website: Hotel Lago di Garda](https://hldg.it/de)##hotelmalcesine
+		- Viale Tommaso dal Molin 63{location: https://maps.app.goo.gl/Ch1bHZWzJmn59vZR7}##locationmalcesine
+		- Lage am See##orientationMalcesine
 - **Sa 06.06.**
 	- nnn
 - **So 07.06.**
