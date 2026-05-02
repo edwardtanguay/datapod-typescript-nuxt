@@ -2,6 +2,8 @@
 	- [Hotelliste](../gardasee-hike/media/gardasee-hotels.pdf)
 	- [Eurohike Reisedaten](https://trip.guibo.travel/psvhAX)
 	- [Gardasee Wetter](https://www.meteoblue.com/en/weather/14-days/garda_italy_3176320)
+- Hotels
+	- Überblick:##thehotellist
 - **Sa 30.05. Riva del Garda**
 	- 06:42 Berlin Südkreuz
 	- 10:45 München Hbf
