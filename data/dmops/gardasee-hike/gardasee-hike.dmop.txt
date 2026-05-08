@@ -13,13 +13,17 @@
 		- [Website: Velora Hotel](http://www.hotelveneziariva.com/de)##hotelvelora
 		- Via Franz Kafka 7-9{location: https://maps.app.goo.gl/ajEp85tkFxBJiPXx6}##locationVelora
 		- Lage am See##orientationRiva
-- **So 31.05. Riva del Garda (2. Tag)**
+- **So 31.05. Riva del Garda 2**
 	- {hotel: Velora Hotel (2. Tag)}
 		- E-Mail: info@hotelveneziariva.com
 		- Telefon: +39 0464 552216
 		- [Website: Velora Hotel](http://www.hotelveneziariva.com/de)##hotelvelora
 		- Via Franz Kafka 7-9{location: https://maps.app.goo.gl/ajEp85tkFxBJiPXx6}##locationVelora
 		- Lage am See##orientationRiva
+	- testing 222
+	- testing 222
+	- testing 222
+	- testing 222
 - **Mo 01.06. Limone sul Garda**
 	- {hotel: Hotel Cristina Limone}
 		- Telefon: +39 0365 958111
