@@ -365,6 +365,11 @@
     margin-top: 0;
 }
 
+.dmop-line:has(.dmop-journey-label) .dmop-icon {
+    background: radial-gradient(circle at 30% 30%, #34d399, #059669); /* emerald-400 to emerald-600 */
+    box-shadow: 0 0 8px rgba(16, 185, 129, 0.4);
+}
+
 .dmop-header-info {
     color: #1e40af; /* strong blue for light mode */
     font-weight: 500;
