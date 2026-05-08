@@ -341,4 +341,8 @@
 
 .container.dark-mode .dmop-header-info {
     color: #facc15; /* yellow-400 for dark mode */
-}
+}
+
+.no-select {
+    user-select: none;
+}
