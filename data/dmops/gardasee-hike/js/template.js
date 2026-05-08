@@ -121,15 +121,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const themeBtn = document.getElementById('btn-theme-toggle');
     const sunIcon = themeBtn?.querySelector('.icon-sun');
     const moonIcon = themeBtn?.querySelector('.icon-moon');
-    const container = document.querySelector('.container');
+    const containers = document.querySelectorAll('.container');
 
     const applyTheme = (isDark, saveToStorage = true) => {
-        if (!container) return;
-        if (isDark) {
-            container.classList.add('dark-mode');
-        } else {
-            container.classList.remove('dark-mode');
-        }
+        containers.forEach(container => {
+            if (isDark) {
+                container.classList.add('dark-mode');
+            } else {
+                container.classList.remove('dark-mode');
+            }
+        });
         if (sunIcon) sunIcon.style.display = isDark ? 'none' : 'block';
         if (moonIcon) moonIcon.style.display = isDark ? 'block' : 'none';
         if (saveToStorage) localStorage.setItem('gs_theme', isDark ? 'dark' : 'light');
@@ -144,7 +145,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     themeBtn?.addEventListener('click', () => {
-        if (container) {
+        if (containers.length > 0) {
             // Trigger animation
             themeBtn.classList.remove('flip-anim');
             void themeBtn.offsetWidth; // Force reflow
@@ -155,7 +156,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 themeBtn.classList.remove('flip-anim');
             }, 600);
 
-            const isNowDark = !container.classList.contains('dark-mode');
+            const isNowDark = !containers[0].classList.contains('dark-mode');
             applyTheme(isNowDark);
         }
     });

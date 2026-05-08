@@ -455,54 +455,13 @@ footer a:hover {
 }
 
 #extra-info {
-    max-width: 1000px;
-    margin: 40px auto;
-    padding: 40px;
-    background: linear-gradient(145deg, #0f172a, #1e293b);
-    border: 1px solid rgba(255, 204, 0, 0.3);
-    border-radius: 20px;
-    color: #f8fafc;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5), inset 0 0 15px rgba(255, 204, 0, 0.1);
-    animation: extra-glow-pulse 3s infinite alternate;
     display: none;
-    position: relative;
-    z-index: 5;
-    text-align: left;
-}
-
-#extra-info h2 {
-    color: #ffcc00;
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 1.5rem;
-    margin-top: 0;
-    margin-bottom: 20px;
-    text-transform: lowercase;
-    border-bottom: 2px solid #ffcc00;
-    display: block;
-    padding-bottom: 10px;
-}
-
-#extra-info p {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 0.95rem;
-    line-height: 1.6;
-    opacity: 0.9;
-    margin-bottom: 15px;
-}
-
-#extra-info .code-accent {
-    color: #ffcc00;
-    font-weight: bold;
-}
-
-@keyframes extra-glow-pulse {
-    from { border-color: rgba(255, 204, 0, 0.2); box-shadow: 0 0 20px rgba(0,0,0,0.5); }
-    to { border-color: rgba(255, 204, 0, 0.6); box-shadow: 0 0 40px rgba(255, 204, 0, 0.2); }
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 @media (max-width: 768px) {
     #extra-info {
-        margin: 20px 15px;
-        padding: 25px;
+        margin: 20px 10px;
     }
 }
