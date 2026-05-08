@@ -68,7 +68,7 @@ header {
 
 .container {
     max-width: 1000px;
-    margin: -100px auto 80px;
+    margin: -100px auto 40px;
     background-color: #ffffff; /* Use explicit white */
     padding: 70px;
     border-radius: 30px;
@@ -456,7 +456,7 @@ footer a:hover {
 
 #extra-info {
     display: none;
-    margin-top: 40px;
+    margin-top: 0;
     margin-bottom: 40px;
 }
 
@@ -464,4 +464,4 @@ footer a:hover {
     #extra-info {
         margin: 20px 10px;
     }
-}
+}
