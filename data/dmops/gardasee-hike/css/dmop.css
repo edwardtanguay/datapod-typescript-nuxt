@@ -50,7 +50,7 @@
 }
 
 .dmop-line.level-0:not(:first-child) {
-    margin-top: 0px;
+    margin-top: 15px;
 }
 
 .dmop-image-container+.dmop-line.level-0 {
@@ -358,7 +358,7 @@
 }
 
 .dmop-line.hotel-last-in-section {
-    margin-bottom: -10px;
+    margin-bottom: -25px;
 }
 
 .hotel-parent + .hotel-child {
