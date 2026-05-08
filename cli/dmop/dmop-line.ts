@@ -13,6 +13,7 @@ export class DmopLine {
 	private importPathAndFileName: string = "";
 	private sourceDirectoryPath: string = "";
 	public isHotel: boolean = false;
+	public isJourney: boolean = false;
 
 	constructor(line: string, importPathAndFileName: string, sourceDirectoryPath: string) {
 		this.line = line;

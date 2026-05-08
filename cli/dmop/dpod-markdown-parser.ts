@@ -26,6 +26,7 @@ export class DpodMarkdownParser {
 			this.parseEmail();
 			this.parsePhone();
 			this.parseHotel();
+			this.parseJourney();
 			this.isParsed = true;
 		}
 		return this.dpodLine.displayAsHtmlWithText(this.text);
@@ -51,6 +52,14 @@ export class DpodMarkdownParser {
 			this.dpodLine.isHotel = true;
 		}
 		this.text = this.text.replace(/\{hotel:(.*?)\}/g, `<span class="dmop-hotel-label hotel-trigger">${houseIcon} $1</span>`);
+	}
+
+	private parseJourney() {
+		const hikingIcon = `<span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:20px; height:20px; display:inline-block; vertical-align:middle; margin-right:8px;"><path d="m13 4 1 0.75"/><path d="M17 21h-5l-1-2.5 1-3 1.25-3.5 1.75-2"/><path d="M7 21h5"/><path d="M12 13 9 20"/><path d="M18 7c1 1 2 2 2 3"/><circle cx="12" cy="5" r="1"/></svg></span>`;
+		if (this.text.includes("{journey:")) {
+			this.dpodLine.isJourney = true;
+		}
+		this.text = this.text.replace(/\{journey:(.*?)\}/g, `<span class="dmop-journey-label journey-trigger">${hikingIcon} $1</span>`);
 	}
 
 	private parseDpodLocation() {

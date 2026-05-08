@@ -85,7 +85,9 @@ export class DmopFileParser {
 		const parseSection = (lines: string[]) => {
 			let sectionHtml = "";
 			let currentHotelId = 0;
+			let currentJourneyId = 0;
 			let hotelLevel = -1;
+			let journeyLevel = -1;
 
 			for (let i = 0; i < lines.length; i++) {
 				const line = lines[i];
@@ -111,6 +113,25 @@ export class DmopFileParser {
 
 					const lastClass = isLastInSection ? " hotel-last-in-section" : "";
 					lineHtml = lineHtml.replace(/class="([^"]*)"/, `data-hotel-id="${currentHotelId}" class="$1 hotel-parent${lastClass}"`);
+				} else if (parser.dpodLine.isJourney) {
+					currentJourneyId++;
+					journeyLevel = parser.dpodLine.level;
+
+					let isLastInSection = true;
+					for (let j = i + 1; j < lines.length; j++) {
+						const nextParser = new DpodMarkdownParser(lines[j], parseVars, this.importPathAndFileName, this.sourceDirectoryPath);
+						if (nextParser.dpodLine.level === journeyLevel) {
+							isLastInSection = false;
+							break;
+						}
+						if (nextParser.dpodLine.level < journeyLevel) {
+							isLastInSection = true;
+							break;
+						}
+					}
+
+					const lastClass = isLastInSection ? " journey-last-in-section" : "";
+					lineHtml = lineHtml.replace(/class="([^"]*)"/, `data-journey-id="${currentJourneyId}" class="$1 journey-parent${lastClass}"`);
 				} else if (hotelLevel !== -1 && parser.dpodLine.level > hotelLevel) {
 					lineHtml = lineHtml.replace(/class="([^"]*)"/, `style="display: none;" class="$1 hotel-child hotel-child-${currentHotelId}"`);
 					if (parser.dpodLine.imageIdCode) {
@@ -121,8 +142,19 @@ export class DmopFileParser {
 							return match;
 						});
 					}
+				} else if (journeyLevel !== -1 && parser.dpodLine.level > journeyLevel) {
+					lineHtml = lineHtml.replace(/class="([^"]*)"/, `style="display: none;" class="$1 journey-child journey-child-${currentJourneyId}"`);
+					if (parser.dpodLine.imageIdCode) {
+						lineHtml = lineHtml.replace(/class="([^"]*)"/g, (match, p1) => {
+							if (match.includes('dmop-image-container')) {
+								return `style="display: none;" class="${p1} journey-child journey-child-${currentJourneyId}"`;
+							}
+							return match;
+						});
+					}
 				} else {
 					hotelLevel = -1;
+					journeyLevel = -1;
 				}
 				sectionHtml += lineHtml + "\n";
 			}
