@@ -55,11 +55,11 @@ export class DpodMarkdownParser {
 	}
 
 	private parseJourney() {
-		const hikingIcon = `<span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:20px; height:20px; display:inline-block; vertical-align:middle; margin-right:8px;"><path d="m13 4 1 0.75"/><path d="M17 21h-5l-1-2.5 1-3 1.25-3.5 1.75-2"/><path d="M7 21h5"/><path d="M12 13 9 20"/><path d="M18 7c1 1 2 2 2 3"/><circle cx="12" cy="5" r="1"/></svg></span>`;
+		const mapPinIcon = `<span class="icon"><svg viewBox="0 0 24 24" fill="currentColor" style="width:20px; height:20px; display:inline-block; vertical-align:middle; margin-right:8px;"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg></span>`;
 		if (this.text.includes("{journey:")) {
 			this.dpodLine.isJourney = true;
 		}
-		this.text = this.text.replace(/\{journey:(.*?)\}/g, `<span class="dmop-journey-label journey-trigger">${hikingIcon} $1</span>`);
+		this.text = this.text.replace(/\{journey:(.*?)\}/g, `<span class="dmop-journey-label journey-trigger">${mapPinIcon} $1</span>`);
 	}
 
 	private parseDpodLocation() {
