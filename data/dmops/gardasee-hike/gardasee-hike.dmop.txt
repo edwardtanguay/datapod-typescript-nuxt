@@ -16,6 +16,11 @@
 		- Via Franz Kafka 7-9{location: https://maps.app.goo.gl/ajEp85tkFxBJiPXx6}##locationVelora
 		- Lage am See##orientationRiva
 - **So 31.05. Riva del Garda 2**
+	- {journey: Bus + 13km Wanderung}
+		- Bus
+			- Durch felsige Tunnel per Transfer zum Ausgangspunkt, wo sogleich die ersten spektakulären Tiefblicke auf dem Sonnensteig warten. 
+		- Wanderung
+			- Ein Stück wandern Sie direkt über dem Wasser auf dem neuen Fußweg entlang der Felsen. Am Bergbach aufwärts auf den Panoramasteig, der vorbei am Fischereimuseum in den malerischen Ort Limone führt. Hier lohnt ein Bummel durch den Ortskern und eine Kostprobe des köstlichen Zitroneneis.
 	- {hotel: Velora Hotel (2. Tag)}
 		- E-Mail: info@hotelveneziariva.com
 		- Telefon: +39 0464 552216
