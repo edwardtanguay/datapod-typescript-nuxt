@@ -1,6 +1,5 @@
 - Allgemein
 	- [Gardasee Wetter](https://www.meteoblue.com/en/weather/14-days/garda_italy_3176320)
-	- Eurohike service hotline (8:00-20:00 täglich, Österreich): +43 664 80183 444 
 - Hotels
 	- Überblick:##thehotellist
 - **Sa 30.05. Riva del Garda**
@@ -14,8 +13,8 @@
 		- [Website: Velora Hotel](http://www.hotelveneziariva.com/de)##hotelvelora
 		- Via Franz Kafka 7-9{location: https://maps.app.goo.gl/ajEp85tkFxBJiPXx6}##locationVelora
 		- Lage am See##orientationRiva
-- **So 31.05. Riva del Garda-2. Tag**
-	- {hotel: Velora Hotel-2. Tag}
+- **So 31.05. Riva del Garda (2. Tag)**
+	- {hotel: Velora Hotel (2. Tag)}
 		- E-Mail: info@hotelveneziariva.com
 		- Telefon: +39 0464 552216
 		- [Website: Velora Hotel](http://www.hotelveneziariva.com/de)##hotelvelora
@@ -56,6 +55,7 @@
 		- [Website: Hotel Lago di Garda](https://hldg.it/de)##hotelmalcesine
 		- Viale Tommaso dal Molin 63{location: https://maps.app.goo.gl/Ch1bHZWzJmn59vZR7}##locationmalcesine
 		- Lage am See##orientationMalcesine
+	- testing
 - **Sa 06.06. Riva del Garda**
 	- {hotel: Hotel Mirage}
 		- Telefon: +39 0464 552671
@@ -75,6 +75,11 @@
 	- 14:26 München Hbf
 	- 15:17 München Hbf
 	- 19:15 Berlin Südkreuz
+- infos
+	- Eurohike service hotline 
+		- 8:00-20:00 täglich
+		- Österreich
+		- +43 664 80183 444 
 ``extrainfo
 - EXTRA INFO
 	- [Hotelliste](./media/gardasee-hotels.pdf)
