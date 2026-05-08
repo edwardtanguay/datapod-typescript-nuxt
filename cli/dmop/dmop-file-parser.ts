@@ -82,17 +82,39 @@ export class DmopFileParser {
 			mainLines.push(line);
 		}
 
-		let mainHtml = "";
-		for (const line of mainLines) {
-			const parser = new DpodMarkdownParser(line, parseVars, this.importPathAndFileName, this.sourceDirectoryPath);
-			mainHtml += parser.parse() + "\n";
-		}
+		const parseSection = (lines: string[]) => {
+			let sectionHtml = "";
+			let currentHotelId = 0;
+			let hotelLevel = -1;
 
-		let extraHtml = "";
-		for (const line of extraLines) {
-			const parser = new DpodMarkdownParser(line, parseVars, this.importPathAndFileName, this.sourceDirectoryPath);
-			extraHtml += parser.parse() + "\n";
-		}
+			for (const line of lines) {
+				const parser = new DpodMarkdownParser(line, parseVars, this.importPathAndFileName, this.sourceDirectoryPath);
+				let lineHtml = parser.parse();
+
+				if (parser.dpodLine.isHotel) {
+					currentHotelId++;
+					hotelLevel = parser.dpodLine.level;
+					lineHtml = lineHtml.replace(/class="([^"]*)"/, `data-hotel-id="${currentHotelId}" class="$1 hotel-parent"`);
+				} else if (hotelLevel !== -1 && parser.dpodLine.level > hotelLevel) {
+					lineHtml = lineHtml.replace(/class="([^"]*)"/, `style="display: none;" class="$1 hotel-child hotel-child-${currentHotelId}"`);
+					if (parser.dpodLine.imageIdCode) {
+						lineHtml = lineHtml.replace(/class="([^"]*)"/g, (match, p1) => {
+							if (match.includes('dmop-image-container')) {
+								return `style="display: none;" class="${p1} hotel-child hotel-child-${currentHotelId}"`;
+							}
+							return match;
+						});
+					}
+				} else {
+					hotelLevel = -1;
+				}
+				sectionHtml += lineHtml + "\n";
+			}
+			return sectionHtml;
+		};
+
+		let mainHtml = parseSection(mainLines);
+		let extraHtml = parseSection(extraLines);
 
 		parseVars.set("content", mainHtml);
 		parseVars.set("extrainfo", extraHtml);

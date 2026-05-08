@@ -1,7 +1,7 @@
 import { DmopLine } from "./dmop-line";
 
 export class DpodMarkdownParser {
-	private dpodLine: DmopLine;
+	public dpodLine: DmopLine;
 	private text: string;
 	private parseVars: Map<string, string>;
 	private isParsed: boolean = false;
@@ -47,7 +47,10 @@ export class DpodMarkdownParser {
 
 	private parseHotel() {
 		const houseIcon = `<span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:20px; height:20px; display:inline-block; vertical-align:middle; margin-right:8px;"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg></span>`;
-		this.text = this.text.replace(/\{hotel:(.*?)\}/g, `<span class="dmop-hotel-label">${houseIcon} $1</span>`);
+		if (this.text.includes("{hotel:")) {
+			this.dpodLine.isHotel = true;
+		}
+		this.text = this.text.replace(/\{hotel:(.*?)\}/g, `<span class="dmop-hotel-label hotel-trigger">${houseIcon} $1</span>`);
 	}
 
 	private parseDpodLocation() {

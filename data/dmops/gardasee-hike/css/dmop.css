@@ -305,6 +305,13 @@
     width: 100%;
     box-sizing: border-box;
     box-shadow: 0 2px 8px rgba(234, 88, 12, 0.1);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.dmop-hotel-label:hover {
+    background: rgba(234, 88, 12, 0.25);
+    transform: translateY(-1px);
 }
 
 .dmop-hotel-label .icon {

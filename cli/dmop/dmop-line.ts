@@ -5,13 +5,14 @@ import * as qdev from "../qtools/qdev";
 export class DmopLine {
 	private line: string;
 	public textContent: string;
-	private level: number = 0;
+	public level: number = 0;
 	private marker: string = "";
-	private imageIdCode: string = "";
+	public imageIdCode: string = "";
 	private externalAbsoluteImagePathAndFileName: string = "";
 	private relativeLocalImagePathAndFileName: string = "";
 	private importPathAndFileName: string = "";
 	private sourceDirectoryPath: string = "";
+	public isHotel: boolean = false;
 
 	constructor(line: string, importPathAndFileName: string, sourceDirectoryPath: string) {
 		this.line = line;
