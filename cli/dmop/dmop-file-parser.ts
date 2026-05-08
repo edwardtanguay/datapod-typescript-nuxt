@@ -68,20 +68,15 @@ export class DmopFileParser {
 
 		for (const line of this.lines) {
 			const trimmed = line.trim();
-			const level = this.calculateLevel(line);
 
-			if (trimmed === "- extrainfo" && level === 0) {
+			if (trimmed === "``extrainfo") {
 				inExtraSection = true;
 				continue;
 			}
 
 			if (inExtraSection) {
-				if (level > 0) {
-					extraLines.push(line);
-					continue;
-				} else {
-					inExtraSection = false;
-				}
+				extraLines.push(line);
+				continue;
 			}
 
 			mainLines.push(line);

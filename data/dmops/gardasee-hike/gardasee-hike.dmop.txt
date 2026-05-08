@@ -75,7 +75,7 @@
 	- 14:26 München Hbf
 	- 15:17 München Hbf
 	- 19:15 Berlin Südkreuz
-- extrainfo
-	- **EXTRA INFO**
-		- [Hotelliste](./media/gardasee-hotels.pdf)
-		- [Eurohike Reisedaten](https://trip.guibo.travel/psvhAX)
+``extrainfo
+- EXTRA INFO
+	- [Hotelliste](./media/gardasee-hotels.pdf)
+	- [Eurohike Reisedaten](https://trip.guibo.travel/psvhAX)
