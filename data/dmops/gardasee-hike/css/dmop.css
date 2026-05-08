@@ -38,7 +38,7 @@
     margin-bottom: 12px;
     background: linear-gradient(to right, #cbd5e1, rgba(203, 213, 225, 0));
     border-left: 5px solid #334155;
-    padding: 8px 15px;
+    padding: 4px 15px;
     border-radius: 0 4px 4px 0;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -50,7 +50,7 @@
 }
 
 .dmop-line.level-0:not(:first-child) {
-    margin-top: 3px;
+    margin-top: 0px;
 }
 
 .dmop-image-container+.dmop-line.level-0 {
@@ -352,4 +352,16 @@
 
 .no-select {
     user-select: none;
+}
+
+.dmop-line.hotel-parent {
+    margin-bottom: 0;
+}
+
+.dmop-line.hotel-last-in-section {
+    margin-bottom: -14px;
+}
+
+.hotel-parent + .hotel-child {
+    margin-top: 14px;
 }

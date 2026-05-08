@@ -87,14 +87,30 @@ export class DmopFileParser {
 			let currentHotelId = 0;
 			let hotelLevel = -1;
 
-			for (const line of lines) {
+			for (let i = 0; i < lines.length; i++) {
+				const line = lines[i];
 				const parser = new DpodMarkdownParser(line, parseVars, this.importPathAndFileName, this.sourceDirectoryPath);
 				let lineHtml = parser.parse();
 
 				if (parser.dpodLine.isHotel) {
 					currentHotelId++;
 					hotelLevel = parser.dpodLine.level;
-					lineHtml = lineHtml.replace(/class="([^"]*)"/, `data-hotel-id="${currentHotelId}" class="$1 hotel-parent"`);
+					
+					let isLastInSection = true;
+					for (let j = i + 1; j < lines.length; j++) {
+						const nextParser = new DpodMarkdownParser(lines[j], parseVars, this.importPathAndFileName, this.sourceDirectoryPath);
+						if (nextParser.dpodLine.level === hotelLevel) {
+							isLastInSection = false;
+							break;
+						}
+						if (nextParser.dpodLine.level < hotelLevel) {
+							isLastInSection = true;
+							break;
+						}
+					}
+
+					const lastClass = isLastInSection ? " hotel-last-in-section" : "";
+					lineHtml = lineHtml.replace(/class="([^"]*)"/, `data-hotel-id="${currentHotelId}" class="$1 hotel-parent${lastClass}"`);
 				} else if (hotelLevel !== -1 && parser.dpodLine.level > hotelLevel) {
 					lineHtml = lineHtml.replace(/class="([^"]*)"/, `style="display: none;" class="$1 hotel-child hotel-child-${currentHotelId}"`);
 					if (parser.dpodLine.imageIdCode) {
