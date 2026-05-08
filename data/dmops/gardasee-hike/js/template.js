@@ -121,16 +121,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const themeBtn = document.getElementById('btn-theme-toggle');
     const sunIcon = themeBtn?.querySelector('.icon-sun');
     const moonIcon = themeBtn?.querySelector('.icon-moon');
-    const containers = document.querySelectorAll('.container');
+    const body = document.body;
 
     const applyTheme = (isDark, saveToStorage = true) => {
-        containers.forEach(container => {
-            if (isDark) {
-                container.classList.add('dark-mode');
-            } else {
-                container.classList.remove('dark-mode');
-            }
-        });
+        if (isDark) {
+            body.classList.add('dark-mode');
+        } else {
+            body.classList.remove('dark-mode');
+        }
         if (sunIcon) sunIcon.style.display = isDark ? 'none' : 'block';
         if (moonIcon) moonIcon.style.display = isDark ? 'block' : 'none';
         if (saveToStorage) localStorage.setItem('gs_theme', isDark ? 'dark' : 'light');
@@ -145,20 +143,18 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     themeBtn?.addEventListener('click', () => {
-        if (containers.length > 0) {
-            // Trigger animation
+        // Trigger animation
+        themeBtn.classList.remove('flip-anim');
+        void themeBtn.offsetWidth; // Force reflow
+        themeBtn.classList.add('flip-anim');
+
+        // Stabilize in flat position before allowing hover tilt to return
+        setTimeout(() => {
             themeBtn.classList.remove('flip-anim');
-            void themeBtn.offsetWidth; // Force reflow
-            themeBtn.classList.add('flip-anim');
+        }, 600);
 
-            // Stabilize in flat position before allowing hover tilt to return
-            setTimeout(() => {
-                themeBtn.classList.remove('flip-anim');
-            }, 600);
-
-            const isNowDark = !containers[0].classList.contains('dark-mode');
-            applyTheme(isNowDark);
-        }
+        const isNowDark = !body.classList.contains('dark-mode');
+        applyTheme(isNowDark);
     });
 });
 

@@ -80,7 +80,7 @@ header {
     font-size: var(--content-scale, 100%);
 }
 
-.container.dark-mode {
+.dark-mode .container {
     background-color: #1e1e1e;
     color: #e2e8f0;
     box-shadow: 0 40px 80px -15px rgba(0, 0, 0, 0.8);
@@ -171,7 +171,7 @@ footer a:hover {
         padding: 20px 15px;
     }
 
-    .container.dark-mode {
+    .dark-mode .container {
         box-shadow: none;
         border: 1px solid rgba(255, 255, 255, 0.3);
     }
@@ -415,22 +415,22 @@ footer a:hover {
 }
 
 /* Dark Mode Overrides */
-.container.dark-mode h2 {
+.dark-mode .container h2 {
     color: #66bb6a;
 }
-.container.dark-mode p {
+.dark-mode .container p {
     color: #cbd5e1;
 }
-.container.dark-mode .level-0 {
+.dark-mode .container .level-0 {
     background: linear-gradient(to right, #334155, rgba(51, 65, 85, 0)) !important;
     border-left: 5px solid #f8fafc;
     color: #f8fafc;
     border-radius: 0 4px 4px 0 !important;
 }
-.container.dark-mode .dmop-text {
+.dark-mode .container .dmop-text {
     color: #e2e8f0;
 }
-.container.dark-mode a, .container.dark-mode a:visited {
+.dark-mode .container a, .dark-mode .container a:visited {
     color: #60a5fa; /* blue-400 equivalent for better contrast in dark mode */
 }
 
