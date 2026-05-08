@@ -62,14 +62,60 @@ export class DmopFileParser {
 	}
 
 	private getHtmlContent(parseVars: Map<string, string>): string {
-		let dmopHtml = "";
+		let mainLines: string[] = [];
+		let extraLines: string[] = [];
+		let inExtraSection = false;
+
 		for (const line of this.lines) {
-			const parser = new DpodMarkdownParser(line, parseVars, this.importPathAndFileName, this.sourceDirectoryPath);
-			dmopHtml += parser.parse() + "\n";
+			const trimmed = line.trim();
+			const level = this.calculateLevel(line);
+
+			if (trimmed === "- extrainfo" && level === 0) {
+				inExtraSection = true;
+				continue;
+			}
+
+			if (inExtraSection) {
+				if (level > 0) {
+					extraLines.push(line);
+					continue;
+				} else {
+					inExtraSection = false;
+				}
+			}
+
+			mainLines.push(line);
 		}
-		parseVars.set("content", dmopHtml);
+
+		let mainHtml = "";
+		for (const line of mainLines) {
+			const parser = new DpodMarkdownParser(line, parseVars, this.importPathAndFileName, this.sourceDirectoryPath);
+			mainHtml += parser.parse() + "\n";
+		}
+
+		let extraHtml = "";
+		for (const line of extraLines) {
+			const parser = new DpodMarkdownParser(line, parseVars, this.importPathAndFileName, this.sourceDirectoryPath);
+			extraHtml += parser.parse() + "\n";
+		}
+
+		parseVars.set("content", mainHtml);
+		parseVars.set("extrainfo", extraHtml);
+
 		const dt = new DynamicText("template", parseVars, this.templatePathAndFileName);
 		return dt.getText();
+	}
+
+	private calculateLevel(line: string) {
+		let level = 0;
+		for (let i = 0; i < line.length; i++) {
+			if (line[i] === '\t') {
+				level++;
+			} else {
+				break;
+			}
+		}
+		return level;
 	}
 
 	createWebsite() {
