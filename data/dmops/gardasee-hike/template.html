@@ -111,6 +111,13 @@
                     }
                 });
 
+                section.addEventListener('click', (e) => {
+                    if (e.target.closest('a')) {
+                        section.style.display = 'none';
+                        clearTimeout(closeTimer);
+                    }
+                });
+
                 function toggleExtra() {
                     const isVisible = section.style.display === 'block';
                     
