@@ -26,7 +26,7 @@
 	- {journey: Bus + 13km Wanderung}
 		- Bus
 			- Durch felsige Tunnel per Transfer zum Ausgangspunkt, wo sogleich die ersten spektakulären Tiefblicke auf dem Sonnensteig warten. 
-		- Wanderung
+		- 13km Wanderung
 			- Ein Stück wandern Sie direkt über dem Wasser auf dem neuen Fußweg entlang der Felsen. Am Bergbach aufwärts auf den Panoramasteig, der vorbei am Fischereimuseum in den malerischen Ort Limone führt. Hier lohnt ein Bummel durch den Ortskern und eine Kostprobe des köstlichen Zitroneneis.
 	- {hotel: Hotel Cristina Limone}
 		- Telefon: +39 0365 958111
@@ -35,6 +35,11 @@
 		- Via Tamas 20{location: https://maps.app.goo.gl/RCCfCHYPwtXttFSb9}##locationLimone
 		- Lage am See##orientationLimone
 - **Di 02.06. Gardone**
+	- {journey: Schiff + 12km Wanderung}
+		- Schiff
+			- Erleben Sie die weite Wasserfläche des riesigen Sees auf einer Schifffahrt nach Süden. 
+		- 12km Wanderung
+			- Auf historischen Pfaden geht es ab Toscolano tief ins Tal, wo Wasserfälle und Bergbäche rauschen. Sie steigen hinauf in einsame Waldgebiete in ein weitläufiges Berggebiet. Auf schattigen Wegen und kleinen Straßen in den eleganten Ort Gardone Riviera, wo ein Besuch im exotischen Garten und im schmucken Zentrum lockt.
 	- {hotel: Hotel Savoy Palace}
 		- Telefon: +39 0365 290588
 		- E-Mail: info@savoypalace.it
