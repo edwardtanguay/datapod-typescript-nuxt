@@ -81,7 +81,7 @@
 		- [Website: Hotel Mirage](http://www.mirageriva.it)##hotelriva2
 		- Viale Tommaso dal Molin 63{location: https://maps.app.goo.gl/rjBMqGZW49wHVjTL7}##locationriva2
 		- Lage am See##orientationRiva
-- **Mo 08.06.**
+- **Mo 08.06. --> Berlin**
 	- 09:43 Rovereto
 	- 14:26 München Hbf
 	- 15:17 München Hbf

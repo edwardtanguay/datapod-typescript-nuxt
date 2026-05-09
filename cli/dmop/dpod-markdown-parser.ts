@@ -33,7 +33,13 @@ export class DpodMarkdownParser {
 	}
 
 	private parseHeaderHighlight() {
-		this.text = this.text.replace(/^(\**)([a-z]{2,3}\s\d{2}\.\d{2}\.)\s+(.+?)(\**)$/i, '$2 <span class="dmop-header-info"><span class="header-arrow">➜</span> $3</span>');
+		this.text = this.text.replace(/^(\**)([a-z]{2,3}\s\d{2}\.\d{2}\.)\s+(.+?)(\**)$/i, (match, p1, p2, p3, p4) => {
+			let destination = p3;
+			if (destination.includes("-->")) {
+				destination = destination.replace("-->", '<span class="header-arrow">➜</span>');
+			}
+			return `${p2} <span class="dmop-header-info">${destination}</span>`;
+		});
 	}
 
 	private parseEmail() {
