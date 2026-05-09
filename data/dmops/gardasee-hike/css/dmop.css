@@ -397,7 +397,7 @@
 }
 
 .dmop-line.hotel-last-in-section, .dmop-line.journey-last-in-section {
-    margin-bottom: -17px;
+    margin-bottom: 0px;
 }
 
 .hotel-parent + .hotel-child, .journey-parent + .journey-child {
