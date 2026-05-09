@@ -40,8 +40,8 @@
     border-left: 5px solid #334155;
     padding: 4px 15px;
     border-radius: 0 4px 4px 0;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 0px;
+    font-size: 0.95em;
     color: #1e293b;
 }
 
@@ -295,7 +295,7 @@
     padding: 8px 12px;
     border-radius: 12px;
     font-weight: 600;
-    font-size: 0.9em;
+    font-size: 0.85em;
     margin: 6px 0 0 0;
     width: 100%;
     box-sizing: border-box;
