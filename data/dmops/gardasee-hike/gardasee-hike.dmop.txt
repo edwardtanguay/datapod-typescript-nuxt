@@ -5,10 +5,15 @@
 	- Hotels:##thehotellist
 	- Wanderungen und Transport:##hiketransport
 - **Sa 30.05. --> Riva del Garda**
-	- 06:42 Berlin Südkreuz
-	- 10:45 München Hbf
-	- 11:30 München Hbf
-	- 16:17 Rovereto
+	- {journey: Zug + Taxi}
+		- Route##togardasee
+		- Zug
+			- 06:42 Berlin Südkreuz
+			- 10:45 München Hbf
+			- 11:30 München Hbf
+			- 16:17 Rovereto
+		- Taxi
+			- Rovereto nach Riva del Garda
 	- {hotel: Velora Hotel}
 		- E-Mail: info@hotelveneziariva.com
 		- Telefon: +39 0464 552216
@@ -75,6 +80,12 @@
 		- Viale Tommaso dal Molin 63{location: https://maps.app.goo.gl/dbfqF7XtvQVh1jdu5}##locationgarda
 		- Lage am See##orientationGarda
 - **Fr 05.06. --> Malcesine**
+	- {journey: Bus + 11km Wanderung}
+		- Route##tomalcesine
+		- Bus
+			- Nach einer kurzen Busfahrt wandern Sie auf historischen Steinpflasterwegen weit hinauf zur Einsiedelei. 
+		- 11km Wanderung
+			- Vorbei an den wundersam geformten Felsformationen der „Bügeleisen“ folgen Sie dem Weg an den Flanken des Monte Baldo. Sie erreichen das Kirchlein San Michele an der Seilbahnstation des Monte Baldo. Wahlweise schaukeln Sie hinauf zum Gipfel oder direkt ins Tal nach Malcesine mit dem sehenswerten Castello di Scaligero.
 	- {hotel: Hotel Lago di Garda}
 		- Telefon: +39 045 740 0633
 		- E-Mail: info@hldg.it
@@ -96,10 +107,14 @@
 		- Viale Tommaso dal Molin 63{location: https://maps.app.goo.gl/rjBMqGZW49wHVjTL7}##locationriva2
 		- Lage am See##orientationRiva
 - **Mo 08.06. --> Berlin**
-	- 09:43 Rovereto
-	- 14:26 München Hbf
-	- 15:17 München Hbf
-	- 19:15 Berlin Südkreuz
+	- {journey: Taxi + Zug}
+		- Taxi
+			- Riva del Garda nach Rovereto
+		- Zug	
+			- 09:43 Rovereto
+			- 14:26 München Hbf
+			- 15:17 München Hbf
+			- 19:15 Berlin Südkreuz
 - infos
 	- Eurohike service hotline 
 		- 8:00-20:00 täglich
