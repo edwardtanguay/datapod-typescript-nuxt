@@ -49,14 +49,26 @@
 		- Via Zanardelli 2/4{location: https://maps.app.goo.gl/Tv2qobUbDUohZvC47}##locationgardone
 		- Lage am See##orientationGardone
 - **Mi 03.06. --> Desenzano**
+	- {journey: 15km Wanderung + Schiff}
+		- Route##todesenzano
+		- 15km Wanderung
+			- Auf dem Promenadenweg an der Bucht von Salò gemütlich in den winzigen mittelalterlichen Ort Cisano und weiter durch traumhafte Olivenhaine nach San Felice. Vorbei an Feriensiedlungen und einladenden Stränden gelangen Sie zur felsigen Halbinsel von Manerba. Eindrucksvoll thront das Kreuz hoch auf dem Felsen. Sandige Pfade führen Sie direkt an den Steilklippen rund um die Halbinsel zum idyllischen kleinen Hafen von Dusano. 
+		- Schiff
+			- Per Schiff erreichen Sie Ihren Übernachtungsort in Desenzano.
 	- {hotel: Hotel Lido International}
 		- Telefon: +39 030 914 1027
 		- E-Mail: info@lidointernational.it
 		- [Website: Hotel Lido International](http://www.lidointernational.it)##hoteldesenzano
 		- Viale Tommaso dal Molin 63{location: https://maps.app.goo.gl/HqRYPb9Hh9ykxCPM8}##locationdesenzano
 		- Lage am See##orientationDesenzano
-- **Do 04.06. Garda**
-	- {hotel: --> Hotel La Perla}
+- **Do 04.06. --> Garda**
+	- {journey: Schiff + 12km Wanderung}
+		- Route##togarda
+		- Schiff
+			- Auf der Schifffahrt können Sie die eindrucksvolle Halbinsel Sirmione bestaunen. 
+		- 12km Wanderung
+			- Ganz entspannt schlendern Sie auf wunderbaren Uferwegen durch quirlige Örtchen wie Lazise oder Bardolino entlang des Sees. Bergauf zur Rocca von Garda, von wo Sie beeindruckende Ausblicke auf die langen Strände und die kleinen Orte im Tal genießen. Durch schattige Wälder nach Garda, wo Sie eine herrliche Seepromenade und ein netter Hafen mit kleinen Fischerbooten erwartet.
+	- {hotel: Hotel La Perla}
 		- Telefon: +39 045 627 0111
 		- E-Mail: hotels@europlan.it
 		- [Website: Hotel La Perla](https://www.hotelperlagarda.com)##hotelgarda
