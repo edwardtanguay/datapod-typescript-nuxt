@@ -93,6 +93,12 @@
 		- Viale Tommaso dal Molin 63{location: https://maps.app.goo.gl/Ch1bHZWzJmn59vZR7}##locationmalcesine
 		- Lage am See##orientationMalcesine
 - **Sa 06.06. --> Riva del Garda**
+	- {journey: Bus + 15km Wanderung}
+		- Route##backtoriva
+		- Bus
+			- Zum Abschluss Ihrer Reise steht mit dem bekannten wie aussichtsreichen Panoramasteig von Busatte ein ganz besonderes Highlight auf Ihrem Programm. 
+		- 15km Wanderung
+			- Sie erklimmen gesicherte Stufenwege, queren imposante Brücken und genießen die Vogelperspektive auf das Tal unter Ihnen. Anschließend drehen Sie eine Runde durch den belebten Ferienort Torbole und wandern durch Olivenhaine und Weinreben zum Kastell von Nago. An der malerischen Uferpromenade spazieren Sie nach Riva.
 	- {hotel: Hotel Mirage}
 		- Telefon: +39 0464 552671
 		- E-Mail: info@mirageriva.it
