@@ -400,10 +400,10 @@
     margin-bottom: 0px;
 }
 
-.hotel-parent + .hotel-child, .journey-parent + .journey-child {
+.hotel-parent + .hotel-child, .hotel-last-in-section + .hotel-child {
     margin-top: 14px;
 }
 
-.hotel-last-in-section + .hotel-child, .journey-last-in-section + .journey-child {
-    margin-top: 24px;
+.journey-parent + .journey-child, .journey-last-in-section + .journey-child {
+    margin-top: 7px;
 }
