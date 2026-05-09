@@ -4,7 +4,7 @@
 	- Geografischer Kontext##gardaenvironment
 	- Hotels:##thehotellist
 	- Wanderungen und Transport:##hiketransport
-- **Sa 30.05. Riva del Garda**
+- **Sa 30.05. --> Riva del Garda**
 	- 06:42 Berlin Südkreuz
 	- 10:45 München Hbf
 	- 11:30 München Hbf
@@ -15,14 +15,14 @@
 		- [Website: Velora Hotel](http://www.hotelveneziariva.com/de)##hotelvelora
 		- Via Franz Kafka 7-9{location: https://maps.app.goo.gl/ajEp85tkFxBJiPXx6}##locationVelora
 		- Lage am See##orientationRiva
-- **So 31.05. Riva del Garda 2**
+- **So 31.05. Riva del Garda**
 	- {hotel: Velora Hotel (2. Tag)}
 		- E-Mail: info@hotelveneziariva.com
 		- Telefon: +39 0464 552216
 		- [Website: Velora Hotel](http://www.hotelveneziariva.com/de)##hotelvelora
 		- Via Franz Kafka 7-9{location: https://maps.app.goo.gl/ajEp85tkFxBJiPXx6}##locationVelora
 		- Lage am See##orientationRiva
-- **Mo 01.06. Limone sul Garda**
+- **Mo 01.06. --> Limone sul Garda**
 	- {journey: Bus + 13km Wanderung}
 		- Bus
 			- Durch felsige Tunnel per Transfer zum Ausgangspunkt, wo sogleich die ersten spektakulären Tiefblicke auf dem Sonnensteig warten. 
@@ -34,7 +34,7 @@
 		- [Website: Hotel Cristina Limone](https://www.hotelcristinalimone.it)##hotellimone
 		- Via Tamas 20{location: https://maps.app.goo.gl/RCCfCHYPwtXttFSb9}##locationLimone
 		- Lage am See##orientationLimone
-- **Di 02.06. Gardone**
+- **Di 02.06. --> Gardone**
 	- {journey: Schiff + 12km Wanderung}
 		- Schiff
 			- Erleben Sie die weite Wasserfläche des riesigen Sees auf einer Schifffahrt nach Süden. 
@@ -46,7 +46,7 @@
 		- [Website: Hotel Savoy Palace](https://www.savoypalace.it/)##hotelgardone
 		- Via Zanardelli 2/4{location: https://maps.app.goo.gl/Tv2qobUbDUohZvC47}##locationgardone
 		- Lage am See##orientationGardone
-- **Mi 03.06. Desenzano**
+- **Mi 03.06. --> Desenzano**
 	- {hotel: Hotel Lido International}
 		- Telefon: +39 030 914 1027
 		- E-Mail: info@lidointernational.it
@@ -54,28 +54,28 @@
 		- Viale Tommaso dal Molin 63{location: https://maps.app.goo.gl/HqRYPb9Hh9ykxCPM8}##locationdesenzano
 		- Lage am See##orientationDesenzano
 - **Do 04.06. Garda**
-	- {hotel: Hotel La Perla}
+	- {hotel: --> Hotel La Perla}
 		- Telefon: +39 045 627 0111
 		- E-Mail: hotels@europlan.it
 		- [Website: Hotel La Perla](https://www.hotelperlagarda.com)##hotelgarda
 		- Viale Tommaso dal Molin 63{location: https://maps.app.goo.gl/dbfqF7XtvQVh1jdu5}##locationgarda
 		- Lage am See##orientationGarda
-- **Fr 05.06. Malcesine**
+- **Fr 05.06. --> Malcesine**
 	- {hotel: Hotel Lago di Garda}
 		- Telefon: +39 045 740 0633
 		- E-Mail: info@hldg.it
 		- [Website: Hotel Lago di Garda](https://hldg.it/de)##hotelmalcesine
 		- Viale Tommaso dal Molin 63{location: https://maps.app.goo.gl/Ch1bHZWzJmn59vZR7}##locationmalcesine
 		- Lage am See##orientationMalcesine
-- **Sa 06.06. Riva del Garda**
+- **Sa 06.06. --> Riva del Garda**
 	- {hotel: Hotel Mirage}
 		- Telefon: +39 0464 552671
 		- E-Mail: info@mirageriva.it
 		- [Website: Hotel Mirage](http://www.mirageriva.it)##hotelriva2
 		- Viale Tommaso dal Molin 63{location: https://maps.app.goo.gl/Ch1bHZWzJmn59vZR7}##locationriva2
 		- Lage am See##orientationRiva
-- **So 07.06. Riva del Garda 2**
-	- {hotel: Hotel Mirage-2. Tag}
+- **So 07.06. Riva del Garda**
+	- {hotel: Hotel Mirage (2. Tag)}
 		- Telefon: +39 0464 552671
 		- E-Mail: info@mirageriva.it
 		- [Website: Hotel Mirage](http://www.mirageriva.it)##hotelriva2
