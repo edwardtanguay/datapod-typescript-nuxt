@@ -375,8 +375,17 @@
     font-weight: 500;
 }
 
+.header-arrow {
+    color: #eab308; /* yellow-500 */
+    margin-right: 4px;
+}
+
 .dark-mode .container .dmop-header-info {
     color: #facc15; /* yellow-400 for dark mode */
+}
+
+.dark-mode .container .header-arrow {
+    color: #facc15;
 }
 
 .no-select {
