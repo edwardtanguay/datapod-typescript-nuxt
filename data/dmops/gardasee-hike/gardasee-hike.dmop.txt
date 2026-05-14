@@ -1,6 +1,6 @@
 - Allgemein
 	- [Gardasee Wetter](https://www.google.com/search?q=wetter+gardasee&oq=wetter+gardesee&gs_lcrp=EgZjaHJvbWUqCQgBEAAYDRiABDIGCAAQRRg5MgkIARAAGA0YgAQyCQgCEAAYDRiABDIJCAMQABgNGIAEMgkIBBAAGA0YgAQyCQgFEAAYDRiABDIJCAYQABgNGIAEMgkIBxAAGA0YgAQyCQgIEAAYDRiABDIJCAkQABgNGIAEMgkIChAAGA0YgAQyCQgLEAAYDRiABDIJCAwQABgNGIAEMgkIDRAAGA0YgAQyCQgOEAAYDRiABNIBCDY5NDBqMGo0qAIOsAIB8QVr9X0HlHG_QA&client=ms-android-samsung-ss&sourceid=chrome-mobile&ie=UTF-8)
-	- [KMZ Datei](./media/garda001.kmz) für Google Earth am Smartphone
+	- [KMZ Datei](./media/garda002.kmz) für Google Earth am Smartphone
 	- Schifffahrpläne: [www.navigazionelaghi.it](https://www.navigazionelaghi.it)
 	- Busfahrpläne: [www.arriva.it](https://www.arriva.it)
 - Mitbringen
@@ -10,8 +10,10 @@
 	- Müssen wir unsere Tickets für die Busse und Schiffe selbst kaufen?
 	- ::warn:: Fragen zu der Fähre in Limone ::warn::
 		- Wo ist der Fährhafen in Limone?##whichlimoneferry 
+		- Es gibt anscheinend zwei Hafen?##twoports
 		- Wo sind die Stationen "Limone Centro" und "Limone Multipiano"?##multiplano
 		- Die Zeiten von Eurohike und "www.navigazionelaghi.it" stimmen nicht überein:##timesdontmakesense
+		- Aber bei [www.navigazionelaghi.it](https://www.navigazionelaghi.it) wenn ich wähle "includi servizo rapido", bekomme ich:##ifyouchoosefast
 - Überblick
 	- Geografischer Kontext##gardaenvironment
 	- Hotels:##thehotellist
@@ -88,7 +90,7 @@
 				- Fahrplan: [www.navigazionelaghi.it](https://www.navigazionelaghi.it)##limonboatsdf
 				- [Servizio rapido Fahrplan](https://www.torridelbenaco.live/wp-content/uploads/2026/05/Fahrplan-oeffentlichen-Verkehrs-sommer-2026.pdf)##boatlimone
 		- Wanderung
-			- 12 km von Maderno zum Hotel in Gardona Riviera##hike002-overview
+			- 12 km von Maderno zum Hotel in Gardone Riviera##hike002-overview
 			- die heutige Wanderroute ist über weite Strecken mit "BVG" (Bassa Via del Garda) rot weißen Farben markiert und beschildert##bvgsigns
 			- es gibt unterwegs auf der Standardroute keine Einkehrmöglichkeit
 				- packen Sie ausreichen Proviant und Wasser ein
@@ -196,3 +198,12 @@
 	- OLD: [Gardasee Wetter](https://www.meteoblue.com/en/weather/14-days/garda_italy_3176320)
 	- unsere Kontaktperson:
 		- Sophie Helene Murauer, +43 621960877174, s.murauer@eurohike.at
+	- learn
+		- [Italy Regions/Water](./media/learn/italy.pdf)
+		- [Italy Cities](./media/learn/italy-cities.pdf)
+		- [Italy Rivers](./media/learn/italy-rivers.pdf)
+		- [Italy Islands](./media/learn/italy-islands.pdf)
+		- [Italy Topography](./media/learn/italy-topography.pdf)
+		- [Italy blank](./media/learn/italy-blank.pdf)
+		- [Gardasee](./media/learn/gardasee.pdf)
+		- [Gardasee blank](./media/learn/gardasee-blank.pdf)
