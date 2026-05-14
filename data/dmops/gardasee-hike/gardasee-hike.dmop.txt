@@ -1,5 +1,17 @@
 - Allgemein
-	- [Gardasee Wetter](https://www.meteoblue.com/en/weather/14-days/garda_italy_3176320)
+	- [Gardasee Wetter](https://www.google.com/search?q=wetter+gardasee&oq=wetter+gardesee&gs_lcrp=EgZjaHJvbWUqCQgBEAAYDRiABDIGCAAQRRg5MgkIARAAGA0YgAQyCQgCEAAYDRiABDIJCAMQABgNGIAEMgkIBBAAGA0YgAQyCQgFEAAYDRiABDIJCAYQABgNGIAEMgkIBxAAGA0YgAQyCQgIEAAYDRiABDIJCAkQABgNGIAEMgkIChAAGA0YgAQyCQgLEAAYDRiABDIJCAwQABgNGIAEMgkIDRAAGA0YgAQyCQgOEAAYDRiABNIBCDY5NDBqMGo0qAIOsAIB8QVr9X0HlHG_QA&client=ms-android-samsung-ss&sourceid=chrome-mobile&ie=UTF-8)
+	- [KMZ Datei](./media/garda001.kmz) für Google Earth am Smartphone
+	- Schifffahrpläne: [www.navigazionelaghi.it](https://www.navigazionelaghi.it)
+	- Busfahrpläne: [www.arriva.it](https://www.arriva.it)
+- Mitbringen
+	- Zeitungspapier (für nasse Wanderstiefel) 
+- Fragen
+	- Wann und wo nehmen wir in Riva del Garda den Bus nach Limone?
+	- Müssen wir unsere Tickets für die Busse und Schiffe selbst kaufen?
+	- ::warn:: Fragen zu der Fähre in Limone ::warn::
+		- Wo ist der Fährhafen in Limone?##whichlimoneferry 
+		- Wo sind die Stationen "Limone Centro" und "Limone Multipiano"?##multiplano
+		- Die Zeiten von Eurohike und "www.navigazionelaghi.it" stimmen nicht überein:##timesdontmakesense
 - Überblick
 	- Geografischer Kontext##gardaenvironment
 	- Hotels:##thehotellist
@@ -28,12 +40,37 @@
 		- Via Franz Kafka 7-9{location: https://maps.app.goo.gl/ajEp85tkFxBJiPXx6}##locationVelora
 		- Lage am See##orientationRiva
 - **Mo 01.06. --> Limone sul Garda**
-	- {journey: Bus + 13km Wanderung}
+	- {journey: Bus + 11 km Wanderung}
 		- Route##tolimone
+		- Organisatorisches
+			- 08:30-09:30 von einem Eurohike-Transfer abgeholt 
+				- nähere beim Informationsgespräch
+				- zum Wanderstart gebracht
+				- von dort wandern Sie bis ans Ziel nach Limone
 		- Bus
-			- Durch felsige Tunnel per Transfer zum Ausgangspunkt, wo sogleich die ersten spektakulären Tiefblicke auf dem Sonnensteig warten. 
-		- 13km Wanderung
-			- Ein Stück wandern Sie direkt über dem Wasser auf dem neuen Fußweg entlang der Felsen. Am Bergbach aufwärts auf den Panoramasteig, der vorbei am Fischereimuseum in den malerischen Ort Limone führt. Hier lohnt ein Bummel durch den Ortskern und eine Kostprobe des köstlichen Zitroneneis.
+			- durch felsige Tunnel per Transfer zum Ausgangspunkt, wo sogleich die ersten spektakulären Tiefblicke auf dem Sonnensteig warten.##busToLimone
+		- 11 km Wanderung
+			- die heutige Wanderung können Sie flexibel gestalten
+			- unsere ca. 11 km Route zum Hotel##limonehike2
+			- Fußweg entlang der Felsen ("ciclopista")##tehbiketrail
+			- am **Bergbach** aufwärts auf den **Panoramasteig** oder **"Sentiero del Sole"
+			- führt zu einigen Aussichtsplätzen 
+			- entweder die obere "Postazione Alta" oder die untere "Postazione Bassa"##highandlow
+				- bei der oberen "Postazione Alte" lohnen die Tiefblicke allemal
+				- ist aber anspruchsvoll (einige Stellen loser Schotter) und ein schmaler Berg-Steig für Geübte
+			- diese Strecke nimmt nach 2 km ein plötzliches Ende 
+			- von hier wandern Sie Richtung Limone auf einer hübschen Pflastergasse
+			- ein kurzer steiler Abstecher führt Sie zum Wasserfall##towasserfall
+			- Wasserfall "Cascata Sopino"##sopinowaterfall
+			- dann weiter nach Limone
+			- Ristorante Gemma##gemma
+			- Bar Spaghetteria Da Titano Di Fort Enea##barspag
+			- **Fischereimuseum**##fischermuseum
+			- Sie können auch am Strand Spiaggia Cola baden gehen##colaswim
+			- dann ein Bummel durch den Ortskern Limone und eine Kostprobe des köstlichen Zitroneneis
+			- Limone aus dem Norden##arrivingInLimone
+			- bei Hotel Christina ankommen##arriveHotelChristina
+			- INFO: *"Der Name Limone kommt vom lateinischen Wort 'Limes' (Grenze), weil hier lange die Grenze zwischen Österreich und Italien verlief."*
 	- {hotel: Hotel Cristina Limone}
 		- Telefon: +39 0365 958111
 		- E-Mail: cristina@parchotels.it
@@ -41,12 +78,35 @@
 		- Via Tamas 20{location: https://maps.app.goo.gl/RCCfCHYPwtXttFSb9}##locationLimone
 		- Lage am See##orientationLimone
 - **Di 02.06. --> Gardone Riviera**
-	- {journey: Schiff + 12km Wanderung}
-		- Route##togardone
-		- Schiff
-			- Erleben Sie die weite Wasserfläche des riesigen Sees auf einer Schifffahrt nach Süden. 
-		- 12km Wanderung
-			- Auf historischen Pfaden geht es ab Toscolano tief ins Tal, wo Wasserfälle und Bergbäche rauschen. Sie steigen hinauf in einsame Waldgebiete in ein weitläufiges Berggebiet. Auf schattigen Wegen und kleinen Straßen in den eleganten Ort Gardone Riviera, wo ein Besuch im exotischen Garten und im schmucken Zentrum lockt.
+	- {journey: Schiff + 12 km Wanderung}
+		- Schifffahrt von Limone bis Maderno##togardone
+			- Seien Sie in der Hauptsaison frühzeitig am Schiffsanleger in Limone
+			- wir empfehlen das erste Schiff, ein Schnellboot (SR=servizio rapido), so sind Sie schneller am Wanderstart
+				- ::warn:: Achtung: es ist nicht klar wann/wo die Fähre kommt, Zeiten von Eurohike und navigazione.it stimmen nicht überein, unbedingt Fragen ::warn::
+				- Abfahrt in Limone um 08:55 Uhr (Schnellboot) und 09:05 Uhr
+				- Fahrtdauer ca. 1 Stunde
+				- Fahrplan: [www.navigazionelaghi.it](https://www.navigazionelaghi.it)##limonboatsdf
+				- [Servizio rapido Fahrplan](https://www.torridelbenaco.live/wp-content/uploads/2026/05/Fahrplan-oeffentlichen-Verkehrs-sommer-2026.pdf)##boatlimone
+		- Wanderung
+			- 12 km von Maderno zum Hotel in Gardona Riviera##hike002-overview
+			- die heutige Wanderroute ist über weite Strecken mit "BVG" (Bassa Via del Garda) rot weißen Farben markiert und beschildert##bvgsigns
+			- es gibt unterwegs auf der Standardroute keine Einkehrmöglichkeit
+				- packen Sie ausreichen Proviant und Wasser ein
+				- Bars und Restaurants gibt es erst wieder in Gardone
+			- Toscolano-Maderno 
+				- eine Gemeinde getrennt durch den Toscolano-Bach##madtos
+				- Toscolano-Maderno aus der Luft##toscolanomadernoair2
+			- zunächst durch Maderno##durchMaderno 
+			- ab Toscolano tief ins Tal
+				- wo Wasserfälle und Bergbäche rauschen##indental
+			- dann hinauf in einsame Waldgebiete in ein weitläufiges Berggebiet##waldgebiet
+			- danach auf schattigen Wegen und kleinen Straßen in den eleganten Ort Gardone Riviera##aboveGardone
+				- ein Besuch im Botanischen Garten##botanischgarten
+				- einen Spaziergang durch das charmante Zentrum##charmingcenter
+		- Sehenswürdigkeiten
+			- Il Vittoriale degli Italiani
+				- der ehemalige Wohnsitz des Schriftstellers Gabriele D'Annunzio
+				- 9-17 Uhr [MORE INFO](https://www.vittoriale.it/)##vittoriale
 	- {hotel: Hotel Savoy Palace}
 		- Telefon: +39 0365 290588
 		- E-Mail: info@savoypalace.it
@@ -54,9 +114,9 @@
 		- Via Zanardelli 2/4{location: https://maps.app.goo.gl/Tv2qobUbDUohZvC47}##locationgardone
 		- Lage am See##orientationGardone
 - **Mi 03.06. --> Desenzano**
-	- {journey: 15km Wanderung + Schiff}
+	- {journey: 15 km Wanderung + Schiff}
 		- Route##todesenzano
-		- 15km Wanderung
+		- 15 km Wanderung
 			- Auf dem Promenadenweg an der Bucht von Salò gemütlich in den winzigen mittelalterlichen Ort Cisano und weiter durch traumhafte Olivenhaine nach San Felice. Vorbei an Feriensiedlungen und einladenden Stränden gelangen Sie zur felsigen Halbinsel von Manerba. Eindrucksvoll thront das Kreuz hoch auf dem Felsen. Sandige Pfade führen Sie direkt an den Steilklippen rund um die Halbinsel zum idyllischen kleinen Hafen von Dusano. 
 		- Schiff
 			- Per Schiff erreichen Sie Ihren Übernachtungsort in Desenzano.
@@ -67,12 +127,13 @@
 		- Viale Tommaso dal Molin 63{location: https://maps.app.goo.gl/HqRYPb9Hh9ykxCPM8}##locationdesenzano
 		- Lage am See##orientationDesenzano
 - **Do 04.06. --> Garda**
-	- {journey: Schiff + 12km Wanderung}
+	- {journey: Schiff + 12 km Wanderung}
 		- Route##togarda
 		- Schiff
 			- Auf der Schifffahrt können Sie die eindrucksvolle Halbinsel Sirmione bestaunen. 
-		- 12km Wanderung
+		- 12 km Wanderung
 			- Ganz entspannt schlendern Sie auf wunderbaren Uferwegen durch quirlige Örtchen wie Lazise oder Bardolino entlang des Sees. Bergauf zur Rocca von Garda, von wo Sie beeindruckende Ausblicke auf die langen Strände und die kleinen Orte im Tal genießen. Durch schattige Wälder nach Garda, wo Sie eine herrliche Seepromenade und ein netter Hafen mit kleinen Fischerbooten erwartet.
+		- Von der Rocca di Garda aus von Süden gesehen: die Stadt Garda rechts und der Monte Luppia im Hintergrund##panoramaGarda
 	- {hotel: Hotel La Perla}
 		- Telefon: +39 045 627 0111
 		- E-Mail: hotels@europlan.it
@@ -80,11 +141,11 @@
 		- Viale Tommaso dal Molin 63{location: https://maps.app.goo.gl/dbfqF7XtvQVh1jdu5}##locationgarda
 		- Lage am See##orientationGarda
 - **Fr 05.06. --> Malcesine**
-	- {journey: Bus + 11km Wanderung}
+	- {journey: Bus + 11 km Wanderung}
 		- Route##tomalcesine
 		- Bus
 			- Nach einer kurzen Busfahrt wandern Sie auf historischen Steinpflasterwegen weit hinauf zur Einsiedelei. 
-		- 11km Wanderung
+		- 11 km Wanderung
 			- Vorbei an den wundersam geformten Felsformationen der „Bügeleisen“ folgen Sie dem Weg an den Flanken des Monte Baldo. Sie erreichen das Kirchlein San Michele an der Seilbahnstation des Monte Baldo. Wahlweise schaukeln Sie hinauf zum Gipfel oder direkt ins Tal nach Malcesine mit dem sehenswerten Castello di Scaligero.
 	- {hotel: Hotel Lago di Garda}
 		- Telefon: +39 045 740 0633
@@ -93,11 +154,11 @@
 		- Viale Tommaso dal Molin 63{location: https://maps.app.goo.gl/Ch1bHZWzJmn59vZR7}##locationmalcesine
 		- Lage am See##orientationMalcesine
 - **Sa 06.06. --> Riva del Garda**
-	- {journey: Bus + 15km Wanderung}
+	- {journey: Bus + 15 km Wanderung}
 		- Route##backtoriva
 		- Bus
 			- Zum Abschluss Ihrer Reise steht mit dem bekannten wie aussichtsreichen Panoramasteig von Busatte ein ganz besonderes Highlight auf Ihrem Programm. 
-		- 15km Wanderung
+		- 15 km Wanderung
 			- Sie erklimmen gesicherte Stufenwege, queren imposante Brücken und genießen die Vogelperspektive auf das Tal unter Ihnen. Anschließend drehen Sie eine Runde durch den belebten Ferienort Torbole und wandern durch Olivenhaine und Weinreben zum Kastell von Nago. An der malerischen Uferpromenade spazieren Sie nach Riva.
 	- {hotel: Hotel Mirage}
 		- Telefon: +39 0464 552671
@@ -132,3 +193,6 @@
 	- [Ihr Reisebegleiter](./media/eurohike-booklet-deutsch.pdf)
 	- [Hotelliste](./media/gardasee-hotels.pdf)
 	- [Eurohike Reisedaten](https://trip.guibo.travel/psvhAX)
+	- OLD: [Gardasee Wetter](https://www.meteoblue.com/en/weather/14-days/garda_italy_3176320)
+	- unsere Kontaktperson:
+		- Sophie Helene Murauer, +43 621960877174, s.murauer@eurohike.at
