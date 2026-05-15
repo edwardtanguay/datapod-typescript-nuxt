@@ -7,13 +7,6 @@
 	- Zeitungspapier (für nasse Wanderstiefel) 
 - Fragen
 	- Wann und wo nehmen wir in Riva del Garda den Bus nach Limone?
-	- Müssen wir unsere Tickets für die Busse und Schiffe selbst kaufen?
-	- ::warn:: Fragen zu der Fähre in Limone ::warn::
-		- Wo ist der Fährhafen in Limone?##whichlimoneferry 
-		- Es gibt anscheinend zwei Hafen?##twoports
-		- Wo sind die Stationen "Limone Centro" und "Limone Multipiano"?##multiplano
-		- Die Zeiten von Eurohike und "www.navigazionelaghi.it" stimmen nicht überein:##timesdontmakesense
-		- Aber bei [www.navigazionelaghi.it](https://www.navigazionelaghi.it) wenn ich wähle "includi servizo rapido", bekomme ich:##ifyouchoosefast
 - Überblick
 	- Geografischer Kontext##gardaenvironment
 	- Hotels:##thehotellist
@@ -207,3 +200,11 @@
 		- [Italy blank](./media/learn/italy-blank.pdf)
 		- [Gardasee](./media/learn/gardasee.pdf)
 		- [Gardasee blank](./media/learn/gardasee-blank.pdf)
+	- alte Fragen
+		- Müssen wir unsere Tickets für die Busse und Schiffe selbst kaufen? / Bus yes, we get ship tickets
+		- ::warn:: Fragen zu der Fähre in Limone ::warn:: / check before locally
+			- Wo ist der Fährhafen in Limone?##whichlimoneferry 
+			- Es gibt anscheinend zwei Hafen?##twoports
+			- Wo sind die Stationen "Limone Centro" und "Limone Multipiano"?##multiplano
+			- Die Zeiten von Eurohike und "www.navigazionelaghi.it" stimmen nicht überein:##timesdontmakesense
+			- Aber bei [www.navigazionelaghi.it](https://www.navigazionelaghi.it) wenn ich wähle "includi servizo rapido", bekomme ich:##ifyouchoosefast		
