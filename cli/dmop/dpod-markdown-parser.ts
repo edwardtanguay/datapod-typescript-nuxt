@@ -18,6 +18,7 @@ export class DpodMarkdownParser {
 			this.parseHeaderHighlight();
 			this.parseDpodLocation();
 			this.parseWarningSign();
+			this.parseConstruction();
 			this.parseDpodEmojis();
 			this.parseTimes();
 			this.parseBold();
@@ -76,6 +77,11 @@ export class DpodMarkdownParser {
 	private parseWarningSign() {
 		const warnIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="#ffcc00" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width:1.2em; height:1.2em; display:inline-block; vertical-align:middle; margin-right:4px; filter: drop-shadow(0 0 2px rgba(255, 204, 0, 0.5));"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>`;
 		this.text = this.text.replace(/::warn::/g, warnIcon);
+	}
+
+	private parseConstruction() {
+		const constructionIcon = `<svg viewBox="0 0 24 24" style="width:1.2em; height:1.2em; display:inline-block; vertical-align:middle; margin-right:4px; filter: drop-shadow(0 0 2px rgba(255, 204, 0, 0.5));"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" fill="#ffcc00" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><g transform="translate(12, 14.5) scale(0.016) translate(-256, -256)" fill="#000"><g transform="translate(0, 0)"><path d="M352 320c88.4 0 160-71.6 160-160c0-15.3-2.2-30.1-6.2-44.2c-3.1-10.8-16.4-13.2-24.3-5.3l-76.8 76.8c-3 3-7.1 4.7-11.3 4.7L336 192c-8.8 0-16-7.2-16-16l0-57.4c0-4.2 1.7-8.3 4.7-11.3l76.8-76.8c7.9-7.9 5.4-21.2-5.3-24.3C382.1 2.2 367.3 0 352 0C263.6 0 192 71.6 192 160c0 19.1 3.4 37.5 9.5 54.5L19.9 396.1C7.2 408.8 0 426.1 0 444.1C0 481.6 30.4 512 67.9 512c18 0 35.3-7.2 48-19.9L297.5 310.5c17 6.2 35.4 9.5 54.5 9.5zM80 408a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/></g><g transform="translate(540, 0) scale(-1, 1)"><path d="M413.5 237.5c-28.2 4.8-58.2-3.6-80-25.4l-38.1-38.1C280.4 159 272 138.8 272 117.6l0-12.1L192.3 62c-5.3-2.9-8.6-8.6-8.3-14.7s3.9-11.5 9.5-14l47.2-21C259.1 4.2 279 0 299.2 0l18.1 0c36.7 0 72 14 98.7 39.1l44.6 42c24.2 22.8 33.2 55.7 26.6 86L503 183l8-8c9.4-9.4 24.6-9.4 33.9 0l24 24c9.4 9.4 9.4 24.6 0 33.9l-88 88c-9.4 9.4-24.6 9.4-33.9 0l-24-24c-9.4-9.4-9.4-24.6 0-33.9l8-8-17.5-17.5zM27.4 377.1L260.9 182.6c3.5 4.9 7.5 9.6 11.8 14l38.1 38.1c6 6 12.4 11.2 19.2 15.7L134.9 484.6c-14.5 17.4-36 27.4-58.6 27.4C34.1 512 0 477.8 0 435.7c0-22.6 10.1-44.1 27.4-58.6z"/></g></g></svg>`;
+		this.text = this.text.replace(/::construction::/g, constructionIcon);
 	}
 
 	private parseDpodEmojis() {

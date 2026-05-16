@@ -3,10 +3,9 @@
 	- [KMZ Datei](./media/garda002.kmz) für Google Earth am Smartphone
 	- Schifffahrpläne: [www.navigazionelaghi.it](https://www.navigazionelaghi.it)
 	- Busfahrpläne: [www.arriva.it](https://www.arriva.it)
-- Mitbringen
-	- Zeitungspapier (für nasse Wanderstiefel) 
 - Fragen
 	- Wann und wo nehmen wir in Riva del Garda den Bus nach Limone?
+	- Wie können wir am besten Sirmione besuchen?
 - Überblick
 	- Geografischer Kontext##gardaenvironment
 	- Hotels:##thehotellist
@@ -77,11 +76,13 @@
 		- Schifffahrt von Limone bis Maderno##togardone
 			- Seien Sie in der Hauptsaison frühzeitig am Schiffsanleger in Limone
 			- wir empfehlen das erste Schiff, ein Schnellboot (SR=servizio rapido), so sind Sie schneller am Wanderstart
-				- ::warn:: Achtung: es ist nicht klar wann/wo die Fähre kommt, Zeiten von Eurohike und navigazione.it stimmen nicht überein, unbedingt Fragen ::warn::
-				- Abfahrt in Limone um 08:55 Uhr (Schnellboot) und 09:05 Uhr
-				- Fahrtdauer ca. 1 Stunde
-				- Fahrplan: [www.navigazionelaghi.it](https://www.navigazionelaghi.it)##limonboatsdf
-				- [Servizio rapido Fahrplan](https://www.torridelbenaco.live/wp-content/uploads/2026/05/Fahrplan-oeffentlichen-Verkehrs-sommer-2026.pdf)##boatlimone
+				- ::warn:: Achtung: es ist nicht klar wann/wo die Fähre kommt::warn::##limonethreeports
+					- in den Reisedokumenten sieht es aus als "Limone Traghetto" das Richtige ist, nicht "Fähre Limone nach Malcesine"##limoneferryport
+				- Zeiten von Eurohike und navigazione.it stimmen nicht überein, unbedingt Fragen 
+					- Abfahrt in Limone um 08:55 Uhr (Schnellboot) und 09:05 Uhr
+					- Fahrtdauer ca. 1 Stunde
+					- Fahrplan: [www.navigazionelaghi.it](https://www.navigazionelaghi.it)##limonboatsdf
+					- [Servizio rapido Fahrplan](https://www.torridelbenaco.live/wp-content/uploads/2026/05/Fahrplan-oeffentlichen-Verkehrs-sommer-2026.pdf)##boatlimone
 		- Wanderung
 			- 12 km von Maderno zum Hotel in Gardone Riviera##hike002-overview
 			- die heutige Wanderroute ist über weite Strecken mit "BVG" (Bassa Via del Garda) rot weißen Farben markiert und beschildert##bvgsigns
@@ -120,7 +121,41 @@
 		- E-Mail: info@lidointernational.it
 		- [Website: Hotel Lido International](http://www.lidointernational.it)##hoteldesenzano
 		- Viale Tommaso dal Molin 63{location: https://maps.app.goo.gl/HqRYPb9Hh9ykxCPM8}##locationdesenzano
-		- Lage am See##orientationDesenzano
+		- Lage am See##orientationDesenzano	
+	- ::construction:: TEXT AUS DEM BOOKLET, WIRD NOCH ÜBERARBEITET ::construction::
+		- Organisatorisches
+			- Heute wandern Sie von Saló über die Halbinsel der Rocca von Manerba bis in den Hafen Porto Dusano. Dort nehmen Sie das Schiff nach Desenzano. Wer in Gardone übernachtet hat, nimmt morgens den Bus nach Salo zum Wanderstart. Beachten Sie bitte den Fahrplan des Schiffes! Es gibt je nach Saison nur ein oder zwei Fahrten am Nachmittag. Hinweis: Bei sehr starkem Wellengang, bei Sturm oder Gewitter können die Schiffe am Hafen Porto Dusano nicht anlegen. In diesem Falle müssen Sie entweder hinauf in den Ort Manerba/Montinelle wandern und dort einen Bus nehmen oder sich ein Taxi organisieren, möglicherweise können Sie sich hierfür mit anderen Reisenden zusammentun. Taxinummern hängen aus.
+		- Ihre Wanderung 
+			- Die heutige Wanderung führt Sie zunächst am Lungolago von Salo direkt am Uferweg entlang. Dann folgt ein kurzer Aufstieg ins kleine Dorf Cisano, von wo sich wunderbare Olivenhaine erstrecken, durch welche Sie nun gemütlich auf Schotterwegen weiterwandern. Bald geht es durch San Felice abwärts und weiter auf Gehwegen durch die Urlaubersiedlungen, hier sind teilweise die Uferwege nicht öffentlich zugänglich. Später erreichen Sie den See und können in einer Strandbar einkehren. Überqueren Sie den Strand Pisenze und dann geht es richtig los: Der Aufstieg auf die Halbinsel der Rocca und der Weiterweg über die Spitze der Punta Sasso ist wunderbar. Geübte schwindelfreie Bergsteiger können zusätzlich die Rocca und das Kreuz auf der Spitze erklimmen, gemütliche Geher wandern direkt unten über den Aussichtsplatz Punta Sasso weiter. Stets in Klippen-Nähe überschreiten Sie die Halbinsel auf Pfaden und Steigen über Fels und Wald bis Sie den Hafen von Dusano erreichen. Dort nehmen Sie das Schiff, das Sie nach Desenzano bringt. Beachten Sie bitte den Fahrplan für Ihre Schifffahrt am Nachmittag!
+		- Wichtiger Hinweis
+			- Die Zusatzrunde über die Rocca eignet sich ausschließlich für geübte Bergsteiger und schwindelfreie Personen! Etwa 2km und 100hm anspruchsvoller Aufstieg!
+		- Optionen
+			- Wer nicht trittsicher und/oder nicht schwindelfrei ist, läßt bitte den Aufstieg zur Rocca aus. Dieser ist ein alpiner Steig über steile Felsen, hier gibt es teils Seilsicherungen. Nur für alpin Erfahrene!
+			- Auf der Halblinsel der Rocca nach der Punta Sasso gibt es verschiedene Wege. Der Hauptweg ist nur schwach markiert. Das letzte Stück an der Klippe erfordert Trittsicherheit und Schwindelfreiheit. Hier wahlweise auf den Waldweg etwas abseits der Küste ausweichen (pink in der Karte).
+			- Machen Sie statt der Wanderung eine Schifffahrt und einen Spaziergang auf der Halbinsel Sirmione und fahren Sie von dort weiter nach Desenzano.
+		- Öffentliche Verkehrsmittel
+			- Bus 202 von Gardone nach Saló. Abfahrt in Gardone (corso Zanardelli) im halb-Stunden-Takt um 8:10, 08:40, 09:10,...
+			- Bus 006/027 von Salo nach Desenzano. Abfahrt in Saló (autostazione) um 07:34 und 12:10 Uhr.
+			- Schifffahrt vom Hafen Porto Dusano nach Desenzano. Abfahrt in Manerba um 12:23 und 17:00 Uhr.
+			- Schifffahrt von Salo nach Desenzano. Abfahrt in Saló um 10:24*, 11:45, 12:09* und 14:00, Ankunft in Desenzano nach ca. 2 Stunden. (*Schnellboot, Ankunft nach ca. 1,5 Stunden).
+		- Dom di Santa Maria Annunziata
+			- Mit Santa Maria Annunziata besitzt Salò den einzigen Dom am Gardasee. Von außen präsentiert sich das Gebäude sehr schlicht, da die Fassade unvollendet ist, im Inneren ist das Gotteshaus aber sehr prachtvoll. Ein Highlight ist die Christusdarstellung des Bildhauers Johannes Teutonicus aus dem 16. Jahrhundert
+		- Salò
+			- Salò ist als eine reizvolle Stadt am Ufer des Gardasees, sie erstreckt sich auf einer Gesamtfläche von rund 30 Quadratkilometern und beheimatet mehr als 10.000 Menschen. Salò ist die größte Stadt am Westufer des Gardasees und gehört zur Provinz Brescia. Die Gemeinde liegt am Fuße des „Monte San Bartolomeo“.
+		- Chiosco Porto Torchio
+		- Da Rino
+		- Rocca di Manerba
+			- Die Rocca di Manerba ist eine beeindruckende Felsformation und archäologische Stätte am südwestlichen Ufer des Gardasees. Diese markante Klippe, die steil in den See abfällt, ist nicht nur ein Naturwunder, sondern auch ein Ort von großer historischer Bedeutung. Auf dem Plateau befinden sich die Überreste einer mittelalterlichen Festung. Archäologische Funde zeigen, dass der Ort bereits in der Bronzezeit besiedelt war.
+		- Bar Al Museo
+		- Osteria Da Mari con cucina
+		- Desenzano del Garda
+			- Bereits im Mittelalter war die Stadt ein bedeutender Handelsstützpunkt. Davon zeugen die vielen Handelshäuser mit ihren typisch gewölbten Lagerräumen, die vor allem im historischen Ortskern und rund um den Hafen zu finden sind. Wer sich nur einen Cappuccino genehmigen und das rege Treiben in den Straßen und Gassen genießen möchte, ist im Zentrum von Desenzano mit seinen hübschen und romantischen Plätzen ebenso gut aufgehoben. In den Sommermonaten herrscht hier reges Treiben.
+		- La Cambusa della Fraglia
+			- Italienisches Restaurant mit mediterraner Küche und regionalem Einfluss, bekannt für frische Fisch und Pasta Spezialitäten sowie entspannte Terrasse direkt am Gardasee.
+		- Ristorante Al Fattore
+			- Italienisches Restaurant & Pizzeria mit mediterraner und lombardischer Küche, bekannt für frische Pizza, Pasta, Fisch und Fleischspezialitäten sowie einladende Terrasse am historischen Ortskern, Via Roma 8, 25015 Desenzano del Garda
+		- Ristorante Garda
+			- Italienisches Restaurant mit klassischer italienischer Küche, bekannt für vielfältige Pasta‑ und Pizzaspezialitäten, frische Meeresgerichte und entspannte Terrasse mit Blick auf den Gardasee, Lungolago Cesare Battisti 21, 25015 Desenzano del Garda		
 - **Do 04.06. --> Garda**
 	- {journey: Schiff + 12 km Wanderung}
 		- Route##togarda
@@ -135,6 +170,48 @@
 		- [Website: Hotel La Perla](https://www.hotelperlagarda.com)##hotelgarda
 		- Viale Tommaso dal Molin 63{location: https://maps.app.goo.gl/dbfqF7XtvQVh1jdu5}##locationgarda
 		- Lage am See##orientationGarda
+	- ::construction:: TEXT AUS DEM BOOKLET, WIRD NOCH ÜBERARBEITET ::construction::
+		- Organisatorisches
+			- Heute fahren Sie mit dem Schiff von Desenzano über den See ans Ostufer des Gardasees. Steigen Sie in Lazise aus. Dann wandern Sie bis ans Ziel Garda.
+		- Ihre Wanderung
+			- Genießen Sie heute eine gemütliche Uferwanderung durch die schönsten Seeorte am Ostufer. Von Lazise geht es über Cisano nach Bardolino, entspannt am Uferweg. Nach den Campingplätzen hinter Bardolino wandern Sie anfangs auf Asphalt, bald auf Schotterwegen hinauf in den Wald zur Rocca von Garda. Wer interessiert ist, besucht die Klosterkirche des Karameliterordens San Giorgio auf der Kuppe im Wald. Über Felsen steigen Sie hinauf zum Aussichtsplatz bei der Rocca mit Tiefblick auf Garda. Hier haben Sie wunderbare Fernsicht auf die blauen Buchten unter Ihnen. Steil bergab führt Sie ein Pfad im Wald schließlich nach Garda, wo Sie noch gemütlich am Lungolago entlangschlendern können. 
+			- Die heutige Wanderroute führt über weite Strecken einfach am Lungolago (Uferweg) entlang. Hier ist die Orientierung denkbar einfach. Beim Weg über die Rocca folgen Sie verschiedenen Wegweisern, achten Sie auf die Texthinweise.
+		- Optionen
+			- Wahlweise nehmen Sie die pink eingezeichnete Option und wandern Sie, statt hinauf auf die Rocca, entspannt am Uferweg direkt nach Garda. So ist Ihre Wanderung durchwegs flach. 
+			- Sie können statt in Lazise auch in Bardolino Ihre Wanderung starten und sich so die ersten Kilometer sparen. 
+			- Machen Sie auf dem Weg zur Rocca einen Besuch im Karameliterkloster San Giorgio (siehe Sehenswertes). Die Kirche ist für Besucher offen, sowie ein kleiner Klosterladen, der von einem Mönch betreut wird. Gehen Sie dafür nach dem ersten Anstieg an der Gabelung bei KM 9 geradeaus hinab, an der T-Kreuzung gehen Sie scharf links hinauf und beim letzten Haus (Nr.5) in den Pfad hinauf. Oben an der Schotterstraße links zum Kloster. Nach dem Besuch der Anlage bitte die Klostermauern gegen den Uhrzeigersinn umrunden und dem Waldweg immer geradeaus abwärts Richtung Rocca folgen. Markierung orange in der Karte.
+		- Öffentliche Verkehrsmittel
+			- Schifffahrt von Desenzano nach Lazise oder Bardolino.
+				- Abfahrt in Desenzano um 09:05 und 10:15 Uhr.
+			- Alternativ können Sie mit der Bahn von Desenzano nach Verona fahren und von dort mit dem Bus nach Lazise, Fahrzeit ca. 1,5 Stunden.
+				- Die aktuellen Fahrpläne finden Sie unter: www.trenitalia.com und www.atv.verona.it##veronaOption
+				- könnte interessant sein##veronaOption2
+		- Mura di Lazise
+			- Einer der schönsten Orte am Gardasee ist Lazise und dabei wartet die kleine Stadt nicht mit den MegaSehenswürdigkeiten auf. Lazise ist vielmehr liebenswert, verzaubert seine Besucher mit italienischem Flair und dem eigenen Charme. Der mittelalterliche Stadtkern beginnt direkt am See, die kleinen Geschäfte laden zum Bummel ein und wer auf Meeresfrüchte steht, kommt auch nicht zu kurz. Die kleine Stadt gehört zu einer der ältesten Gemeinden Italiens, denn Lazise bekam bereits im Jahre 983 das Recht zur Selbstverwaltung und die Venezianer machten das Städtchen zu einem bedeutenden Handelsort am Gardasee. Lazise befindet sich am Veroneser Südost-Ufer des Gardasees und liegt zwischen den Ortschaften Bardolino und Peschiera del Garda. Von Lazise liegt gerade einmal 23 Kilometer von der Provinzhauptstadt entfernt. Was es alles zu besichtigen und erkunden gibt, findest du hier, viel Spaß bei den folgenden Sehenswürdigkeiten von Lazise.##lazisesun
+		- Taverna Da Memo Dal 1949
+			- Traditionsrestaurant seit 1949 mit italienischer & mediterraner Küche, frischem Fisch, Pizza und herzlicher Atmosphäre. €€€ Piazza Statuto 15, 37011 Bardolino
+		- Bardolino
+			- Bardolino ist eine italienische Gemeinde am Gardasee in der Provinz Verona in der nordostitalienischen Region Venetien mit 7207 Einwohnern. Bardolino liegt an der Ostseite des Sees nördlich von Lazise und südlich von Garda. Bardolino ist das Zentrum eines bekannten Weinbaugebiets gleichen Namens. Der rote Bardolino sowie der Rosé mit dem Namen „Chiaretto“ sind sehr beliebt.
+		- La Piccola Osteria
+			- Gemütliche, zentrale Osteria mit frischer italienisch‑mediterraner Küche, großzügigen Portionen, ruhiger Atmosphäre und herzlichem Service. €€ Via Palestro 38/A, 37011 Bardolino
+		- Bottega Del Vino
+			- Kleine, gemütliche Weinbar mit regionalen Weinen, leichten Gerichten, Sandwiches & Bruschetta. € Piazza Giacomo Matteotti 46, 37011 Bardolino
+		- Eremo di San Giorgio
+			- Auf dem 305 m hohen Monte San Giorgio, der östlich der Rocca liegt, befindet sich seit dem 17. Jahrhundert ein Kamaldulenser-Kloster. Teilweise kann es besichtigt werden, in einem kleinen Laden werden Produkte des Klosters verkauft.
+		- Rocca di Garda
+			- La Rocca di Garda ist ein Fels, der steil und markant zwischen den Orten Garda und Bardolino über das östliche Gardaseeufer ragt. Von oben hat man einen tollen Blick auf Bardolino und Garda mit Punta San Vigilio. Am gegenüberliegenden Ufer sieht man klar den spitzen Fels der Rocca di Manerba, die größte Gardaseeinsel Isola del Garda und die weit in den See ragende Halbinsel von Sirmione
+		- Ristorante Pizzeria Bar Pegaso
+			- Beliebtes Lokal etwas abseits vom Trubel, mit italienischer & mediterraner Küche, hervorragender Pizza und freundlichem Service. €€ Via Michele Abrile 20, 37016 Garda
+		- Osteria Caffè Amaro
+			- Familiäre Osteria mit typisch venetischer Küche, regionalen Weinen, saisonalen Gerichten und gemütlicher Atmosphäre nahe der Uferpromenade. €€ Piazzale Roma 2, 37017 Garda
+		- Garda
+			- Garda liegt zwischen dem riesigen Felsen Rocca und der sehr schönen Halbinsel San Virgilio. Eine sehr schöne und vielseitige Vegetation ist in der Bucht von Garda beheimatet. Hier wachsen Zypressen, Ölbäume, Myrte und auch Oleander. Während der Römerzeit wurde der Ort als „Perle“ des Sees bezeichnet. Erst im 12. Jh. bekam der See durch den Ort Garda seinen Namen, vor dieser Zeit hieß der Gardasee "Benaco".
+		- Villa Albertini
+			- Nicht nur auf den ersten Blick erinnert die Villa BecelliAlbertini in Garda an ein Schloss, das am Gardasee über der Straße nach San Vigilio thront. Dieser Prachtbau wurde im 16. Jahrhundert im Auftrag der Familie Becelli errichtet.
+		- Osteria al Porto
+			- Beliebtes Lokal etwas abseits vom Trubel, mit italienischer & mediterraner Küche, hervorragender Pizza und freundlichem Service. €€ Via Michele Abrile 20, 37016 Garda
+		- Vinoteca Delizia
+			- Kleine, charmante Weinbar mit großer Auswahl an lokalen Weinen, Aperitivi und Sitzplätzen direkt an der Promenade. € Via Spagna 6, 37016 Garda
 - **Fr 05.06. --> Malcesine**
 	- {journey: Bus + 11 km Wanderung}
 		- Route##tomalcesine
@@ -142,6 +219,7 @@
 			- Nach einer kurzen Busfahrt wandern Sie auf historischen Steinpflasterwegen weit hinauf zur Einsiedelei. 
 		- 11 km Wanderung
 			- Vorbei an den wundersam geformten Felsformationen der „Bügeleisen“ folgen Sie dem Weg an den Flanken des Monte Baldo. Sie erreichen das Kirchlein San Michele an der Seilbahnstation des Monte Baldo. Wahlweise schaukeln Sie hinauf zum Gipfel oder direkt ins Tal nach Malcesine mit dem sehenswerten Castello di Scaligero.
+		- Bergsteigen##montebaldoclimb2
 	- {hotel: Hotel Lago di Garda}
 		- Telefon: +39 045 740 0633
 		- E-Mail: info@hldg.it
@@ -185,6 +263,9 @@
 		- +43 664 80183 444 
 ``extrainfo
 - EXTRA INFO
+	- Mitbringen
+		- Zeitungspapier (für nasse Wanderstiefel) 
+		- Passport
 	- [Ihr Reisebegleiter](./media/eurohike-booklet-deutsch.pdf)
 	- [Hotelliste](./media/gardasee-hotels.pdf)
 	- [Eurohike Reisedaten](https://trip.guibo.travel/psvhAX)
