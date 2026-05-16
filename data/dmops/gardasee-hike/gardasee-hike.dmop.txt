@@ -124,7 +124,7 @@
 		- Lage am See##orientationDesenzano	
 	- ::construction:: TEXT AUS DEM BOOKLET, WIRD NOCH ÜBERARBEITET ::construction::
 		- Organisatorisches
-			- Heute wandern Sie von Saló über die Halbinsel der Rocca von Manerba bis in den Hafen Porto Dusano. Dort nehmen Sie das Schiff nach Desenzano. Wer in Gardone übernachtet hat, nimmt morgens den Bus nach Salo zum Wanderstart. Beachten Sie bitte den Fahrplan des Schiffes! Es gibt je nach Saison nur ein oder zwei Fahrten am Nachmittag. Hinweis: Bei sehr starkem Wellengang, bei Sturm oder Gewitter können die Schiffe am Hafen Porto Dusano nicht anlegen. In diesem Falle müssen Sie entweder hinauf in den Ort Manerba/Montinelle wandern und dort einen Bus nehmen oder sich ein Taxi organisieren, möglicherweise können Sie sich hierfür mit anderen Reisenden zusammentun. Taxinummern hängen aus.
+			- Heute wandern Sie von Saló über die Halbinsel der Rocca von Manerba bis in den Hafen Porto Dusano. Dort nehmen Sie das Schiff nach Desenzano. Wer in Gardone übernachtet hat, nimmt morgens den Bus nach Salo zum Wanderstart. Beachten Sie bitte den Fahrplan des Schiffes! Es gibt je nach Saison nur ein oder zwei Fahrten am Nachmittag. Hinweis: Bei sehr starkem Wellengang, bei Sturm oder Gewitter können die Schiffe am Hafen Porto Dusano nicht anlegen. In diesem Falle müssen Sie entweder hinauf in den Ort Manerba/Montinelle wandern und dort einen Bus nehmen oder sich ein Taxi organisieren, möglicherweise können Sie sich hierfür mit anderen Reisenden zusammentun. Taxinummern hängen aus.##previewDesenzano
 		- Ihre Wanderung 
 			- Die heutige Wanderung führt Sie zunächst am Lungolago von Salo direkt am Uferweg entlang. Dann folgt ein kurzer Aufstieg ins kleine Dorf Cisano, von wo sich wunderbare Olivenhaine erstrecken, durch welche Sie nun gemütlich auf Schotterwegen weiterwandern. Bald geht es durch San Felice abwärts und weiter auf Gehwegen durch die Urlaubersiedlungen, hier sind teilweise die Uferwege nicht öffentlich zugänglich. Später erreichen Sie den See und können in einer Strandbar einkehren. Überqueren Sie den Strand Pisenze und dann geht es richtig los: Der Aufstieg auf die Halbinsel der Rocca und der Weiterweg über die Spitze der Punta Sasso ist wunderbar. Geübte schwindelfreie Bergsteiger können zusätzlich die Rocca und das Kreuz auf der Spitze erklimmen, gemütliche Geher wandern direkt unten über den Aussichtsplatz Punta Sasso weiter. Stets in Klippen-Nähe überschreiten Sie die Halbinsel auf Pfaden und Steigen über Fels und Wald bis Sie den Hafen von Dusano erreichen. Dort nehmen Sie das Schiff, das Sie nach Desenzano bringt. Beachten Sie bitte den Fahrplan für Ihre Schifffahrt am Nachmittag!
 		- Wichtiger Hinweis
@@ -172,7 +172,7 @@
 		- Lage am See##orientationGarda
 	- ::construction:: TEXT AUS DEM BOOKLET, WIRD NOCH ÜBERARBEITET ::construction::
 		- Organisatorisches
-			- Heute fahren Sie mit dem Schiff von Desenzano über den See ans Ostufer des Gardasees. Steigen Sie in Lazise aus. Dann wandern Sie bis ans Ziel Garda.
+			- Heute fahren Sie mit dem Schiff von Desenzano über den See ans Ostufer des Gardasees. Steigen Sie in Lazise aus. Dann wandern Sie bis ans Ziel Garda.##previewGarda
 		- Ihre Wanderung
 			- Genießen Sie heute eine gemütliche Uferwanderung durch die schönsten Seeorte am Ostufer. Von Lazise geht es über Cisano nach Bardolino, entspannt am Uferweg. Nach den Campingplätzen hinter Bardolino wandern Sie anfangs auf Asphalt, bald auf Schotterwegen hinauf in den Wald zur Rocca von Garda. Wer interessiert ist, besucht die Klosterkirche des Karameliterordens San Giorgio auf der Kuppe im Wald. Über Felsen steigen Sie hinauf zum Aussichtsplatz bei der Rocca mit Tiefblick auf Garda. Hier haben Sie wunderbare Fernsicht auf die blauen Buchten unter Ihnen. Steil bergab führt Sie ein Pfad im Wald schließlich nach Garda, wo Sie noch gemütlich am Lungolago entlangschlendern können. 
 			- Die heutige Wanderroute führt über weite Strecken einfach am Lungolago (Uferweg) entlang. Hier ist die Orientierung denkbar einfach. Beim Weg über die Rocca folgen Sie verschiedenen Wegweisern, achten Sie auf die Texthinweise.
@@ -226,6 +226,62 @@
 		- [Website: Hotel Lago di Garda](https://hldg.it/de)##hotelmalcesine
 		- Viale Tommaso dal Molin 63{location: https://maps.app.goo.gl/Ch1bHZWzJmn59vZR7}##locationmalcesine
 		- Lage am See##orientationMalcesine
+	- ::construction:: TEXT AUS DEM BOOKLET, WIRD NOCH ÜBERARBEITET ::construction::
+		- Organisatorisches
+			- Morgens mit dem Bus von Garda nach Assenza. Wanderung entlang der Flanken des Monte Baldo bis zur Seilbahn- Mittelstation San Michele. Von dort mit der Gondel hinab nach Malcesine. Weitere Möglichkeiten siehe unter Optionen. Ausserhalb der Betriebszeiten der Seilbahn: Sollte die Seilbahn nicht fahren, empfehlen wir den Direktabstieg ab San Maggiore (pink in der Karte eingezeichnet). Wahlweise auch die Rundwanderung ab Malcesine (siehe separate Wegbeschreibung Option).##previewMalcesine
+		- Ihre Wanderung
+			- Heute wandern Sie auf historischen Steinpflasterwegen weit hinauf zu einer Einsiedelei in den Bergen. Zunächst von Assenza aufwärts nach Sommavilla, wo der Sentiero di Mezzo (Mittelweg), ein historischer Verbindungsweg zwischen den Dörfern beginnt. Oberhalb von Cassone geht es dann steil bergauf. Vorbei an den wundersam geformten Felsformationen der „Bügeleisen“ folgen Sie dem Weg an den Flanken des Monte Baldo. Es geht in zahlreichen, teils steilen Serpentinen hinauf. Nach der Rast auf der Höhe nahe der kleinen Bergkirche wandern Sie die Berghänge des Monte Baldo entlang. Schattige Wege im Wald erwarten Sie. Der Abstieg verläuft ebenfalls teils steil auf Steinpflasterwegen, Betonstreifen und Pfaden, er ist bei Nässe eher unangenehm. Ab San Maggiore führt ein Höhenweg ein weiteres Mal sanft bergauf. Bald erreichen Sie das Kirchlein San Michele an der Seilbahnstation des Monte Baldo. Nun schaukeln Sie gemütlich ins Tal nach Malcesine, wo ein Besuch in der Altstadt lohnt.
+		- Hinweise
+			- Die Standardroute ist relativ anspruchsvoll und sollte nur bei trockenen Bedingungen durchgeführt werden. Außerdem erfordert Sie sehr gute Kondition für einen mindestens zweistündigen Aufstieg, welcher mitunter steil ist. Alternativ wählen Sie die Rundwanderung Malcesine, hierfür lesen Sie bitte die separate Wegbeschreibung und Info der Option.
+		- Optionen
+			- Direktabstieg nach Malcesine (ohne Seilbahn): pink in der Karte eingezeichnet 
+			- Option Rundwanderung Malcesine: siehe separate Wegbeschreibung
+			- Zusatzprogramm: Auffahrt mit der Seilbahn zur Bergstation Monte Baldo (in Eigenregie, auf eigene Kosten).
+		- Öffentliche Verkehrsmittel
+			- Bus 484 von Garda nach Assenza oder direkt nach Malcesine. Abfahrt in Garda um 09:35 und 11:35 Uhr.
+				- Den aktuellen Fahrplan finden Sie unter: www.mycicero.it
+			- Talfahrt mit der Seilbahn Monte Baldo. Die Bahn fährt regelmäßig im 30-Minuten-Takt.
+				- Alle Informationen finden Sie unter: www.funiviedelbaldo.it
+		- Verpflegung
+			- Es gibt unterwegs auf der Standardroute keine Einkehrmöglichkeit, packen Sie ausreichen Proviant und Wasser ein. Ein Restaurant gibt es erst wieder an der Seilbahnstation San Michele.
+		- Bar Lido Assenza, Via Gardesana, 37010 Assenza
+		- June Beach Restaurant & Bar, Via Gardesana, 56, 37010 Assenza
+		- Pizzeria Ristorante Marianna, Via Gardesana, 14, 37010 Brenzone sul Garda
+		- Monte Baldo
+			- Der Monte Baldo ist mit über 2000 Metern das höchste Bergmassiv des Gardasees. Auf über 30 Kilometern trennt er das Ostufer vom Etschtal. An seinen Hängen wachsen über 600 verschiedene Pflanzenarten, darunter etliche botanische Raritäten.
+		- Malcesine
+			- Malcesine bezaubert mit seinem charmanten historischen Zentrum, verwinkelten Gassen und atemberaubenden Ausblicken. Die imposante Scaligerburg, die über dem Ort thront, bietet nicht nur Einblicke in die Geschichte, sondern auch einen Panoramablick auf den See und die umliegenden Berge. Für Ruhesuchende laden die Uferpromenade und idyllische Strände zum Verweilen ein, während Wassersportler beste Bedingungen für Segeln, Windsurfen und Kitesurfen vorfinden.
+		- Hotel Malcesine Ristorante & Pizzeria, Bar & Gelateria
+			- Piazza Guglielmo Marconi, 12, 37018 Malcesine
+		- Bar Gelateria Alpino
+			- Piazza Statuto, 24, 37018 Malcesine
+		- Ristorante pizzeria Firenze
+			- Via Gardesana, 131, 37018 Malcesine
+		- Madonna dell'Accoglienza
+			- Die Madonna dell'Accoglienza ist eine beeindruckende Statue der Jungfrau Maria, die auf einer Panoramaterrasse oberhalb der Stadt thront. Von diesem Aussichtspunkt bietet sich ein atemberaubender Blick auf Malcesine, den Gardasee und die umliegenden Berge.
+		- Ristorante Pizzeria "al Ristoro", Via Navene Vecchia, 3, 37018 Malcesine
+		- Locanda Monte Baldo, Via S. Michele 45,37018 Malcesine VR
+		- Rundwanderung Malcesine Option
+			- Organisatorisches
+				- Fahren Sie mit dem Bus nach Malcesine und starten Sie dort zu einer kleinen oder großen Rundwanderung. Je nach Routenwahl, fahren Sie mit der Seilbahn zurück ins Tal. Diese Wanderung können Sie flexibel gestalten. Sie ist auch in anderer Richtung möglich. Wer von San Michele mit der Seilbahn hinab fährt, spart sich den steilen Abstieg.
+				- Alternativ machen Sie ein kurze gemütlichere Runde und nehmen nach dem Aussichtsplatz bei der Madonna gleich die "Abkürzung" (pink in der Karte) wieder ins Tal.
+			- Ihre Wanderung
+				- Der Weg verläuft auf dem Sentiero dei Capitelli, einem historischen Verbindungsweg von Malcesine in die Bergdörfer oberhalb. Sie wandern immer wieder auf (teils sehr steilen) Pflastersteinwegen, wo früher Maultiere Ihre Lasten transportierten. Zahlreiche kleine Denkmäler und Heiligenbilder sind anzutreffen. Ab dem Ortsteil Paier biegen Sie ab und besuchen den wunderbaren Aussichtsplatz bei der Madonna der Gastfreundschaft. Anschließend geht es hinab und wieder hinauf auf kleinen Straßen nach Santa Maggiore, wo Sie auf die Standardroute (siehe separate Wegbeschreibung) treffen. Nun wandern Sie sanft hinauf nach San Michele und zur Seilbahnstation. Wahlweise mit der Bahn ins Tal oder Sie setzen den Abstieg auf dem Sentiero dei Capitelli über steile Pflasterwege durch Wald und über Panoramastraßen fort.
+			- Optionen
+				- Die Route kann in beide Richtungen begangen werden. Der direkte Anstieg über den "Sentiero dei Capitelli" ist ebenfalls lohnend, jedoch auch sehr steil. 
+				- Wenn die Seilbahn in Betrieb ist, können Sie wahlweise mit der Bahn ins Tal schweben oder auf dem Sentiero dei Capitelli ins Tal wandern.
+				- Eine kurze schöne Runde mit wunderbarem Aussichtsplatz erwandern Sie auch, wenn Sie nach der Madonna dell`Accoglienza die Abkürzung direkt ins Tal nehmen. Markierung pink in der Karte.
+				- Zusatzprogramm: Auffahrt mit der Seilbahn zur Bergstation Monte Baldo (in Eigenregie, auf eigene Kosten).
+			- Hotel Malcesine Ristorante & Pizzeria, Bar & Gelateria
+				- Piazza Guglielmo Marconi, 12, 37018 Malcesine
+			- Bar Gelateria Alpino
+				- Piazza Statuto, 24, 37018 Malcesine
+			- Ristorante Pizzeria "al Ristoro"
+				- Via Navene Vecchia, 3, 37018 Malcesine
+			- Madonna dell'Accoglienza
+				- Die Madonna dell'Accoglienza ist eine beeindruckende statue der Jungfrau Maria, die auf einer Panoramaterrasse oberhalb der Stadt thront. Von diesem Aussichtspunkt bietet sich ein atemberaubender Blick auf Malcesine, den Gardasee und die umliegenden Berge.
+			- Locanda Monte Baldo
+				- Via S. Michele 45,37018 Malcesine VR
 - **Sa 06.06. --> Riva del Garda**
 	- {journey: Bus + 15 km Wanderung}
 		- Route##backtoriva
@@ -239,6 +295,58 @@
 		- [Website: Hotel Mirage](http://www.mirageriva.it)##hotelriva2
 		- Viale Tommaso dal Molin 63{location: https://maps.app.goo.gl/Ch1bHZWzJmn59vZR7}##locationriva2
 		- Lage am See##orientationRiva
+	- ::construction:: TEXT AUS DEM BOOKLET, WIRD NOCH ÜBERARBEITET ::construction::
+		- Organisatorisches
+			- Morgens mit dem Bus von Malcesine nach Tempesta. Wanderung über den anspruchsvollen "Le Busatte"- Steig nach Torbole und wahlweise weiter nach Nago. Dann mit dem Bus oder zu Fuß am See entlang nach Riva. Weitere Möglichkeiten siehe unter Optionen.
+		- Ihre Wanderung
+			- Heute wandern Sie von den Ufern des Sees zunächst aufwärts, um zum Panoramaweg zu gelangen. Weiter geht es auf dem "Sentiero Panoramico Le Busatte", welcher abschnittsweise spektakulär in den Fels gebaute Treppen, Brücken und Stege beinhaltet. Wirklich atemberaubende Tiefblicke begleiten Sie auf dem Weg entlang der Bergflanken Richtung Torbole. Durch einen Olivenhain setzen Sie im Tal Ihren Weg fort, um auf der Strada Santa Lucia zum Kastell von Nago aufzusteigen. Nach einer Einkehr in Nago wandern Sie nun wieder talwärts zu den Marmitte dei Giganti, gewaltige Felsformationen aus der Eiszeit erinnern an "Töpfe von Giganten". Ein teilweise felsiger steiler Pfad führt Sie hinab und durch Gärten und Haine geht es weiter flach zurück ans Seeufer und wahlweise zu Fuß oder mit dem Bus nach Riva.
+		- Wichtiger Hinweis
+			- Die Standardroute über "Le Busatte" beinhaltet einige Abschnitte auf Leitern und Stegen, Brücken und in den Fels gebaute Stufen. Hier ist vollkommene Schwindelfreiheit unbedingt erforderlich! Die Steige sind gut gesichert, jedoch haben Sie stets atemberaubenden Tiefblick zum See. Alternativ steigen Sie erst in Torbole Porto aus dem Bus und wandern den restlichen Teil der Standardroute und / oder steigen zusätzlich auf den Monte Brione. Siehe unter Optionen.
+		- Hunde
+			- Der Steig "Le Busatte" führt über Stufen und Brücken, wo der Boden aus Metallgitter besteht. Diese sind für manche Hundepfoten ungeeignet. Wählen Sie ggf. besser die Option.
+		- Optionen
+			- Start der Etappe in Torbole am Hafen (Haltestelle Porto) zur Vermeidung des anspruchsvollen "Le Busatte" Abschnittes. 
+			- Abkürzung: Ab Torbole direkt weiter nach Riva, ohne die Schleife nach Nago. Der Abstieg über die Marmitte dei Giganti ist auf einem Abschnitt steil und rutschig. Abkürzung pink in der Karte.
+			- In Nago können Sie den Aufstieg zum Kastell auslassen und direkt ins Zentrum weitergehen, das Kastell ist nicht zu besichtigen. Abkürzung orange in der Karte.
+			- Busfahrt oder Fußweg von Torbole nach Riva. 
+			- Zusatzprogramm: Monte Brione, etwa 3,5 km und 300 hm auf teil steilen Steigen zum Gipfelkreuz (hin und retour). Lohnende Wanderung auf einen felsigen Höhenzug mit spektakulären Tiefblicken am Gipfel und schönen Aussichtsplätzen. Einfache Wegfindung. Wanderung auf Pfaden mit einigen Stufen, keine Leitern, Brücken oder Stege. Für Hunde geeignet. Pink in der Karte.
+		- Öffentliche Verkehrsmittel
+			- Bus 484 von Malcesine nach Tempesta, Torbole oder Riva. Abfahrt in Malcesine (Autostazione B) im 2- Stunden Takt um 08:18, 10:18,...
+				- Die aktuellen Fahrpläne finden Sie unter: www.mycicero.it
+		- Wanderweg Le Busatte
+			- Dieser Wanderweg führt an einem steilen Berghang hoch über dem See durch dichte mediterrane Vegetation. Das Hauptmerkmal sind die herrlichen Aussichten und die Eisenleitern an den steilen Felswänden über dem Gardasee: sie zählen mehr als 400 Stufen.
+		- Torbole Nago
+			- Dieses zauberhafte Dorf nördlich von Torbole befindet sich zu Füßen des Castel Penede. Nago ist Richtung Gardasee ausgerichtet, einen der schönsten Seen Italiens, und bietet unvergessliche Panoramablicke, sowie eine Umgebung mit einer herrlich mediterranen Vegetation. In Nago ist auch die Ruine des Castel Penede zu finden (nicht zugänglich), die von einem schönen Park umgeben ist.
+		- Ristorante Pizzeria L'Ora
+			- Gemütliches italienisches Restaurant und Pizzeria direkt am Gardaseeufer mit klassischer Küche (Pasta, Fleisch, Fisch), hausgemachter Holzofen-Pizza, großer Weinkarte und Blick auf den Hafen. €€ Viale Rovereto 101, 38066 Riva del Garda
+		- Yachthafen Porto San Nicolò Riva
+			- Der Yachthafen von Porto San Nicolò Riva ist nicht nur ein Ankerplatz für Boote, sondern ein pulsierendes Zentrum der Region. Mit seinem eleganten Ambiente und der strategischen Lage zieht der Hafen nicht nur Bootsliebhaber an, sondern bereichert auch das lokale Leben mit maritimem Flair und Tourismusaktivitäten.
+		- Ristorante Enoteca Restel De Fer
+			- Charmantes, familiengeführtes italienisches Restaurant mit saisonaler Küche aus lokalen Zutaten, exzellenter Weinbegleitung, eigener Olivenölproduktion und gemütlicher Garten-Terrasse. €€ Via Restel de Fer 10, 38066 Riva del Garda
+		- Ristorante Pizzeria Villa Aranci
+			- Italienische Küche mit Pizza, Meeresfrüchten und mediterranen und vegetarische Spezialitäten mit Außensitzplätzen. €€ Viale Rovereto, 25, 38066 Riva del Garda
+		- Spiaggia dei Pini und Sabbioni Riva
+			- Sind die beiden beliebtesten Strände des Nordufers. Entlang eines Uferradwegs findet man eine breite Liegewiese vor einem schönen Kiesstrand mit überwachten Badebereichen. An der Strandbar stehen öffentliche Toiletten und Duschen zur Verfügung und eine Segelschule mit Boots-, SUP und Kanuverleih ist gleich nebenan.
+		- Spiaggia degli Olivi Riva
+			- Beim Spiaggia degli Olivi handelt es sich um ein historisches Strandbad direkt am Rand der Altstadt von Riva, das heute allerdings nicht mehr zum Baden genutzt wird. Hier befindet sich jetzt der Segelclub des Ortes
+		- Riva del Garda
+			- Der lebhafte Urlaubsort Riva liegt umgeben von mächtigen Bergen an der schmalen Nordspitze des Lago di Garda. Mit seinen rund 13.000 Einwohnern ist er nach Desenzano der zweitgrößte Ort am See. Herrliche Strandanlagen, Uferpromenaden und sehenswerte Bauwerke locken jährlich zahlreiche Besucher an.
+		- La Caneva Bistrot Mediterraneo
+			- Elegantes mediterranes Fine-Dining-Restaurant mit kreativer mediterraner und italienischer Küche (insbesondere frischen Fisch- und Meeresfrüchtegerichten) in stilvollem Ambiente. €€€ Via Fiume 40, 38066 Riva del Garda
+		- Enosteria I Momenti
+			- Italienische Enosteria mit kreativen Gourmet-Pizzen, frischen Cruditè, Meeres- und Landgerichten sowie ausgesuchten Weinen in charmanter, gemütlicher Atmosphäre
+		- Bella Napoli
+			- Traditionelle italienische Pizzeria und Restaurant mit klassischer und kreativer Küche, Neapel-inspirierten Pizzen, regionalen Trentino-Gerichten, Fleisch- und Fischoptionen. €€ Via Diaz 29, 38066 Riva del Garda
+		- Ristorante Pizzeria Leon D'oro Riva
+			- Traditionelles Restaurant im Altbau/Gewölbekeller und ein paar Tischen im Freien mit gutem italienischem Essen. €€ Via Fiume 28, 38066 Riva del Garda
+		- Piazza III Novembre Riva
+			- Der malerische Vorzeigeplatz der schönen Altstadt liegt direkt am See und ist von Arkaden im lombardischvenzianischen Stil umgeben. Er wird vom hohen Turm Torre Apponale, einem Relikt der mittelalterlichen Stadtmauer, dominiert. Umrahmt wird der Platz von drei Palazzi: dem Palazzo Pretorio (14. Jh.), dem Palazzo del Provvenditore (14. Jh.) und dem Palazzo Municipale (15. Jh.).
+		- Ristorante Al Volt
+			- Elegantes italienisches Gourmet-Restaurant mit klassischer und zeitgenössischer Küche aus lokalen See- und Landzutaten, kreativen Degustations-Menüs, ausgewählten Weinen und romantischer Atmosphäre. €€ Via Fiume 73, 38066 Riva del Garda
+		- Ristorante Pizzeria RivaMia
+			- Beliebte italienische Pizzeria und Restaurant mit klassischer Küche, frischer Holzofen-Pizza, lokalen Spezialitäten, Fischund Fleischgerichten in gemütlicher Atmosphäre. €€ Viale Dante Alighieri 49, 38066 Riva del Garda
+		- Bastione - Festung mit Panoramaaufzug Riva
+			- Dieser letzte Rest einer venezianischen Festung aus dem 16. Jahrhundert thront in etwa 200 Metern Höhe am Berg Monte Rocchetta über der Stadt und ist über einen gepflasterten Weg zu erreichen. Die Festung wurde 1703 von den Franzosen zerstört, heute ist nur noch eine Ruine - jedoch mit spektakulärem Blick - erhalten.
 - **So 07.06. Riva del Garda**
 	- {hotel: Hotel Mirage (2. Tag)}
 		- Telefon: +39 0464 552671
