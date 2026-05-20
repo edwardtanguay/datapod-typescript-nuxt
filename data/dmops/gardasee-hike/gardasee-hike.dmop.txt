@@ -219,7 +219,6 @@
 			- Nach einer kurzen Busfahrt wandern Sie auf historischen Steinpflasterwegen weit hinauf zur Einsiedelei. 
 		- 11 km Wanderung
 			- Vorbei an den wundersam geformten Felsformationen der „Bügeleisen“ folgen Sie dem Weg an den Flanken des Monte Baldo. Sie erreichen das Kirchlein San Michele an der Seilbahnstation des Monte Baldo. Wahlweise schaukeln Sie hinauf zum Gipfel oder direkt ins Tal nach Malcesine mit dem sehenswerten Castello di Scaligero.
-		- Bergsteigen##montebaldoclimb2
 	- {hotel: Hotel Lago di Garda}
 		- Telefon: +39 045 740 0633
 		- E-Mail: info@hldg.it
@@ -232,7 +231,8 @@
 		- Ihre Wanderung
 			- Heute wandern Sie auf historischen Steinpflasterwegen weit hinauf zu einer Einsiedelei in den Bergen. Zunächst von Assenza aufwärts nach Sommavilla, wo der Sentiero di Mezzo (Mittelweg), ein historischer Verbindungsweg zwischen den Dörfern beginnt. Oberhalb von Cassone geht es dann steil bergauf. Vorbei an den wundersam geformten Felsformationen der „Bügeleisen“ folgen Sie dem Weg an den Flanken des Monte Baldo. Es geht in zahlreichen, teils steilen Serpentinen hinauf. Nach der Rast auf der Höhe nahe der kleinen Bergkirche wandern Sie die Berghänge des Monte Baldo entlang. Schattige Wege im Wald erwarten Sie. Der Abstieg verläuft ebenfalls teils steil auf Steinpflasterwegen, Betonstreifen und Pfaden, er ist bei Nässe eher unangenehm. Ab San Maggiore führt ein Höhenweg ein weiteres Mal sanft bergauf. Bald erreichen Sie das Kirchlein San Michele an der Seilbahnstation des Monte Baldo. Nun schaukeln Sie gemütlich ins Tal nach Malcesine, wo ein Besuch in der Altstadt lohnt.
 		- Hinweise
-			- Die Standardroute ist relativ anspruchsvoll und sollte nur bei trockenen Bedingungen durchgeführt werden. Außerdem erfordert Sie sehr gute Kondition für einen mindestens zweistündigen Aufstieg, welcher mitunter steil ist. Alternativ wählen Sie die Rundwanderung Malcesine, hierfür lesen Sie bitte die separate Wegbeschreibung und Info der Option.
+			- Die Standardroute ist relativ anspruchsvoll und sollte nur bei trockenen Bedingungen durchgeführt werden. Außerdem erfordert Sie sehr gute Kondition für einen mindestens zweistündigen Aufstieg, welcher mitunter steil ist.##montebaldoclimb2
+			- Alternativ wählen Sie die Rundwanderung Malcesine, hierfür lesen Sie bitte die separate Wegbeschreibung und Info der Option.
 		- Optionen
 			- Direktabstieg nach Malcesine (ohne Seilbahn): pink in der Karte eingezeichnet 
 			- Option Rundwanderung Malcesine: siehe separate Wegbeschreibung
